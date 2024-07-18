@@ -1,0 +1,93 @@
+[gd_scene load_steps=13 format=3 uid="uid://dqnaqj8yb6hwd"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_ofpvf"]
+[ext_resource type="Texture2D" uid="uid://cj5tv2xmajs0o" path="res://assets/majdSprites/majd idle.png" id="2_mjfdd"]
+[ext_resource type="Texture2D" uid="uid://bcg36juitsvkg" path="res://assets/majdSprites/majd walk.png" id="3_c5kvi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3fw2e"]
+radius = 7.25
+height = 40.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ircrp"]
+atlas = ExtResource("2_mjfdd")
+region = Rect2(0, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mwew"]
+atlas = ExtResource("2_mjfdd")
+region = Rect2(700, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ym8k"]
+atlas = ExtResource("2_mjfdd")
+region = Rect2(350, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3wfh"]
+atlas = ExtResource("3_c5kvi")
+region = Rect2(0, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvish"]
+atlas = ExtResource("3_c5kvi")
+region = Rect2(350, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8byo"]
+atlas = ExtResource("3_c5kvi")
+region = Rect2(700, 0, 350, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvk5v"]
+atlas = ExtResource("3_c5kvi")
+region = Rect2(1050, 0, 350, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh7cy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ircrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mwew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ym8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mwew")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3wfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvish")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8byo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvk5v")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 2
+script = ExtResource("1_ofpvf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_3fw2e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 3)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_qh7cy")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.343089

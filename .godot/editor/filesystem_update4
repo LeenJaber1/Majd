@@ -1,6 +1,5 @@
-res://jarashBackground.tscn
-res://sound puzzle/sound_puzzle_jerash.gdshader
-res://jarash/mainJarashScene.tscn
+res://levels/ajloun/level.tscn
+res://player/player.tscn
 res://levels/jarash/mainJarashScene.tscn
-res://levels/sound puzzle/sound_puzzle_jerash.gdshader
-res://player/majd.tscn
+res://levels/ajloun/ajloun.tscn
+res://levels/ajloun/platform.tscn

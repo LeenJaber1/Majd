@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4qsuo4fatyet"]
+
+[ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_wx2sv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tf0x0"]
+size = Vector2(62, 31)
+
+[node name="AnimatedSprite2D" type="AnimatableBody2D"]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wx2sv")
+region_enabled = true
+region_rect = Rect2(286.785, 0.412735, 63.955, 33.5298)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_tf0x0")
