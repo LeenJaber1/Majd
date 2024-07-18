@@ -1,12 +1,9 @@
-res://sound puzzle/sound_puzzle_jerash.tscn
-res://hoverButton.tres
-res://idleButton.tres
-res://button.tres
-res://hoverBig.tres
-res://bigpressing.tres
-res://bigpressed.tres
-res://submitButton.tres
+res://majd/majdPlayer.tscn
 res://sound puzzle/sound_puzzle_jerash.gdshader
 res://jarash/mainJarashScene.tscn
 res://jarashBackground.tscn
-res://majd/majdPlayer.tscn
+res://player/majd.gd
+res://player/majd.tscn
+res://testPlayer.gd
+res://player/character_body_2d.tscn
+res://player/testPlayer.gd
