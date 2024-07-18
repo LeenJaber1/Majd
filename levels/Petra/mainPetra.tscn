@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cekmymrg0l56b"]
+
+[ext_resource type="Texture2D" uid="uid://7brr5krkp5pt" path="res://assets/backgrounds/petra.png" id="1_xfn82"]
+
+[node name="MainPetra" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Petra" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2160, 453)
+scale = Vector2(0.506521, 0.503765)
+texture = ExtResource("1_xfn82")
