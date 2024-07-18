@@ -6702,7 +6702,7 @@ position = Vector2(-45, -5)
 motion_scale = Vector2(0.3, 0.3)
 
 [node name="Ajloun" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(1552, 402)
+position = Vector2(1535, 401)
 scale = Vector2(0.208844, 0.208844)
 texture = ExtResource("2_tsqbp")
 
