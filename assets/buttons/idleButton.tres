@@ -1,0 +1,7 @@
+[gd_resource type="AnimatedTexture" load_steps=2 format=3 uid="uid://7ycjmlr4wq8d"]
+
+[ext_resource type="Texture2D" uid="uid://du6yy1iowjf3i" path="res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Small_Release_02a4.png" id="1_8xbyu"]
+
+
+[resource]
+frame_0/texture = ExtResource("1_8xbyu")

@@ -1,0 +1,346 @@
+[gd_scene load_steps=45 format=3 uid="uid://b5x5pfg3hjv0o"]
+
+[ext_resource type="Script" path="res://levels/sound puzzle/sound_puzzle_jerash.gd" id="1_pcpi3"]
+[ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="2_55o0s"]
+[ext_resource type="Texture2D" path="res://backgrounds/image.png" id="2_jvdm1"]
+[ext_resource type="Texture2D" uid="uid://d05ik63xm68m7" path="res://assets/backgrounds/MAJD_GAME_2.png" id="3_cdyuw"]
+[ext_resource type="AudioStream" uid="uid://b770uavd1taff" path="res://levels/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3" id="3_hgugq"]
+[ext_resource type="AudioStream" uid="uid://c18tdpruqrxu2" path="res://levels/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3" id="4_ud2xs"]
+[ext_resource type="AudioStream" uid="uid://dl1cvg03bom4s" path="res://levels/sound puzzle/sounds/lyre (mp3cut.net) (1).mp3" id="5_udofm"]
+[ext_resource type="AudioStream" uid="uid://bl2vkhrjyma3k" path="res://levels/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3" id="6_bop7c"]
+[ext_resource type="AudioStream" uid="uid://b1fyn5ia2feyd" path="res://levels/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3" id="7_6a4tc"]
+[ext_resource type="AudioStream" uid="uid://bftwystb61lun" path="res://levels/sound puzzle/sounds/lyre (mp3cut.net).mp3" id="8_cik5c"]
+[ext_resource type="Texture2D" uid="uid://n7l24wbr88vl" path="res://assets/GUI/Animated Chests/closedChest.png" id="9_va6co"]
+[ext_resource type="Texture2D" uid="uid://cue0uqu3uptdf" path="res://assets/GUI/Animated Chests/open1.png" id="10_5u47g"]
+[ext_resource type="Texture2D" uid="uid://5ilesj5cutuf" path="res://assets/GUI/Animated Chests/open2.png" id="11_pafj7"]
+[ext_resource type="Script" path="res://levels/sound puzzle/chest.gd" id="12_01514"]
+[ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="13_utril"]
+[ext_resource type="AudioStream" uid="uid://x4wvn8yipcvh" path="res://assets/gui sounds/Treasure Chest Sound Effect (mp3cut.net).mp3" id="14_as8lv"]
+[ext_resource type="AudioStream" uid="uid://cx18rmau27s5x" path="res://assets/gui sounds/Unlock  Open  Close Chest Sound Effect (mp3cut.net).mp3" id="15_7kefj"]
+[ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="18_ku5me"]
+
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yu001"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_va6co")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_5u47g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_pafj7")
+}],
+"loop": true,
+"name": &"opening",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i4bj"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n65u1"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dl2w"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqg6t"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf5t0"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtsuf"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qrb4"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghgwq"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtpj3"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd2ua"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlkx3"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpagi"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6rvn"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ag5c"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v62l1"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbpgo"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y43n3"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(544, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no52j"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(576, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus8r"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(608, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kih78"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(640, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myy3e"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(672, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgkjj"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kut4c"]
+atlas = ExtResource("18_ku5me")
+region = Rect2(736, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1xn2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o3bb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i4bj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n65u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dl2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqg6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf5t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtsuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qrb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghgwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtpj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd2ua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlkx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpagi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6rvn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ag5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v62l1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbpgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y43n3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no52j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kih78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myy3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgkjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kut4c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="sound puzzle jerash" type="Node2D"]
+script = ExtResource("1_pcpi3")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Image" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(572, 356)
+scale = Vector2(0.274465, 0.327959)
+texture = ExtResource("2_jvdm1")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="MajdGame2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(556, 320)
+scale = Vector2(0.3875, 0.488889)
+texture = ExtResource("3_cdyuw")
+
+[node name="button1" type="Button" parent="."]
+offset_left = 312.0
+offset_top = 128.0
+offset_right = 408.0
+offset_bottom = 240.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "I"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button1"]
+stream = ExtResource("3_hgugq")
+
+[node name="button2" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 608.0
+offset_bottom = 240.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "II"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button2"]
+stream = ExtResource("4_ud2xs")
+
+[node name="button3" type="Button" parent="."]
+offset_left = 688.0
+offset_top = 128.0
+offset_right = 779.0
+offset_bottom = 247.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "III"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button3"]
+stream = ExtResource("5_udofm")
+
+[node name="button4" type="Button" parent="."]
+offset_left = 312.0
+offset_top = 304.0
+offset_right = 408.0
+offset_bottom = 416.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "IV"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button4"]
+stream = ExtResource("6_bop7c")
+
+[node name="button5" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 304.0
+offset_right = 608.0
+offset_bottom = 416.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "V"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button5"]
+stream = ExtResource("7_6a4tc")
+
+[node name="button6" type="Button" parent="."]
+offset_left = 688.0
+offset_top = 304.0
+offset_right = 776.0
+offset_bottom = 416.0
+theme = ExtResource("2_55o0s")
+toggle_mode = true
+text = "VI"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="button6"]
+stream = ExtResource("8_cik5c")
+
+[node name="chest" type="AnimatedSprite2D" parent="."]
+position = Vector2(820, 486.944)
+scale = Vector2(4, 4.83025)
+sprite_frames = SubResource("SpriteFrames_yu001")
+animation = &"closed"
+frame_progress = 0.219627
+script = ExtResource("12_01514")
+
+[node name="submit" type="Button" parent="."]
+offset_left = 456.0
+offset_top = 456.0
+offset_right = 658.0
+offset_bottom = 536.0
+theme = ExtResource("13_utril")
+
+[node name="opening" type="AudioStreamPlayer2D" parent="submit"]
+stream = ExtResource("14_as8lv")
+
+[node name="locked" type="AudioStreamPlayer2D" parent="submit"]
+stream = ExtResource("15_7kefj")
+
+[node name="key" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(290, 488)
+scale = Vector2(1.875, 2)
+sprite_frames = SubResource("SpriteFrames_v1xn2")
+frame_progress = 0.0540683
+
+[connection signal="toggled" from="button1" to="." method="_on_button_1_toggled"]
+[connection signal="toggled" from="button2" to="." method="_on2__toggled"]
+[connection signal="toggled" from="button3" to="." method="_on3__toggled"]
+[connection signal="toggled" from="button4" to="." method="_on4__toggled"]
+[connection signal="toggled" from="button5" to="." method="_on5__toggled"]
+[connection signal="toggled" from="button6" to="." method="_on6__toggled"]
+[connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://syacvtjubfmp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ad2h2"]
+load_path = "res://.godot/imported/jarash.png-a338c2880464279f46f43d023570e225.ctex"
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Jarash" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(3272, 512)
+scale = Vector2(0.436209, 0.436209)
+texture = SubResource("CompressedTexture2D_ad2h2")

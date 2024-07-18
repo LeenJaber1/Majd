@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4yt53cyonc5q"]
-
-[ext_resource type="Script" path="res://main.gd" id="1_nav1a"]
-
-[node name="Main" type="Node2D"]
-position = Vector2(169, 157)
-script = ExtResource("1_nav1a")

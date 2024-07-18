@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b770uavd1taff"
+path="res://.godot/imported/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3-9efd470de1e84ac12c83ec62cd081d5d.mp3str"
+
+[deps]
+
+source_file="res://levels/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3"
+dest_files=["res://.godot/imported/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3-9efd470de1e84ac12c83ec62cd081d5d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
