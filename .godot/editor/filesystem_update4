@@ -1,0 +1,5 @@
+res://levels/jarash/sound puzzle/sound_puzzle_jerash.gdshader
+res://levels/main menu/MainMenu.gd
+res://levels/main menu/MainMenu.tscn
+res://assets/buttons/mainMenuButtons.tres
+res://levels/map/map.tscn
