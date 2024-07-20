@@ -24,25 +24,28 @@ anchor_left = 0.5
 anchor_top = 0.512
 anchor_right = 0.5
 anchor_bottom = 0.512
-offset_left = -1559.18
-offset_top = -1206.47
-offset_right = -497.181
-offset_bottom = -268.475
+offset_left = -1563.96
+offset_top = -1256.62
+offset_right = -470.956
+offset_bottom = -223.616
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ele36")
-theme_override_font_sizes/font_size = 80
-text = "السؤال الاول: هل انت معوق ومريض نفسي؟
-أ- نعم 	ب- نعم
+theme_override_font_sizes/font_size = 70
+text = "- من أمر ببناء قلعة عجلون؟
+أ- عمر بن الخطاب ب- الصليبيين  ج- صلاح الدين الأيوبي
 
-السؤال الاول: هل انت معوق ومريض نفسي؟
-أ- نعم 	ب- نعم
+ما اسم الجبل الذي بنيت عليه القلعة؟
+ل- جبل عوف س- جبل النور د- جبل البلقاء
 
-السؤال الاول: هل انت معوق ومريض نفسي؟
-أ- نعم 	ب- نعم
+ما اسم الاداة الحربية التي ترمي المقذوفات الثقيلة؟
+ن- القوس ق- السيف ع- المنجنيق
 
-السؤال الاول: هل انت معوق ومريض نفسي؟
-أ- نعم 	ب- نعم"
+ما الهدف من بناء قلعة عجلون؟
+هـ- تجاري ا- عسكري ك- ثقافي
+
+ما هي البحيرة التي تطل عليها قلعة عجلون؟
+د- بحيرة طبريا ص- البحر الميت م -بحيرة الريان"
 horizontal_alignment = 1
 vertical_alignment = 1
 text_direction = 2

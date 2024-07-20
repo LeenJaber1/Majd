@@ -33,8 +33,11 @@ func _physics_process(delta):
 			animated_sprite.play("idle")
 		else:
 			animated_sprite.play("walk")
-	#else:
-		#animated_sprite.play("jump")
+	else:
+		if velocity.y < 0:
+			animated_sprite.play("jump")
+		else:
+			animated_sprite.play("jumpLoop")
 	
 	# Apply movement
 	if direction:
