@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://33eb2pmoch58"]
+
+[ext_resource type="Script" path="res://levels/jarash/puzzle_1.gd" id="1_15yjh"]
+[ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="1_mmwvd"]
+[ext_resource type="Texture2D" uid="uid://cr3qop8qthofr" path="res://assets/backgrounds/puzzle1.png" id="2_yp4qg"]
+[ext_resource type="Theme" uid="uid://n02qgwf05c5q" path="res://assets/themes/puzzleLabels.tres" id="3_ht6af"]
+[ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="5_8jism"]
+[ext_resource type="AudioStream" uid="uid://c18tdpruqrxu2" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3" id="6_egfd4"]
+[ext_resource type="AudioStream" uid="uid://e1a0ehhb0043" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="7_u4kjq"]
+[ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="8_cfc1k"]
+
+[node name="puzzle1" type="Node2D"]
+script = ExtResource("1_15yjh")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(579, 194)
+scale = Vector2(0.493551, 0.493551)
+texture = ExtResource("1_mmwvd")
+
+[node name="Puzzle1" type="Sprite2D" parent="."]
+position = Vector2(584, 304)
+scale = Vector2(12.7604, 12.7604)
+texture = ExtResource("2_yp4qg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 286.0
+offset_top = 173.0
+offset_right = 873.0
+offset_bottom = 370.0
+theme = ExtResource("3_ht6af")
+text = "IIz - VII = III
+y +  IVz= VIII"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 457.0
+offset_top = 401.0
+offset_right = 645.0
+offset_bottom = 454.0
+theme = ExtResource("3_ht6af")
+alignment = 1
+caret_blink = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 676.0
+offset_top = 395.0
+offset_right = 762.0
+offset_bottom = 462.0
+theme = ExtResource("5_8jism")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
+stream = ExtResource("6_egfd4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_u4kjq")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 1086.0
+offset_top = 13.0
+offset_right = 1129.0
+offset_bottom = 55.0
+theme = ExtResource("8_cfc1k")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
