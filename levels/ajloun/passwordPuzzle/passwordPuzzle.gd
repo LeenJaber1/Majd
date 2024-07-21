@@ -10,7 +10,7 @@ func _on_submit_button_button_down():
 		if word[index] != lineEdits[index].get_text():
 			$wrongAudio.play()
 			break
-		if index == 3:
+		if index == 4:
 			$correctAudio.play()
 			await $correctAudio.finished
 			get_tree().change_scene_to_file("res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.tscn")

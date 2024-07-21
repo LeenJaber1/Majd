@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://burplmtpa0kxr" path="res://assets/GUI/statue 1.png" id="8_v1kmi"]
 [ext_resource type="Texture2D" uid="uid://dew57mnfj8ftc" path="res://assets/GUI/statue 2.png" id="9_r85u2"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
 
@@ -21567,6 +21566,9 @@ sources/3 = SubResource("TileSetAtlasSource_7kfnb")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fbr4s"]
 load_path = "res://.godot/imported/23.png-e9c53c4f6c25eb9c97f7e8f5bcd069a9.ctex"
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t8r3v"]
+distance = -49.0
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)

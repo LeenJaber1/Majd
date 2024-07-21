@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dod4gcij7mrcy"]
+[gd_scene load_steps=10 format=3 uid="uid://cdtuowriymfau"]
 
 [ext_resource type="Script" path="res://levels/jarash/puzzle_3.gd" id="1_7lpjr"]
 [ext_resource type="Texture2D" uid="uid://dyd5n38avl8w3" path="res://assets/backgrounds/image.png" id="2_nmnm6"]
@@ -9,7 +9,6 @@
 [ext_resource type="AudioStream" uid="uid://fxge8irmbxyy" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="7_b5kae"]
 [ext_resource type="AudioStream" uid="uid://couxsrxt27gdm" path="res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3" id="7_y11wr"]
 [ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="9_w3lub"]
-
 
 [node name="puzzle3" type="Node2D"]
 script = ExtResource("1_7lpjr")
