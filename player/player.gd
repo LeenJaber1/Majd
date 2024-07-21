@@ -13,6 +13,9 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
+		
+	var new_position = global_transform.origin
+	GameManager.set_player_position(new_position)
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -46,3 +49,6 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func _on_ready():
+	global_position = GameManager.get_player_position()

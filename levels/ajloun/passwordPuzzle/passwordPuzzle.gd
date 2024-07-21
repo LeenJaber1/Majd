@@ -14,3 +14,7 @@ func _on_submit_button_button_down():
 			$correctAudio.play()
 			await $correctAudio.finished
 			get_tree().change_scene_to_file("res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.tscn")
+
+
+func _on_button_2_pressed():
+	get_tree().change_scene_to_file("res://levels/ajloun/ajloun.tscn")
