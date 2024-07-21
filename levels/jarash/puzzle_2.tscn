@@ -1,14 +1,15 @@
 [gd_scene load_steps=10 format=3 uid="uid://co878injtj7dq"]
 
-[ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="1_m6aaf"]
+[ext_resource type="Texture2D" uid="uid://dyd5n38avl8w3" path="res://assets/backgrounds/image.png" id="1_m6aaf"]
 [ext_resource type="Script" path="res://levels/jarash/puzzle_2.gd" id="1_thkqi"]
-[ext_resource type="Texture2D" uid="uid://dua7lm61f0qg5" path="res://assets/backgrounds/puzzle2.png" id="2_b7pxp"]
-[ext_resource type="AudioStream" uid="uid://e1a0ehhb0043" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="2_tcc4g"]
+[ext_resource type="Texture2D" uid="uid://cr00nfukf4jmh" path="res://assets/backgrounds/puzzle2.png" id="2_b7pxp"]
+[ext_resource type="AudioStream" uid="uid://fxge8irmbxyy" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="2_tcc4g"]
 [ext_resource type="Theme" uid="uid://n02qgwf05c5q" path="res://assets/themes/puzzleLabels.tres" id="3_en8vj"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="4_d64v5"]
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="6_0gfj8"]
-[ext_resource type="AudioStream" uid="uid://bl2vkhrjyma3k" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3" id="7_3cba8"]
+[ext_resource type="AudioStream" uid="uid://bkd1nbyxcqn2t" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3" id="7_3cba8"]
 [ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="9_opf1f"]
+
 
 [node name="puzzle2" type="Node2D"]
 script = ExtResource("1_thkqi")
