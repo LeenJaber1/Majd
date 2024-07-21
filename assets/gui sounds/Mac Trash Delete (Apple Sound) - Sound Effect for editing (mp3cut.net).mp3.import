@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://e1a0ehhb0043"
+path="res://.godot/imported/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3-b031e0b96fe40bbb0a12f35ec5f7fec8.mp3str"
+
+[deps]
+
+source_file="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3-b031e0b96fe40bbb0a12f35ec5f7fec8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

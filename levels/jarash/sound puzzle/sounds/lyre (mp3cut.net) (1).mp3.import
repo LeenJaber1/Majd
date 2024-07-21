@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dl1cvg03bom4s"
+path="res://.godot/imported/lyre (mp3cut.net) (1).mp3-d25735e123bb76855fb7a69e8d854efb.mp3str"
+
+[deps]
+
+source_file="res://levels/jarash/sound puzzle/sounds/lyre (mp3cut.net) (1).mp3"
+dest_files=["res://.godot/imported/lyre (mp3cut.net) (1).mp3-d25735e123bb76855fb7a69e8d854efb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
