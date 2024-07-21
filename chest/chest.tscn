@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://dpyxp1q3ofb5b"]
+
+[ext_resource type="Script" path="res://chest/chest.gd" id="1_3st2l"]
+[ext_resource type="Texture2D" uid="uid://btwwswxkme83g" path="res://assets/GUI/Animated Chests/spriteSheetChest.png" id="2_1wgkf"]
+[ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="6_6nqjh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qaxcf"]
+atlas = ExtResource("2_1wgkf")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iftk8"]
+atlas = ExtResource("2_1wgkf")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgswn"]
+atlas = ExtResource("2_1wgkf")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7tlx"]
+atlas = ExtResource("2_1wgkf")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rowxq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qaxcf")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iftk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgswn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7tlx")
+}],
+"loop": false,
+"name": &"opening",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdli2"]
+size = Vector2(147, 109)
+
+[node name="Chest" type="Node2D"]
+script = ExtResource("1_3st2l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rowxq")
+animation = &"closed"
+
+[node name="InteractionArea" parent="." instance=ExtResource("6_6nqjh")]
+action_name = "لفتح الصندوق"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4.5, -31.5)
+shape = SubResource("RectangleShape2D_fdli2")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
