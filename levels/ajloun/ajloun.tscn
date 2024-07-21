@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=23 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bbm2mk30dxw1d" path="res://assets/tiles/TX Village Props.png" id="3_st21r"]
 [ext_resource type="PackedScene" uid="uid://c4qsuo4fatyet" path="res://levels/ajloun/platform.tscn" id="5_w5db1"]
 [ext_resource type="PackedScene" uid="uid://dpyxp1q3ofb5b" path="res://chest/chest.tscn" id="6_x28vd"]
+[ext_resource type="PackedScene" uid="uid://n362do0xcld6" path="res://interaction/StartLevel.tscn" id="7_xcvyf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ny3x1"]
 texture = ExtResource("1_2ih15")
@@ -6538,7 +6539,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1677, 386), Vector2(2179, 386)]
+"values": [Vector2(1647, 442), Vector2(1947, 442)]
 }
 
 [sub_resource type="Animation" id="Animation_cbn3o"]
@@ -6607,7 +6608,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3929, 327), Vector2(4225, 327)]
+"values": [Vector2(4237, 387), Vector2(3917, 387)]
 }
 
 [sub_resource type="Animation" id="Animation_68wfg"]
@@ -6661,7 +6662,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4816, 386), Vector2(4295, 386)]
+"values": [Vector2(4275, 444), Vector2(4800, 444)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_aks7h"]
@@ -6671,10 +6672,11 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-2, -7)
 
 [node name="Player" parent="." instance=ExtResource("3_2opxa")]
 texture_filter = 1
-position = Vector2(321, 346)
+position = Vector2(3852, 315)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(0, -60)
@@ -6683,7 +6685,7 @@ position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1
-position = Vector2(357, 211)
+position = Vector2(340, 269)
 scale = Vector2(1.0815, 0.889488)
 tile_set = SubResource("TileSet_wo7mc")
 format = 2
@@ -6698,11 +6700,11 @@ layer_2/tile_data = PackedInt32Array(589879, 1441793, 36, 655415, 1441793, 37, 5
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-45, -5)
+position = Vector2(-37, 67)
 motion_scale = Vector2(0.3, 0.3)
 
 [node name="Ajloun" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(1535, 401)
+position = Vector2(1535, 327)
 scale = Vector2(0.208844, 0.208844)
 texture = ExtResource("2_tsqbp")
 
@@ -6728,7 +6730,7 @@ position = Vector2(1669, 385)
 libraries = {
 "": SubResource("AnimationLibrary_1f6pj")
 }
-autoplay = "moving"
+autoplay = "move"
 
 [node name="secondPlatform" parent="." instance=ExtResource("5_w5db1")]
 position = Vector2(4812, 385)
@@ -6750,10 +6752,20 @@ libraries = {
 autoplay = "move"
 
 [node name="Chest" parent="." instance=ExtResource("6_x28vd")]
-position = Vector2(1128, 239)
+position = Vector2(1124, 298)
 
 [node name="Chest2" parent="." instance=ExtResource("6_x28vd")]
-position = Vector2(5103, 336)
+position = Vector2(5073, 413)
 
-[node name="Chest3" parent="." instance=ExtResource("6_x28vd")]
-position = Vector2(1559, 357)
+[node name="StartLevel" parent="." instance=ExtResource("7_xcvyf")]
+position = Vector2(7939, 446)
+levelPath = "res://levels/ajloun/passwordPuzzle/passwordPuzzle.tscn"
+action_name = "لفتح اللغز"
+
+[node name="StartLevel2" parent="." instance=ExtResource("7_xcvyf")]
+position = Vector2(7712, 443)
+scale = Vector2(0.566397, 0.16)
+levelPath = "res://levels/ajloun/quizPuzzle/QuizPuzzle.tscn"
+action_name = "للقراءة"
+
+[connection signal="ready" from="." to="." method="_on_ready"]

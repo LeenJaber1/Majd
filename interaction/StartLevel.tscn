@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://n362do0xcld6"]
+
+[ext_resource type="Script" path="res://interaction/StartLevel.gd" id="1_raglm"]
+[ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="2_gcjbb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hjx4e"]
+radius = 73.0069
+
+[node name="StartLevel" type="Node2D"]
+script = ExtResource("1_raglm")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_gcjbb")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_hjx4e")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

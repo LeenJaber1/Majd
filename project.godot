@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 InteractionManager="*res://interaction/interactionManager.tscn"
+GameManager="*res://gameManager/gameManager.gd"
 
 [display]
 
