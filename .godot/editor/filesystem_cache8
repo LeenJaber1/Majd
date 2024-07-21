@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721575585
+::res://::1721577074
 icon.svg::CompressedTexture2D::7341666087146369755::1721143676::1721574172::1::::<><>::
 Node2D.gd::GDScript::-1::1721503095::0::1::::<>Node2D<>::
 square_line_edit.tres::Theme::1911229572336634152::1721503538::0::1::::<><>::uid://cr28ssm3siwlg::::res://assets/fonts/Arapix.otf<>uid://dem17ldckvmj5::::res://assets/GUI/input/Border All 1.png
@@ -7,20 +7,21 @@ square_line_edit.tres::Theme::1911229572336634152::1721503538::0::1::::<><>::uid
 ::res://assets/audio/::1721574171
 correct.mp3::AudioStreamMP3::1548173021282059311::1721503538::1721574171::1::::<><>::
 wrong.mp3::AudioStreamMP3::4636284568303070752::1721503538::1721574171::1::::<><>::
-::res://assets/backgrounds/::1721575144
+::res://assets/backgrounds/::1721576410
 -jerash-jordan-roman-theater-as-a-game-background-_1.png::CompressedTexture2D::2510140135726959008::1721312160::1721574185::1::::<><>::
 ajloun.png::CompressedTexture2D::3821823551446429446::1721503538::1721575033::1::::<><>::
-image.png::CompressedTexture2D::5562132498667491856::1721503096::1721575144::1::::<><>::
+image.png::CompressedTexture2D::5562132498667491856::1721503096::1721576410::1::::<><>::
 jarash.png::CompressedTexture2D::3852709137191856387::1721312160::1721574187::1::::<><>::
 jarashBackground.tscn::PackedScene::1312948955947155299::1721413143::0::1::::<><>::
 MAJD_GAME_2.png::CompressedTexture2D::8976419741073772628::1721312160::1721574174::1::::<><>::
-map_pergament (1).png::CompressedTexture2D::8764894035876376173::1721503096::1721575144::1::::<><>::
+map_pergament (1).png::CompressedTexture2D::8764894035876376173::1721503096::1721576410::1::::<><>::
 petra.png::CompressedTexture2D::2249171513479448001::1721503538::1721575033::1::::<><>::
-puzzle1.png::CompressedTexture2D::6024851598926804891::1721503096::1721575144::1::::<><>::
-puzzle2.png::CompressedTexture2D::8565002190699574210::1721503096::1721575144::1::::<><>::
-sprites.png::CompressedTexture2D::1859666939653558803::1721503096::1721575144::1::::<><>::
-Xq56he.png::CompressedTexture2D::7776455511748090688::1721503096::1721575144::1::::<><>::
-::res://assets/buttons/::1721575144
+puzzle1.png::CompressedTexture2D::6024851598926804891::1721503096::1721576410::1::::<><>::
+puzzle2.png::CompressedTexture2D::8565002190699574210::1721503096::1721576410::1::::<><>::
+sprites.png::CompressedTexture2D::1859666939653558803::1721503096::1721576410::1::::<><>::
+Xq56he.png::CompressedTexture2D::7776455511748090688::1721503096::1721576410::1::::<><>::
+::res://assets/buttons/::1721576896
+ajlounButton.tres::Theme::7647375129741754686::1721576896::0::1::::<><>::uid://cqwl42elqtgmu::::res://assets/GUI/3.png
 backButton.tres::Theme::5101515084435627773::1721575033::0::1::::<><>::uid://bo5gxaxjtt2gc::::res://assets/GUI/UI books & more.png
 bigpressed.tres::AnimatedTexture::2080314021824715693::1721312331::0::1::::<><>::uid://dedx5d7tcj51s::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Medium_Lock_02a1.png
 bigpressing.tres::AnimatedTexture::6706120844890889992::1721312331::0::1::::<><>::uid://cep8s0t4wyewx::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Medium_Press_02a1.png
@@ -28,20 +29,25 @@ button.tres::Theme::3205508228555764368::1721574347::0::1::::<><>::uid://bbeiljf
 hoverBig.tres::AnimatedTexture::5576503145299580827::1721312331::0::1::::<><>::uid://r5ee8xtpfr60::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Medium_Release_02a1.png
 hoverButton.tres::AnimatedTexture::3221798546694500978::1721312331::0::1::::<><>::uid://m0fxamjkrv3a::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Small_Press_02a2.png
 idleButton.tres::AnimatedTexture::2295726216730238469::1721312331::0::1::::<><>::uid://du6yy1iowjf3i::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Small_Release_02a4.png
-mainMenuButtons.tres::Theme::3020795764205586555::1721572699::0::1::::<><>::uid://c734nitb7fchg::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/TextBTN_Medium_Pressed.png<>uid://b8cgeuxdbnbkl::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/TextBTN_Medium.png
+jarashButton.tres::Theme::721158891672849270::1721576896::0::1::::<><>::uid://gnp6rhrxokxy::::res://assets/GUI/4.png
+mainMenuButtons.tres::Theme::3020795764205586555::1721576896::0::1::::<><>::uid://c734nitb7fchg::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/TextBTN_Medium_Pressed.png<>uid://b8cgeuxdbnbkl::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/TextBTN_Medium.png
 petra.png::CompressedTexture2D::6023680355081087506::1721503538::1721575033::1::::<><>::
+petraButton.tres::Theme::5165089601120999054::1721576896::0::1::::<><>::uid://k1436xux0pw2::::res://assets/GUI/2.png
 pressButton.tres::AnimatedTexture::1560476937696407376::1721312331::0::1::::<><>::uid://dqdjngicwbokv::::res://assets/GUI/Complete_GUI_Essential_Pack_Free_Version/01_Basic_Collection/01_Flat_Theme/Sprites/UI_Flat_Button_Small_Lock_02a2.png
-submitButton.tres::Theme::6245377905949244189::1721575548::0::1::::<><>::uid://clpkgsa7ochh8::::res://assets/buttons/hoverBig.tres<>uid://c2sq3idq7e6bk::::res://assets/buttons/bigpressing.tres<>uid://4vyp6alu5cl6::::res://assets/buttons/bigpressed.tres
+submitButton.tres::Theme::6245377905949244189::1721576410::0::1::::<><>::uid://clpkgsa7ochh8::::res://assets/buttons/hoverBig.tres<>uid://c2sq3idq7e6bk::::res://assets/buttons/bigpressing.tres<>uid://4vyp6alu5cl6::::res://assets/buttons/bigpressed.tres
 ::res://assets/fonts/::1721575033
 Arapix.otf::FontFile::6023826678898489780::1721503538::1721575033::1::::<><>::
 RomanUncialModern.ttf::FontFile::2465372899055543064::1721143676::1721574171::1::::<><>::
-::res://assets/GUI/::1721575144
+::res://assets/GUI/::1721576896
+2.png::CompressedTexture2D::7359741146381368462::1721576896::1721576669::1::::<><>::
+3.png::CompressedTexture2D::8593086162165512507::1721576896::1721576669::1::::<><>::
+4.png::CompressedTexture2D::3297229392468957289::1721576896::1721576669::1::::<><>::
 key_32x32_24f.png::CompressedTexture2D::2052506763590777351::1721312159::1721574172::1::::<><>::
-statue 1.png::CompressedTexture2D::3826223037211227695::1721503096::1721575144::1::::<><>::
-statue 2.png::CompressedTexture2D::7487313042011865108::1721503096::1721575144::1::::<><>::
-statue spritesheet.png::CompressedTexture2D::8647683923983347558::1721503096::1721575144::1::::<><>::
-stone_gate.png::CompressedTexture2D::4210915287886166247::1721503096::1721575144::1::::<><>::
-UI books & more.png::CompressedTexture2D::3431401238429348066::1721503096::1721575144::1::::<><>::
+statue 1.png::CompressedTexture2D::3826223037211227695::1721503096::1721576410::1::::<><>::
+statue 2.png::CompressedTexture2D::7487313042011865108::1721503096::1721576410::1::::<><>::
+statue spritesheet.png::CompressedTexture2D::8647683923983347558::1721503096::1721576410::1::::<><>::
+stone_gate.png::CompressedTexture2D::4210915287886166247::1721503096::1721576410::1::::<><>::
+UI books & more.png::CompressedTexture2D::3431401238429348066::1721503096::1721576410::1::::<><>::
 ::res://assets/GUI/Animated Chests/::1721574173
 closedChest.png::CompressedTexture2D::979232716012537489::1721312159::1721574173::1::::<><>::
 open1.png::CompressedTexture2D::6186430264429569263::1721312159::1721574173::1::::<><>::
@@ -193,45 +199,45 @@ Spritesheet_UI_Flat_Select_02.png::CompressedTexture2D::1204054254349819585::172
 ::res://assets/GUI/Fantasy Wooden GUI  Free/Font/::1721503096
 ::res://assets/GUI/Fantasy Wooden GUI  Free/Font/EULA/::1721503096
 buddychampion.txt::TextFile::-1::1721503096::0::1::::<><>::
-::res://assets/GUI/Fantasy Wooden GUI  Free/Font/Fonts/::1721575144
-buddychampion3d.ttf::FontFile::6776353325874913105::1721503096::1721575144::1::::<><>::
-buddychampion3dital.ttf::FontFile::4664827323253319668::1721503096::1721575144::1::::<><>::
-buddychampion.ttf::FontFile::5109718615747742986::1721503096::1721575144::1::::<><>::
-buddychampionbold.ttf::FontFile::4479468467260349204::1721503096::1721575144::1::::<><>::
-buddychampionboldital.ttf::FontFile::3547533417685096599::1721503096::1721575144::1::::<><>::
-buddychampioncond.ttf::FontFile::2593421468211546293::1721503096::1721575144::1::::<><>::
-buddychampioncondital.ttf::FontFile::1969976075952823022::1721503096::1721575144::1::::<><>::
-buddychampionexpand.ttf::FontFile::184996602936731708::1721503096::1721575144::1::::<><>::
-buddychampionexpandital.ttf::FontFile::6760997198364839093::1721503096::1721575144::1::::<><>::
-buddychampionital.ttf::FontFile::604735028549948906::1721503096::1721575144::1::::<><>::
-buddychampionleft.ttf::FontFile::8472713239927186776::1721503096::1721575144::1::::<><>::
-buddychampionrotal.ttf::FontFile::2999508197011431638::1721503096::1721575144::1::::<><>::
-buddychampionrotate.ttf::FontFile::7783848169511889454::1721503096::1721575144::1::::<><>::
-::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/::1721575144
-1_normal_ui_set-free.png::CompressedTexture2D::73596190849098120::1721503096::1721575144::1::::<><>::
-Close Button.png::CompressedTexture2D::920503607999644324::1721503096::1721575144::1::::<><>::
-Division line.png::CompressedTexture2D::532896907795318218::1721503096::1721575144::1::::<><>::
-Exclamation_Gray.png::CompressedTexture2D::6021735981698342969::1721503096::1721575144::1::::<><>::
-Exclamation_Red.png::CompressedTexture2D::3881695339062847453::1721503096::1721575144::1::::<><>::
-Exclamation_Yellow.png::CompressedTexture2D::3415341511643379999::1721503096::1721575144::1::::<><>::
-Fantasy Wooden GUI  - PNG.png::CompressedTexture2D::4394766730858743834::1721503096::1721575144::1::::<><>::
-IRONY TITLE  empty.png::CompressedTexture2D::713301734253295959::1721503096::1721575144::1::::<><>::
-IRONY TITLE  Large.png::CompressedTexture2D::8686045690100610738::1721503096::1721575144::1::::<><>::
-notice.png::CompressedTexture2D::7153695790721855582::1721503096::1721575144::1::::<><>::
-TextBTN_Big.png::CompressedTexture2D::3843962747220597678::1721503096::1721575144::1::::<><>::
-TextBTN_Big_Pressed.png::CompressedTexture2D::8466958534093531785::1721503096::1721575144::1::::<><>::
-TextBTN_Cancel.png::CompressedTexture2D::4971519828699122497::1721503096::1721575144::1::::<><>::
-TextBTN_Cancel_Pressed.png::CompressedTexture2D::1942811852260155016::1721503096::1721575144::1::::<><>::
-TextBTN_Medium.png::CompressedTexture2D::4707153810524167163::1721503096::1721575144::1::::<><>::
-TextBTN_Medium_Pressed.png::CompressedTexture2D::7078471398654385540::1721503096::1721575144::1::::<><>::
-TextBTN_New-Start.png::CompressedTexture2D::111411318166769537::1721503096::1721575144::1::::<><>::
-TextBTN_New-Start_Pressed.png::CompressedTexture2D::3651537780178902105::1721503096::1721575144::1::::<><>::
-UI board Large  parchment.png::CompressedTexture2D::114336291606579429::1721503096::1721575144::1::::<><>::
-UI board Large  stone.png::CompressedTexture2D::2297501800587579348::1721503096::1721575144::1::::<><>::
-UI board Medium  parchment.png::CompressedTexture2D::8869205457159862602::1721503096::1721575144::1::::<><>::
-UI board Medium  stone.png::CompressedTexture2D::6142475818598171217::1721503096::1721575144::1::::<><>::
-UI board Small  parchment.png::CompressedTexture2D::6722242689173236990::1721503096::1721575144::1::::<><>::
-UI board Small  stone.png::CompressedTexture2D::3202091537156327607::1721503096::1721575144::1::::<><>::
+::res://assets/GUI/Fantasy Wooden GUI  Free/Font/Fonts/::1721576410
+buddychampion3d.ttf::FontFile::6776353325874913105::1721503096::1721576410::1::::<><>::
+buddychampion3dital.ttf::FontFile::4664827323253319668::1721503096::1721576410::1::::<><>::
+buddychampion.ttf::FontFile::5109718615747742986::1721503096::1721576410::1::::<><>::
+buddychampionbold.ttf::FontFile::4479468467260349204::1721503096::1721576410::1::::<><>::
+buddychampionboldital.ttf::FontFile::3547533417685096599::1721503096::1721576410::1::::<><>::
+buddychampioncond.ttf::FontFile::2593421468211546293::1721503096::1721576410::1::::<><>::
+buddychampioncondital.ttf::FontFile::1969976075952823022::1721503096::1721576410::1::::<><>::
+buddychampionexpand.ttf::FontFile::184996602936731708::1721503096::1721576410::1::::<><>::
+buddychampionexpandital.ttf::FontFile::6760997198364839093::1721503096::1721576410::1::::<><>::
+buddychampionital.ttf::FontFile::604735028549948906::1721503096::1721576410::1::::<><>::
+buddychampionleft.ttf::FontFile::8472713239927186776::1721503096::1721576410::1::::<><>::
+buddychampionrotal.ttf::FontFile::2999508197011431638::1721503096::1721576410::1::::<><>::
+buddychampionrotate.ttf::FontFile::7783848169511889454::1721503096::1721576410::1::::<><>::
+::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/::1721576410
+1_normal_ui_set-free.png::CompressedTexture2D::73596190849098120::1721503096::1721576410::1::::<><>::
+Close Button.png::CompressedTexture2D::920503607999644324::1721503096::1721576410::1::::<><>::
+Division line.png::CompressedTexture2D::532896907795318218::1721503096::1721576410::1::::<><>::
+Exclamation_Gray.png::CompressedTexture2D::6021735981698342969::1721503096::1721576410::1::::<><>::
+Exclamation_Red.png::CompressedTexture2D::3881695339062847453::1721503096::1721576410::1::::<><>::
+Exclamation_Yellow.png::CompressedTexture2D::3415341511643379999::1721503096::1721576410::1::::<><>::
+Fantasy Wooden GUI  - PNG.png::CompressedTexture2D::4394766730858743834::1721503096::1721576410::1::::<><>::
+IRONY TITLE  empty.png::CompressedTexture2D::713301734253295959::1721503096::1721576410::1::::<><>::
+IRONY TITLE  Large.png::CompressedTexture2D::8686045690100610738::1721503096::1721576410::1::::<><>::
+notice.png::CompressedTexture2D::7153695790721855582::1721503096::1721576410::1::::<><>::
+TextBTN_Big.png::CompressedTexture2D::3843962747220597678::1721503096::1721576410::1::::<><>::
+TextBTN_Big_Pressed.png::CompressedTexture2D::8466958534093531785::1721503096::1721576410::1::::<><>::
+TextBTN_Cancel.png::CompressedTexture2D::4971519828699122497::1721503096::1721576410::1::::<><>::
+TextBTN_Cancel_Pressed.png::CompressedTexture2D::1942811852260155016::1721503096::1721576410::1::::<><>::
+TextBTN_Medium.png::CompressedTexture2D::4707153810524167163::1721503096::1721576410::1::::<><>::
+TextBTN_Medium_Pressed.png::CompressedTexture2D::7078471398654385540::1721503096::1721576410::1::::<><>::
+TextBTN_New-Start.png::CompressedTexture2D::111411318166769537::1721503096::1721576410::1::::<><>::
+TextBTN_New-Start_Pressed.png::CompressedTexture2D::3651537780178902105::1721503096::1721576410::1::::<><>::
+UI board Large  parchment.png::CompressedTexture2D::114336291606579429::1721503096::1721576410::1::::<><>::
+UI board Large  stone.png::CompressedTexture2D::2297501800587579348::1721503096::1721576410::1::::<><>::
+UI board Medium  parchment.png::CompressedTexture2D::8869205457159862602::1721503096::1721576410::1::::<><>::
+UI board Medium  stone.png::CompressedTexture2D::6142475818598171217::1721503096::1721576410::1::::<><>::
+UI board Small  parchment.png::CompressedTexture2D::6722242689173236990::1721503096::1721576410::1::::<><>::
+UI board Small  stone.png::CompressedTexture2D::3202091537156327607::1721503096::1721576410::1::::<><>::
 ::res://assets/GUI/input/::1721574171
 Border All 1.png::CompressedTexture2D::7869435817618071803::1721503538::1721574171::1::::<><>::
 ::res://assets/GUI/plants/::1721312159
@@ -308,9 +314,9 @@ Border All 1.png::CompressedTexture2D::7869435817618071803::1721503538::17215741
 70.png::CompressedTexture2D::410751072144495839::1721312159::1721574172::1::::<><>::
 idle sprites.png::CompressedTexture2D::3791990798141328673::1721312159::1721574172::1::::<><>::
 plants.png::CompressedTexture2D::3049154147932962665::1721312159::1721574172::1::::<><>::
-::res://assets/gui sounds/::1721575144
-Click - Sound Effect (HD).mp3::AudioStreamMP3::5036590244457913364::1721503096::1721575144::1::::<><>::
-Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3::AudioStreamMP3::334474062232734418::1721503096::1721575144::1::::<><>::
+::res://assets/gui sounds/::1721576410
+Click - Sound Effect (HD).mp3::AudioStreamMP3::5036590244457913364::1721503096::1721576410::1::::<><>::
+Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3::AudioStreamMP3::334474062232734418::1721503096::1721576410::1::::<><>::
 Treasure Chest Sound Effect (mp3cut.net).mp3::AudioStreamMP3::1675584368939174417::1721143676::1721574171::1::::<><>::
 Unlock  Open  Close Chest Sound Effect (mp3cut.net).mp3::AudioStreamMP3::6442893243150448523::1721143676::1721574171::1::::<><>::
 ::res://assets/majdSprites/::1721575033
@@ -326,16 +332,16 @@ typewriter_buttons_pressed.png::CompressedTexture2D::2917201098031136170::172150
 ::res://assets/themes/::1721575033
 new_theme.tres::Theme::2149792850844328041::1721503096::0::1::::<><>::uid://bbeiljfngf6um::::res://assets/fonts/RomanUncialModern.ttf
 puzzleLabels.tres::Theme::965732692040654260::1721575033::0::1::::<><>::uid://bbeiljfngf6um::::res://assets/fonts/RomanUncialModern.ttf
-::res://assets/tiles/::1721575144
+::res://assets/tiles/::1721576410
 classical_ruin_tiles (1).png::CompressedTexture2D::7399217598874937711::1721223537::1721574172::1::::<><>::
 Jerash_Tiles.png::CompressedTexture2D::1660356220213203572::1721143676::1721574173::1::::<><>::
-map_tiles (2).png::CompressedTexture2D::1987956809056256486::1721503096::1721575144::1::::<><>::
+map_tiles (2).png::CompressedTexture2D::1987956809056256486::1721503096::1721576410::1::::<><>::
 New_ruin_tiles.png::CompressedTexture2D::5186283038308247148::1721223604::1721574172::1::::<><>::
-petra-jordan_961307-618.png::CompressedTexture2D::137188448213438826::1721503096::1721575144::1::::<><>::
+petra-jordan_961307-618.png::CompressedTexture2D::137188448213438826::1721503096::1721576410::1::::<><>::
 tile.png::CompressedTexture2D::5400579932149438788::1721143676::1721574172::1::::<><>::
 TX Tileset Ground.png::CompressedTexture2D::4493350797338272275::1721503538::1721575033::1::::<><>::
 TX Village Props.png::CompressedTexture2D::2483043418340254039::1721503538::1721575033::1::::<><>::
-::res://levels/::1721575144
+::res://levels/::1721576410
 ::res://levels/ajloun/::1721503538
 ajloun.tscn::PackedScene::2267516962585418708::1721503538::0::1::::<><>::uid://b5au3i2lrm4l0::::res://assets/tiles/TX Tileset Ground.png<>uid://bupk41dk1gwgs::::res://assets/backgrounds/ajloun.png<>uid://dqnaqj8yb6hwd::::res://player/player.tscn<>uid://bbm2mk30dxw1d::::res://assets/tiles/TX Village Props.png<>uid://c4qsuo4fatyet::::res://levels/ajloun/platform.tscn
 platform.tscn::PackedScene::6842477279056173811::1721503538::0::1::::<><>::uid://b5au3i2lrm4l0::::res://assets/tiles/TX Tileset Ground.png
@@ -346,183 +352,184 @@ passwordPuzzle.gd::GDScript::-1::1721503538::0::1::::<>Control<>::
 passwordPuzzle.tscn::PackedScene::3613436627149323389::1721503538::0::1::::<><>::uid://d05ik63xm68m7::::res://assets/backgrounds/MAJD_GAME_2.png<>res://levels/ajloun/passwordPuzzle/passwordPuzzle.gd<>uid://cr28ssm3siwlg::::res://assets/fonts/Arapix.otf<>uid://2h2w3vki0m21::::res://square_line_edit.tres<>uid://cu8kpxwxk130l::::res://assets/buttons/submitButton.tres<>uid://dlu0j6o5rtnr7::::res://assets/audio/wrong.mp3<>uid://cknnuga2y4kbd::::res://assets/audio/correct.mp3
 ::res://levels/ajloun/quizPuzzle/::1721503538
 QuizPuzzle.tscn::PackedScene::2957907809000529961::1721503538::0::1::::<><>::uid://cg8ejbo38eykp::::res://assets/puzzles/empty-ancient-paper (4).png<>uid://bupk41dk1gwgs::::res://assets/backgrounds/ajloun.png<>uid://cr28ssm3siwlg::::res://assets/fonts/Arapix.otf
-::res://levels/jarash/::1721575212
-mainJarashScene.tscn::PackedScene::2649278301330973762::1721575145::0::1::::<><>::uid://b082fopx481d8::::res://assets/GUI/stone_gate.png<>uid://ci7c06nitsoee::::res://assets/tiles/tile.png<>uid://cf5jlapf7f5oq::::res://assets/tiles/New_ruin_tiles.png<>uid://dvhadc7ia8h7c::::res://assets/GUI/statue spritesheet.png<>uid://xwj3a740dlwu::::res://assets/tiles/Jerash_Tiles.png<>uid://syacvtjubfmp::::res://assets/backgrounds/jarashBackground.tscn<>uid://bo5gxaxjtt2gc::::res://assets/GUI/UI books & more.png<>uid://burplmtpa0kxr::::res://assets/GUI/statue 1.png<>uid://dew57mnfj8ftc::::res://assets/GUI/statue 2.png<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres
+::res://levels/jarash/::1721576896
+mainJarashScene.tscn::PackedScene::2649278301330973762::1721577056::0::1::::<><>::uid://b082fopx481d8::::res://assets/GUI/stone_gate.png<>uid://ci7c06nitsoee::::res://assets/tiles/tile.png<>uid://cf5jlapf7f5oq::::res://assets/tiles/New_ruin_tiles.png<>uid://dvhadc7ia8h7c::::res://assets/GUI/statue spritesheet.png<>uid://xwj3a740dlwu::::res://assets/tiles/Jerash_Tiles.png<>uid://syacvtjubfmp::::res://assets/backgrounds/jarashBackground.tscn<>uid://bo5gxaxjtt2gc::::res://assets/GUI/UI books & more.png<>uid://burplmtpa0kxr::::res://assets/GUI/statue 1.png<>uid://dew57mnfj8ftc::::res://assets/GUI/statue 2.png<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres
 puzzle_1.gd::GDScript::-1::1721503096::0::1::::<>Node2D<>::
-puzzle_1.tscn::PackedScene::2023336294610092905::1721575196::0::1::::<><>::res://levels/jarash/puzzle_1.gd<>uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>uid://bbuopuyb1vsl2::::res://assets/backgrounds/puzzle1.png<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://blw1itshrxt2g::::res://assets/buttons/button.tres<>uid://dkgxtdg78r15a::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
+puzzle_1.tscn::PackedScene::2023336294610092905::1721576410::0::1::::<><>::res://levels/jarash/puzzle_1.gd<>uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>uid://bbuopuyb1vsl2::::res://assets/backgrounds/puzzle1.png<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://blw1itshrxt2g::::res://assets/buttons/button.tres<>uid://dkgxtdg78r15a::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
 puzzle_2.gd::GDScript::-1::1721503096::0::1::::<>Node2D<>::
-puzzle_2.tscn::PackedScene::5825611959873975118::1721575203::0::1::::<><>::uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>res://levels/jarash/puzzle_2.gd<>uid://cr00nfukf4jmh::::res://assets/backgrounds/puzzle2.png<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres<>uid://cu8kpxwxk130l::::res://assets/buttons/submitButton.tres<>uid://bkd1nbyxcqn2t::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
+puzzle_2.tscn::PackedScene::5825611959873975118::1721576410::0::1::::<><>::uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>res://levels/jarash/puzzle_2.gd<>uid://cr00nfukf4jmh::::res://assets/backgrounds/puzzle2.png<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres<>uid://cu8kpxwxk130l::::res://assets/buttons/submitButton.tres<>uid://bkd1nbyxcqn2t::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
 puzzle_3.gd::GDScript::-1::1721503096::0::1::::<>Node2D<>::
-puzzle_3.tscn::PackedScene::8149870620684901280::1721575212::0::1::::<><>::res://levels/jarash/puzzle_3.gd<>uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>uid://bbuopuyb1vsl2::::res://assets/backgrounds/puzzle1.png<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://blw1itshrxt2g::::res://assets/buttons/button.tres<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://couxsrxt27gdm::::res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
+puzzle_3.tscn::PackedScene::8149870620684901280::1721576410::0::1::::<><>::res://levels/jarash/puzzle_3.gd<>uid://dyd5n38avl8w3::::res://assets/backgrounds/image.png<>uid://bbuopuyb1vsl2::::res://assets/backgrounds/puzzle1.png<>uid://5vm1k61hgxg8::::res://assets/themes/new_theme.tres<>uid://n02qgwf05c5q::::res://assets/themes/puzzleLabels.tres<>uid://blw1itshrxt2g::::res://assets/buttons/button.tres<>uid://fxge8irmbxyy::::res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3<>uid://couxsrxt27gdm::::res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
 ::res://levels/jarash/sound puzzle/::1721503096
 AnimatedSprite2D.gd::GDScript::-1::1721503096::0::1::::<>AnimatedSprite2D<>::
 chest.gd::GDScript::-1::1721503096::0::1::::<>AnimatedSprite2D<>::
 sound_puzzle_jerash.gd::GDScript::-1::1721503096::0::1::::<>Node2D<>::
 sound_puzzle_jerash.gdshader::Shader::-1::1721503096::0::1::::<><>::
 sound_puzzle_jerash.tscn::PackedScene::4541415251036517100::1721503096::0::1::::<><>::res://levels/jarash/sound puzzle/sound_puzzle_jerash.gd<>uid://blw1itshrxt2g::::res://assets/buttons/button.tres<>uid://clilrld6kndgq::::res://assets/backgrounds/image.png<>uid://d05ik63xm68m7::::res://assets/backgrounds/MAJD_GAME_2.png<>uid://b770uavd1taff::::res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3<>uid://c18tdpruqrxu2::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3<>uid://dl1cvg03bom4s::::res://levels/jarash/sound puzzle/sounds/lyre (mp3cut.net) (1).mp3<>uid://bl2vkhrjyma3k::::res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3<>uid://b1fyn5ia2feyd::::res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3<>uid://bftwystb61lun::::res://levels/jarash/sound puzzle/sounds/lyre (mp3cut.net).mp3<>uid://n7l24wbr88vl::::res://assets/GUI/Animated Chests/closedChest.png<>uid://cue0uqu3uptdf::::res://assets/GUI/Animated Chests/open1.png<>uid://5ilesj5cutuf::::res://assets/GUI/Animated Chests/open2.png<>res://levels/jarash/sound puzzle/chest.gd<>uid://cu8kpxwxk130l::::res://assets/buttons/submitButton.tres<>uid://x4wvn8yipcvh::::res://assets/gui sounds/Treasure Chest Sound Effect (mp3cut.net).mp3<>uid://cx18rmau27s5x::::res://assets/gui sounds/Unlock  Open  Close Chest Sound Effect (mp3cut.net).mp3<>uid://4iiqsoh81ol0::::res://assets/GUI/key_32x32_24f.png<>uid://cexhhctfqrjov::::res://assets/buttons/backButton.tres
-::res://levels/jarash/sound puzzle/sounds/::1721575145
-1_normal_ui_set-free.png-c5a7f6ab25961dc9a10f3ad3d67108ae.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3::AudioStreamMP3::4700077441550000391::1721503096::1721575145::1::::<><>::
-Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3-53f643fa69967f4a8cc984118d27b9d7.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3::AudioStreamMP3::4223134518294623387::1721503096::1721575145::1::::<><>::
-Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3-e8ba05a611c742a16c3be78301c19737.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-arrowBeige_left.png-9ecbf548a183aec5c151d884a2e54359.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowBeige_right.png-0042b1390a916e6692133f6aefdbdccc.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowBlue_left.png-266dab3451c1334f1e639cb692e90e5d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowBlue_right.png-493fc43d56f7f4397f4ec11f1eb67ca9.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowBrown_left.png-b3951808baf2a7ccc48945a8220cd277.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowBrown_right.png-45e1b1b3dbdf7cd3488e679affe3e010.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowSilver_left.png-cf7869823ab6db545331a67b9ecb4777.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-arrowSilver_right.png-c6ece14905b9d4bafe3f34c86d35d7ff.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_horizontalLeft.png-acf1f9192da40a03d4e45c91993631e5.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_horizontalMid.png-424f74f7bd0bd5e95c56acfa080d825c.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_horizontalRight.png-c112784ed156b2335374d3e2f1accad2.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_verticalBottom.png-18849a56b1fa8b4b97267f052a0bc484.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_verticalMid.png-bfd82b66d0f4a5227aa4c01165166f6e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBack_verticalTop.png-368ea5beacec606a95624ecc27117f5f.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_horizontalBlue.png-90a7eab3aed337b1edd6defbdc73a6b1.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_horizontalLeft.png-9da1d8b65af722e0f8cae1a58c2a982a.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_horizontalRight.png-77e7715fb1f6d532e051993c8db886f2.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_verticalBottom.png-9d1b1e81d0559f28c42c645469cbcd72.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_verticalMid.png-182c20bcf29554755f2d56a951186e7d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barBlue_verticalTop.png-078629e760feb256ddbb1aa5a91ce533.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_horizontalLeft.png-e8c3acd9f1f6c72f63e1574ea7e15acc.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_horizontalMid.png-9b1b14eac6ffc79d06f25f79fe923ba5.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_horizontalRight.png-cd234df4e32e3f4f2eb00512339b1284.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_verticalBottom.png-77ffa891fcc702ab3209a3ac46e90e5d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_verticalMid.png-34c11887f1c42313d39b4063c745f2d1.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barGreen_verticalTop.png-289d67e983c7958e60b3ebfe6c0261b4.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_horizontalLeft.png-27dd05e528687a960d5565d20819b32d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_horizontalMid.png-72653d673d0fb3165ddefba1b17218a3.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_horizontalRight.png-cf7ecbc9c30014e940d2fb76dc62000b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_verticalBottom.png-65ac311125d3b3ed0918ee190d8423c0.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_verticalMid.png-fca542101c977d45693ce4046a3d0ff2.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barRed_verticalTop.png-e2b90d07e62ec710817bacdb27daaf3b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_horizontalLeft.png-dc72726f61774b2cc4af1af8c6d49359.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_horizontalMid.png-38ed7a45aded1e7cddc75a0b676df8b8.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_horizontalRight.png-0de201988aeae0dbe8b01e01a1f4e273.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_verticalBottom.png-b0efc5fdeda3a7401542a30872aab2d6.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_verticalMid.png-22c848f80f732f63221ea49df32ca29e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-barYellow_verticalTop.png-0c1a145b240878aa74f6c8efbd2f3c3b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buddychampion3d.ttf-1bc931fdce41ed732ba645c7f4849538.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampion3dital.ttf-b6e67b9fdaf1a9cc42cd13bd0719efbe.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampion.ttf-7644846b600ad714e82cf40fc14bf074.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionbold.ttf-fde3467b3579bafa2fe1e2ed7ed05fd7.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionboldital.ttf-15cf4d4e3c6e816bcec4caabae26f253.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampioncond.ttf-7d42950ca6dcf7100c204d6308856010.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampioncondital.ttf-51a6f31fa787f13847d62ca3dac32c1d.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionexpand.ttf-323e346ce4906ec1f6be4648f89b9d71.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionexpandital.ttf-e11c0f028f0af8596b5a92b5bcdcf993.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionital.ttf-28b77396a03d229a6a3bfc29335975a0.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionleft.ttf-a52d0d336107ed484198b41e6f77754b.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionrotal.ttf-0252aee8ff0edf96fef6235ba5a66b34.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buddychampionrotate.ttf-c554b5911e6d365ec76c27df7182f386.fontdata::FontFile::-1::1721575145::0::1::::<><>::
-buttonLong_beige.png-fc2145f0ddec35fe556af1c5f51f353c.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_beige_pressed.png-6174852010bfdc9cb45b42453b19bd95.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_blue.png-dff5552405073f8dd75f10970a18a2c9.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_blue_pressed.png-a5f6dd71f6d5ad71836b8f87c86d7b6a.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_brown.png-ce99b02463b65a40ef2325e93f70dd0b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_brown_pressed.png-5d74cc165742f7b163f177968a29a13b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_grey.png-63db1079ef09cd56991e48ac36254677.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonLong_grey_pressed.png-c8d0bc9d1ce12aad8cf1774bfa438986.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonRound_beige.png-ee60098815108eefd8d2b79ae5a9dbba.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonRound_blue.png-dd96703b5b48eaad0ca835cdabb8c6f9.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonRound_brown.png-08ce0248109f85d1b25c44d79f38d020.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonRound_grey.png-7a45c0a81c7186ba6adebdddbb6271bd.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_beige.png-44d08b8a9b68918c4faabe9f19d6fedc.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_beige_pressed.png-4a1a4ebfeab9406cdff036e77f0485f3.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_blue.png-693cf5dd6ef7f893d1a2772e408bd8a0.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_blue_pressed.png-6aed2283c51f4211ffa8715953745681.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_brown.png-6824fc0845803bffcf0716e520bdfb7b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_brown_pressed.png-3b94462d5a04587983a047be8f7f38d6.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_grey.png-d19238cd24ff7689d4fe3d0fc54e46f0.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-buttonSquare_grey_pressed.png-e2f220182bcb44d6fdfa32d791a7fe8d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Click - Sound Effect (HD).mp3-0bb991ec4f37e4c318fecc1a5f254c73.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-Click - Sound Effect (HD).mp3-5298dd27e84fe0f2f7efd614a8eb2c2d.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-Close Button.png-3d709cbd620ad03bf8ff7a701b4f772f.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorGauntlet_blue.png-8ecb903006eb1ed5e1ddb7307e5230e9.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorGauntlet_bronze.png-4041ad7e5ff303a46b7b9350989424a7.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorGauntlet_grey.png-99e12c27a823d1aa4e57077a87373824.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorHand_beige.png-d35c73430eb0990697fac984521f983e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorHand_blue.png-994a2fa45f143dc9154b9b78404dc554.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorHand_grey.png-86fb0d64b0c9eb74b32aeaadc07d7a7a.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorSword_bronze.png-80f6dbb83234795abc9576bf6a5a340d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorSword_gold.png-ca62f3197916389b6d7fa19df25070a4.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-cursorSword_silver.png-8e50d25558b9d3386ff8c6faf873989b.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Division line.png-da231f7c501301307d658115befdd51a.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Exclamation_Gray.png-53ef35da1e8ef2088c2b19aafe762cc8.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Exclamation_Red.png-3a79a0e93ce8cec38957d7caa0983da7.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Exclamation_Yellow.png-f94581d2828de8470198cbf961dc5a20.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Fantasy Wooden GUI  - PNG.png-e68416217b5df690955d7cf066e54e23.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-harmonica (mp3cut.net) (1).mp3::AudioStreamMP3::6667035563146006759::1721503096::1721575145::1::::<><>::
-harmonica (mp3cut.net) (1).mp3-50207b72e432796465b24634e7f48cf6.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-harmonica (mp3cut.net) (2).mp3::AudioStreamMP3::3215529472224805506::1721503096::1721575145::1::::<><>::
-harmonica (mp3cut.net) (2).mp3-3e36d56935408200266b9aded0ad4231.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-harmonica (mp3cut.net).mp3::AudioStreamMP3::4565539785745623323::1721503096::1721575145::1::::<><>::
-harmonica (mp3cut.net).mp3-9f08343c223734c1db8c59d403bddef2.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-iconCheck_beige.png-c8efbb5ee5054ae8976de840aa8fa6aa.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCheck_blue.png-a2bee0dbb3ed4780d4c56220116c8a39.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCheck_bronze.png-ecaf8adae3fa7bdd840bf267a3b6026c.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCheck_grey.png-b96508e59cd0c7ddef6a2d01a1f307d3.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCircle_beige.png-50b2fa8ec749346d853cbea4e1f58acc.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCircle_blue.png-fbc497eb1e4c8821bbf3a4d6ddfa6268.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCircle_brown.png-4eca139bd04e119f5e41a925ff5d9bcc.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCircle_grey.png-8bdb54410d96a2c1b616dcd98d75d123.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCross_beige.png-30349c183ee813c4c29727973c486f3d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCross_blue.png-bfe2dc21521f3f5144fa2ec822e3dca0.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCross_brown.png-c714c2afa0c951b70655628559d91328.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-iconCross_grey.png-9c785a820f7b1487033c5f774c6285b6.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-image.png-a6f79312ffb0b17b58975fabffa969b7.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-IRONY TITLE  empty.png-e1503b785b285aed6a94ab87afe93e01.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-IRONY TITLE  Large.png-438199e94e66300707ca2f23b35ed126.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-lyre (mp3cut.net) (1).mp3::AudioStreamMP3::7985172443395053916::1721503096::1721575145::1::::<><>::
-lyre (mp3cut.net) (1).mp3-d25735e123bb76855fb7a69e8d854efb.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-lyre (mp3cut.net).mp3::AudioStreamMP3::2777967686964462081::1721503096::1721575145::1::::<><>::
-lyre (mp3cut.net).mp3-48309cdd6e7705d5494cdb24f5297a3c.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3-b031e0b96fe40bbb0a12f35ec5f7fec8.mp3str::AudioStreamMP3::-1::1721575145::0::1::::<><>::
-map_pergament (1).png-42e202c55b7eeccb3d0e2abbcdb86160.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-map_tiles (2).png-223e5aa29e3b94eb74138f9d74b85eb4.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-map_tiles (2).png-fdda69f85d29f89def1cb18ee3e6ce20.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-notice.png-07b68be026ff3fde0a93711e6988ad40.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panelInset_beige.png-99b22974aed6a35ea3900198b09a8cf5.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panelInset_beigeLight.png-b32e008dd44c36dbe2bf8f06b32e841e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panelInset_blue.png-86e0ce4e9beb2a996c2e889f4a7cc6ca.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panelInset_brown.png-638b1dee4e5cee45907db3c63efbd2e8.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panel_beige.png-73f6af4fd7aac4634524bd41ca057723.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panel_beigeLight.png-7ecd813ce66d639bf4b3d235ddc0289e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panel_blue.png-09a876706971443dbda3119c1647a041.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-panel_brown.png-58205bf2f2f939a3a48a703389c8b1aa.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-petra-jordan_961307-618.png-efabd426d291b022c99b53577c3efba4.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-puzzle1.png-6cb34427928238c01e4e426d1ef77dd6.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-puzzle2.png-fed494a63c97f56c15c75ab020ea1d6c.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-sprites.png-a90750c295d2bbd5abb390e863dc4ca3.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-statue 1.png-b1803bae1ae7c38e823c4c0fae6c968c.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-statue 2.png-deec017dfb7f9ea687b6c9e033a2977d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-statue spritesheet.png-76e14ac1758d4d3e79f6f419cb181f7d.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-stone_gate.png-8c73614488a0dd59e1171beae3eb63ed.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Big.png-cb9a426e53d74bbdd921374369283f1e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Big_Pressed.png-a63141f6d30df93fa2908d7420e8d597.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Cancel.png-fe6c02c7e0e2a44b9768c52ef4ef5b32.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Cancel_Pressed.png-a3d8b597f0762fea6ec56dff70584b82.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Medium.png-7d41b3a400d3eeb2f6e5d31b239eebc9.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_Medium_Pressed.png-e7bb68e61dcb048cfdc8231d72eaa023.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_New-Start.png-b5a0645eef0036db73d439c123793984.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-TextBTN_New-Start_Pressed.png-c4f36dbe7e9aef30cedbdfe748e714b3.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Large  parchment.png-e8b43c0541a4e64cce3675fd3a010244.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Large  stone.png-97d12f6bb14850127ef1d66779ece096.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Medium  parchment.png-a6f62b4ed2ff0a89303077a3204d53f8.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Medium  stone.png-9f4848fe2d79543abcdd29d87289a874.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Small  parchment.png-77db6a0a1111edeca6d9f225fb0d77a5.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI board Small  stone.png-119e4c24de09f1a72f532ff29f50ebab.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-UI books & more.png-3d104458588a25b44681eea3abe67e8e.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-Xq56he.png-5c48e987e646337dcc40e9b185ec8b14.ctex::CompressedTexture2D::-1::1721575145::0::1::::<><>::
-::res://levels/main menu/::1721572026
-MainMenu.gd::GDScript::-1::1721569124::0::1::::<>Node2D<>::
-MainMenu.tscn::PackedScene::7113840896807698885::1721572026::0::1::::<><>::res://levels/main menu/MainMenu.gd<>uid://7y6rv7ikausa::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png<>uid://bvndp6yl7oft::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  parchment.png<>uid://bjbkchasoq4db::::res://assets/buttons/mainMenuButtons.tres<>uid://cd0051yvy5fsm::::res://assets/gui sounds/Click - Sound Effect (HD).mp3
-::res://levels/map/::1721572029
-map.tscn::PackedScene::8421845144078646484::1721572029::0::1::::<><>::uid://7y6rv7ikausa::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png<>uid://dw41r28kpxler::::res://assets/backgrounds/map_pergament (1).png<>uid://di18c6ta08xw7::::res://assets/backgrounds/Xq56he.png<>uid://cf5jlapf7f5oq::::res://assets/tiles/New_ruin_tiles.png<>uid://3k8mgcy6013o::::res://assets/tiles/map_tiles (2).png<>uid://burplmtpa0kxr::::res://assets/GUI/statue 1.png
+::res://levels/jarash/sound puzzle/sounds/::1721576410
+1_normal_ui_set-free.png-c5a7f6ab25961dc9a10f3ad3d67108ae.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3::AudioStreamMP3::4700077441550000391::1721503096::1721576410::1::::<><>::
+Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3-53f643fa69967f4a8cc984118d27b9d7.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3::AudioStreamMP3::4223134518294623387::1721503096::1721576410::1::::<><>::
+Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3-e8ba05a611c742a16c3be78301c19737.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+arrowBeige_left.png-9ecbf548a183aec5c151d884a2e54359.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowBeige_right.png-0042b1390a916e6692133f6aefdbdccc.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowBlue_left.png-266dab3451c1334f1e639cb692e90e5d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowBlue_right.png-493fc43d56f7f4397f4ec11f1eb67ca9.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowBrown_left.png-b3951808baf2a7ccc48945a8220cd277.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowBrown_right.png-45e1b1b3dbdf7cd3488e679affe3e010.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowSilver_left.png-cf7869823ab6db545331a67b9ecb4777.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+arrowSilver_right.png-c6ece14905b9d4bafe3f34c86d35d7ff.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_horizontalLeft.png-acf1f9192da40a03d4e45c91993631e5.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_horizontalMid.png-424f74f7bd0bd5e95c56acfa080d825c.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_horizontalRight.png-c112784ed156b2335374d3e2f1accad2.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_verticalBottom.png-18849a56b1fa8b4b97267f052a0bc484.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_verticalMid.png-bfd82b66d0f4a5227aa4c01165166f6e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBack_verticalTop.png-368ea5beacec606a95624ecc27117f5f.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_horizontalBlue.png-90a7eab3aed337b1edd6defbdc73a6b1.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_horizontalLeft.png-9da1d8b65af722e0f8cae1a58c2a982a.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_horizontalRight.png-77e7715fb1f6d532e051993c8db886f2.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_verticalBottom.png-9d1b1e81d0559f28c42c645469cbcd72.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_verticalMid.png-182c20bcf29554755f2d56a951186e7d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barBlue_verticalTop.png-078629e760feb256ddbb1aa5a91ce533.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_horizontalLeft.png-e8c3acd9f1f6c72f63e1574ea7e15acc.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_horizontalMid.png-9b1b14eac6ffc79d06f25f79fe923ba5.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_horizontalRight.png-cd234df4e32e3f4f2eb00512339b1284.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_verticalBottom.png-77ffa891fcc702ab3209a3ac46e90e5d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_verticalMid.png-34c11887f1c42313d39b4063c745f2d1.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barGreen_verticalTop.png-289d67e983c7958e60b3ebfe6c0261b4.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_horizontalLeft.png-27dd05e528687a960d5565d20819b32d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_horizontalMid.png-72653d673d0fb3165ddefba1b17218a3.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_horizontalRight.png-cf7ecbc9c30014e940d2fb76dc62000b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_verticalBottom.png-65ac311125d3b3ed0918ee190d8423c0.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_verticalMid.png-fca542101c977d45693ce4046a3d0ff2.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barRed_verticalTop.png-e2b90d07e62ec710817bacdb27daaf3b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_horizontalLeft.png-dc72726f61774b2cc4af1af8c6d49359.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_horizontalMid.png-38ed7a45aded1e7cddc75a0b676df8b8.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_horizontalRight.png-0de201988aeae0dbe8b01e01a1f4e273.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_verticalBottom.png-b0efc5fdeda3a7401542a30872aab2d6.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_verticalMid.png-22c848f80f732f63221ea49df32ca29e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+barYellow_verticalTop.png-0c1a145b240878aa74f6c8efbd2f3c3b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buddychampion3d.ttf-1bc931fdce41ed732ba645c7f4849538.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampion3dital.ttf-b6e67b9fdaf1a9cc42cd13bd0719efbe.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampion.ttf-7644846b600ad714e82cf40fc14bf074.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionbold.ttf-fde3467b3579bafa2fe1e2ed7ed05fd7.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionboldital.ttf-15cf4d4e3c6e816bcec4caabae26f253.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampioncond.ttf-7d42950ca6dcf7100c204d6308856010.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampioncondital.ttf-51a6f31fa787f13847d62ca3dac32c1d.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionexpand.ttf-323e346ce4906ec1f6be4648f89b9d71.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionexpandital.ttf-e11c0f028f0af8596b5a92b5bcdcf993.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionital.ttf-28b77396a03d229a6a3bfc29335975a0.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionleft.ttf-a52d0d336107ed484198b41e6f77754b.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionrotal.ttf-0252aee8ff0edf96fef6235ba5a66b34.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buddychampionrotate.ttf-c554b5911e6d365ec76c27df7182f386.fontdata::FontFile::-1::1721576410::0::1::::<><>::
+buttonLong_beige.png-fc2145f0ddec35fe556af1c5f51f353c.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_beige_pressed.png-6174852010bfdc9cb45b42453b19bd95.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_blue.png-dff5552405073f8dd75f10970a18a2c9.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_blue_pressed.png-a5f6dd71f6d5ad71836b8f87c86d7b6a.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_brown.png-ce99b02463b65a40ef2325e93f70dd0b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_brown_pressed.png-5d74cc165742f7b163f177968a29a13b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_grey.png-63db1079ef09cd56991e48ac36254677.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonLong_grey_pressed.png-c8d0bc9d1ce12aad8cf1774bfa438986.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonRound_beige.png-ee60098815108eefd8d2b79ae5a9dbba.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonRound_blue.png-dd96703b5b48eaad0ca835cdabb8c6f9.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonRound_brown.png-08ce0248109f85d1b25c44d79f38d020.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonRound_grey.png-7a45c0a81c7186ba6adebdddbb6271bd.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_beige.png-44d08b8a9b68918c4faabe9f19d6fedc.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_beige_pressed.png-4a1a4ebfeab9406cdff036e77f0485f3.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_blue.png-693cf5dd6ef7f893d1a2772e408bd8a0.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_blue_pressed.png-6aed2283c51f4211ffa8715953745681.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_brown.png-6824fc0845803bffcf0716e520bdfb7b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_brown_pressed.png-3b94462d5a04587983a047be8f7f38d6.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_grey.png-d19238cd24ff7689d4fe3d0fc54e46f0.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+buttonSquare_grey_pressed.png-e2f220182bcb44d6fdfa32d791a7fe8d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Click - Sound Effect (HD).mp3-0bb991ec4f37e4c318fecc1a5f254c73.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+Click - Sound Effect (HD).mp3-5298dd27e84fe0f2f7efd614a8eb2c2d.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+Close Button.png-3d709cbd620ad03bf8ff7a701b4f772f.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorGauntlet_blue.png-8ecb903006eb1ed5e1ddb7307e5230e9.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorGauntlet_bronze.png-4041ad7e5ff303a46b7b9350989424a7.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorGauntlet_grey.png-99e12c27a823d1aa4e57077a87373824.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorHand_beige.png-d35c73430eb0990697fac984521f983e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorHand_blue.png-994a2fa45f143dc9154b9b78404dc554.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorHand_grey.png-86fb0d64b0c9eb74b32aeaadc07d7a7a.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorSword_bronze.png-80f6dbb83234795abc9576bf6a5a340d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorSword_gold.png-ca62f3197916389b6d7fa19df25070a4.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+cursorSword_silver.png-8e50d25558b9d3386ff8c6faf873989b.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Division line.png-da231f7c501301307d658115befdd51a.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Exclamation_Gray.png-53ef35da1e8ef2088c2b19aafe762cc8.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Exclamation_Red.png-3a79a0e93ce8cec38957d7caa0983da7.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Exclamation_Yellow.png-f94581d2828de8470198cbf961dc5a20.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Fantasy Wooden GUI  - PNG.png-e68416217b5df690955d7cf066e54e23.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+harmonica (mp3cut.net) (1).mp3::AudioStreamMP3::6667035563146006759::1721503096::1721576410::1::::<><>::
+harmonica (mp3cut.net) (1).mp3-50207b72e432796465b24634e7f48cf6.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+harmonica (mp3cut.net) (2).mp3::AudioStreamMP3::3215529472224805506::1721503096::1721576410::1::::<><>::
+harmonica (mp3cut.net) (2).mp3-3e36d56935408200266b9aded0ad4231.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+harmonica (mp3cut.net).mp3::AudioStreamMP3::4565539785745623323::1721503096::1721576410::1::::<><>::
+harmonica (mp3cut.net).mp3-9f08343c223734c1db8c59d403bddef2.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+iconCheck_beige.png-c8efbb5ee5054ae8976de840aa8fa6aa.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCheck_blue.png-a2bee0dbb3ed4780d4c56220116c8a39.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCheck_bronze.png-ecaf8adae3fa7bdd840bf267a3b6026c.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCheck_grey.png-b96508e59cd0c7ddef6a2d01a1f307d3.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCircle_beige.png-50b2fa8ec749346d853cbea4e1f58acc.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCircle_blue.png-fbc497eb1e4c8821bbf3a4d6ddfa6268.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCircle_brown.png-4eca139bd04e119f5e41a925ff5d9bcc.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCircle_grey.png-8bdb54410d96a2c1b616dcd98d75d123.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCross_beige.png-30349c183ee813c4c29727973c486f3d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCross_blue.png-bfe2dc21521f3f5144fa2ec822e3dca0.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCross_brown.png-c714c2afa0c951b70655628559d91328.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+iconCross_grey.png-9c785a820f7b1487033c5f774c6285b6.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+image.png-a6f79312ffb0b17b58975fabffa969b7.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+IRONY TITLE  empty.png-e1503b785b285aed6a94ab87afe93e01.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+IRONY TITLE  Large.png-438199e94e66300707ca2f23b35ed126.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+lyre (mp3cut.net) (1).mp3::AudioStreamMP3::7985172443395053916::1721503096::1721576410::1::::<><>::
+lyre (mp3cut.net) (1).mp3-d25735e123bb76855fb7a69e8d854efb.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+lyre (mp3cut.net).mp3::AudioStreamMP3::2777967686964462081::1721503096::1721576410::1::::<><>::
+lyre (mp3cut.net).mp3-48309cdd6e7705d5494cdb24f5297a3c.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3-b031e0b96fe40bbb0a12f35ec5f7fec8.mp3str::AudioStreamMP3::-1::1721576410::0::1::::<><>::
+map_pergament (1).png-42e202c55b7eeccb3d0e2abbcdb86160.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+map_tiles (2).png-223e5aa29e3b94eb74138f9d74b85eb4.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+map_tiles (2).png-fdda69f85d29f89def1cb18ee3e6ce20.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+notice.png-07b68be026ff3fde0a93711e6988ad40.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panelInset_beige.png-99b22974aed6a35ea3900198b09a8cf5.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panelInset_beigeLight.png-b32e008dd44c36dbe2bf8f06b32e841e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panelInset_blue.png-86e0ce4e9beb2a996c2e889f4a7cc6ca.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panelInset_brown.png-638b1dee4e5cee45907db3c63efbd2e8.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panel_beige.png-73f6af4fd7aac4634524bd41ca057723.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panel_beigeLight.png-7ecd813ce66d639bf4b3d235ddc0289e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panel_blue.png-09a876706971443dbda3119c1647a041.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+panel_brown.png-58205bf2f2f939a3a48a703389c8b1aa.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+petra-jordan_961307-618.png-efabd426d291b022c99b53577c3efba4.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+puzzle1.png-6cb34427928238c01e4e426d1ef77dd6.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+puzzle2.png-fed494a63c97f56c15c75ab020ea1d6c.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+sprites.png-a90750c295d2bbd5abb390e863dc4ca3.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+statue 1.png-b1803bae1ae7c38e823c4c0fae6c968c.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+statue 2.png-deec017dfb7f9ea687b6c9e033a2977d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+statue spritesheet.png-76e14ac1758d4d3e79f6f419cb181f7d.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+stone_gate.png-8c73614488a0dd59e1171beae3eb63ed.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Big.png-cb9a426e53d74bbdd921374369283f1e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Big_Pressed.png-a63141f6d30df93fa2908d7420e8d597.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Cancel.png-fe6c02c7e0e2a44b9768c52ef4ef5b32.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Cancel_Pressed.png-a3d8b597f0762fea6ec56dff70584b82.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Medium.png-7d41b3a400d3eeb2f6e5d31b239eebc9.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_Medium_Pressed.png-e7bb68e61dcb048cfdc8231d72eaa023.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_New-Start.png-b5a0645eef0036db73d439c123793984.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+TextBTN_New-Start_Pressed.png-c4f36dbe7e9aef30cedbdfe748e714b3.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Large  parchment.png-e8b43c0541a4e64cce3675fd3a010244.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Large  stone.png-97d12f6bb14850127ef1d66779ece096.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Medium  parchment.png-a6f62b4ed2ff0a89303077a3204d53f8.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Medium  stone.png-9f4848fe2d79543abcdd29d87289a874.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Small  parchment.png-77db6a0a1111edeca6d9f225fb0d77a5.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI board Small  stone.png-119e4c24de09f1a72f532ff29f50ebab.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+UI books & more.png-3d104458588a25b44681eea3abe67e8e.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+Xq56he.png-5c48e987e646337dcc40e9b185ec8b14.ctex::CompressedTexture2D::-1::1721576410::0::1::::<><>::
+::res://levels/main menu/::1721576896
+MainMenu.gd::GDScript::-1::1721576896::0::1::::<>Node2D<>::
+MainMenu.tscn::PackedScene::7113840896807698885::1721576896::0::1::::<><>::res://levels/main menu/MainMenu.gd<>uid://7y6rv7ikausa::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png<>uid://bvndp6yl7oft::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  parchment.png<>uid://bjbkchasoq4db::::res://assets/buttons/mainMenuButtons.tres<>uid://cd0051yvy5fsm::::res://assets/gui sounds/Click - Sound Effect (HD).mp3
+::res://levels/map/::1721576896
+map.gd::GDScript::-1::1721576896::0::1::::<>Node2D<>::
+map.tscn::PackedScene::8421845144078646484::1721576896::0::1::::<><>::uid://7y6rv7ikausa::::res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png<>res://levels/map/map.gd<>uid://dw41r28kpxler::::res://assets/backgrounds/map_pergament (1).png<>uid://di18c6ta08xw7::::res://assets/backgrounds/Xq56he.png<>uid://cf5jlapf7f5oq::::res://assets/tiles/New_ruin_tiles.png<>uid://3k8mgcy6013o::::res://assets/tiles/map_tiles (2).png<>uid://dg7pfewq247qg::::res://assets/buttons/ajlounButton.tres<>uid://kjlm8d0nl88i::::res://assets/buttons/jarashButton.tres<>uid://cfuajhnmulcqo::::res://assets/buttons/petraButton.tres<>uid://cd0051yvy5fsm::::res://assets/gui sounds/Click - Sound Effect (HD).mp3
 ::res://levels/Petra/::1721503538
 mainPetra.tscn::PackedScene::5075012639294210303::1721503538::0::1::::<><>::uid://7brr5krkp5pt::::res://assets/backgrounds/petra.png
-::res://player/::1721572699
+::res://player/::1721576896
 player.gd::GDScript::-1::1721503538::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::8309149557574787539::1721572699::0::1::::<><>::res://player/player.gd<>uid://cj5tv2xmajs0o::::res://assets/majdSprites/majd idle.png<>uid://bcg36juitsvkg::::res://assets/majdSprites/majd walk.png<>uid://dyoups53q3qn5::::res://assets/majdSprites/majd jump.png
+player.tscn::PackedScene::8309149557574787539::1721576896::0::1::::<><>::res://player/player.gd<>uid://cj5tv2xmajs0o::::res://assets/majdSprites/majd idle.png<>uid://bcg36juitsvkg::::res://assets/majdSprites/majd walk.png<>uid://cvlnf80t218gn::::res://assets/majdSprites/majd jump.png

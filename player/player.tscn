@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://player/player.gd" id="1_ofpvf"]
 [ext_resource type="Texture2D" uid="uid://cj5tv2xmajs0o" path="res://assets/majdSprites/majd idle.png" id="2_mjfdd"]
 [ext_resource type="Texture2D" uid="uid://bcg36juitsvkg" path="res://assets/majdSprites/majd walk.png" id="3_c5kvi"]
-[ext_resource type="Texture2D" uid="uid://dyoups53q3qn5" path="res://assets/majdSprites/majd jump.png" id="3_ka7ka"]
+[ext_resource type="Texture2D" uid="uid://cvlnf80t218gn" path="res://assets/majdSprites/majd jump.png" id="3_ka7ka"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3fw2e"]
 radius = 7.25
@@ -125,8 +125,8 @@ shape = SubResource("CapsuleShape2D_3fw2e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, 3)
-scale = Vector2(0.2, 0.2)
+position = Vector2(4.76837e-07, -9.53674e-07)
+scale = Vector2(0.237143, 0.237143)
 sprite_frames = SubResource("SpriteFrames_qh7cy")
 animation = &"jump"
 autoplay = "idle"
