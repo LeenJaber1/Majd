@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=16 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://ci7c06nitsoee" path="res://assets/tiles/tile.png" id="1_uti85"]
 [ext_resource type="Texture2D" uid="uid://cf5jlapf7f5oq" path="res://assets/tiles/New_ruin_tiles.png" id="2_lsphk"]
 [ext_resource type="Texture2D" uid="uid://xwj3a740dlwu" path="res://assets/tiles/Jerash_Tiles.png" id="3_4cd8m"]
 [ext_resource type="PackedScene" uid="uid://syacvtjubfmp" path="res://assets/backgrounds/jarashBackground.tscn" id="4_caq1b"]
+[ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="5_mqlh2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
@@ -18256,6 +18257,9 @@ sources/0 = SubResource("TileSetAtlasSource_vvldo")
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fbr4s"]
 load_path = "res://.godot/imported/23.png-e9c53c4f6c25eb9c97f7e8f5bcd069a9.ctex"
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t8r3v"]
+distance = -49.0
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)
 
@@ -18486,3 +18490,18 @@ texture = SubResource("CompressedTexture2D_fbr4s")
 position = Vector2(298.014, 120.471)
 scale = Vector2(1.23155, 1.96383)
 texture = SubResource("CompressedTexture2D_fbr4s")
+
+[node name="Player" parent="." instance=ExtResource("5_mqlh2")]
+texture_filter = 1
+position = Vector2(-52, 530)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -60)
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(158, 509)
+shape = SubResource("WorldBoundaryShape2D_t8r3v")

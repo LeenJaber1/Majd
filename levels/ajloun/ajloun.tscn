@@ -6676,7 +6676,7 @@ texture_filter = 1
 position = Vector2(328, 344)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-offset = Vector2(0, -70)
+offset = Vector2(0, -60)
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 
