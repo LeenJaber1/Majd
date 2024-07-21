@@ -6674,7 +6674,7 @@ _data = {
 
 [node name="Player" parent="." instance=ExtResource("3_2opxa")]
 texture_filter = 1
-position = Vector2(1059, 36)
+position = Vector2(321, 346)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(0, -60)
@@ -6750,4 +6750,10 @@ libraries = {
 autoplay = "move"
 
 [node name="Chest" parent="." instance=ExtResource("6_x28vd")]
-position = Vector2(1080, 240)
+position = Vector2(1128, 239)
+
+[node name="Chest2" parent="." instance=ExtResource("6_x28vd")]
+position = Vector2(5103, 336)
+
+[node name="Chest3" parent="." instance=ExtResource("6_x28vd")]
+position = Vector2(1559, 357)
