@@ -16,6 +16,7 @@ func sub_money(amount):
 	
 var defaultPlayerPosition : Vector2 = Vector2(300, 400)
 var playerPosition = defaultPlayerPosition
+var isDefault = true
 
 func get_default_player_position() -> Vector2:
 	set_player_position(defaultPlayerPosition)

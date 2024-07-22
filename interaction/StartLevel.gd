@@ -11,4 +11,5 @@ func _on_ready():
 	
 func _open_level():
 	GameManager.set_player_position(interaction.global_position)
+	GameManager.isDefault = false
 	get_tree().change_scene_to_file(levelPath)

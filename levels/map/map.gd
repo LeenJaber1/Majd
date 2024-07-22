@@ -30,6 +30,7 @@ func _on_ajloun_pressed():
 		GameManager.sub_money(4)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
+		GameManager.isDefault = true
 		get_tree().change_scene_to_file("res://levels/ajloun/ajloun.tscn")
 	
 func _on_jarash_pressed():
@@ -41,6 +42,7 @@ func _on_jarash_pressed():
 		GameManager.sub_money(5)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
+		GameManager.isDefault = true
 		get_tree().change_scene_to_file("res://levels/jarash/mainJarashScene.tscn")
 	
 func _on_petra_pressed():
@@ -52,6 +54,7 @@ func _on_petra_pressed():
 		GameManager.sub_money(6)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
+		GameManager.isDefault = true
 		get_tree().change_scene_to_file("res://levels/Petra/mainPetra.tscn")
 
 
