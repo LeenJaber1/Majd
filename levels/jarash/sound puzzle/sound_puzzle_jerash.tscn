@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://levels/jarash/sound puzzle/sound_puzzle_jerash.gd" id="1_pcpi3"]
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="2_55o0s"]
-[ext_resource type="Texture2D" uid="uid://d0jqk45pansif" path="res://assets/backgrounds/image.png" id="2_jvdm1"]
+[ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="2_jvdm1"]
 [ext_resource type="Texture2D" uid="uid://d05ik63xm68m7" path="res://assets/backgrounds/MAJD_GAME_2.png" id="3_cdyuw"]
 [ext_resource type="AudioStream" uid="uid://b770uavd1taff" path="res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net) (1).mp3" id="3_hgugq"]
 [ext_resource type="AudioStream" uid="uid://c18tdpruqrxu2" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3" id="4_ud2xs"]

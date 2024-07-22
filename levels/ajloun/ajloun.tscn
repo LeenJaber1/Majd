@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=29 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="8_7c6ff"]
 [ext_resource type="PackedScene" uid="uid://prbslm0ewrit" path="res://player/ajloun_guy.tscn" id="8_n14d3"]
 [ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="9_o278s"]
+[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="10_bawg8"]
 [ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="10_wpnlx"]
 
 [sub_resource type="GDScript" id="GDScript_xi5oo"]
@@ -6783,6 +6784,8 @@ position = Vector2(6687, 161)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="MoneyDisplay" parent="CanvasLayer" instance=ExtResource("10_bawg8")]
+
 [node name="map" parent="CanvasLayer" instance=ExtResource("8_7c6ff")]
 visible = false
 offset_left = -2.0
@@ -6793,8 +6796,9 @@ offset_bottom = -7.0
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("9_o278s")]
 visible = false
 
-[node name="Killzone" parent="." instance=ExtResource("10_wpnlx")]
+[node name="Killzone" parent="." node_paths=PackedStringArray("money_display") instance=ExtResource("10_wpnlx")]
 position = Vector2(309, 399)
+money_display = NodePath("../CanvasLayer/MoneyDisplay")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_lnbd3")

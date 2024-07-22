@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dr8utaj6ne1ki"]
+[gd_scene load_steps=19 format=3 uid="uid://dr8utaj6ne1ki"]
 
 [ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="1_5kffc"]
 [ext_resource type="Script" path="res://levels/map/map.gd" id="1_hphut"]
@@ -10,6 +10,10 @@
 [ext_resource type="Theme" uid="uid://kjlm8d0nl88i" path="res://assets/buttons/jarashButton.tres" id="8_m8ofb"]
 [ext_resource type="Theme" uid="uid://cfuajhnmulcqo" path="res://assets/buttons/petraButton.tres" id="9_c1j6a"]
 [ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="10_ebeu6"]
+[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="11_1xlsh"]
+[ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="12_svuwe"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="13_p8obv"]
+[ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="14_bmt8r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ocld"]
 texture = ExtResource("3_t2vni")
@@ -9697,6 +9701,49 @@ text = "الأردن"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="MoneyDisplay" parent="." instance=ExtResource("11_1xlsh")]
+layout_mode = 1
+offset_left = 432.0
+offset_top = 448.0
+offset_right = 432.0
+offset_bottom = 448.0
+
+[node name="popupMessage" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -232.0
+offset_top = -176.0
+offset_right = 1384.0
+offset_bottom = 848.0
+color = Color(0, 0, 0, 0.698039)
+
+[node name="UiBoardSmallParchment" type="Sprite2D" parent="popupMessage"]
+position = Vector2(776, 496)
+texture = ExtResource("12_svuwe")
+
+[node name="Label" type="Label" parent="popupMessage/UiBoardSmallParchment"]
+offset_left = -200.0
+offset_top = -48.0
+offset_right = 225.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 60
+text = "لا تملك رصيدًا كافيًا للسفر"
+
+[node name="Button" type="Button" parent="popupMessage"]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 880.0
+offset_bottom = 584.0
+theme = ExtResource("14_bmt8r")
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 40
+text = "حسنًا"
+
 [connection signal="pressed" from="ajloun" to="." method="_on_ajloun_pressed"]
 [connection signal="pressed" from="jarash" to="." method="_on_jarash_pressed"]
 [connection signal="pressed" from="petra" to="." method="_on_petra_pressed"]
+[connection signal="pressed" from="popupMessage/Button" to="." method="_on_button_pressed"]

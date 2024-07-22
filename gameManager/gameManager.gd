@@ -12,7 +12,6 @@ var money = 0
 
 func add_money(amount):
 	money += amount
-	print(money)
 	
 func sub_money(amount):
 	money -= amount
