@@ -1,12 +1,14 @@
-[gd_scene load_steps=20 format=3 uid="uid://cekmymrg0l56b"]
+[gd_scene load_steps=22 format=3 uid="uid://cekmymrg0l56b"]
 
-[ext_resource type="Texture2D" uid="uid://dkmg6oek0wfch" path="res://assets/tiles/petra.png" id="2_n0qc1"]
-[ext_resource type="Texture2D" uid="uid://b1cacbm88r4up" path="res://assets/tiles/petraBigTile.png" id="3_7hott"]
-[ext_resource type="Texture2D" uid="uid://3p6mx8btlje" path="res://assets/puzzles/petraPuzzleAssets/sprites (15).png" id="3_t1jj7"]
-[ext_resource type="Texture2D" uid="uid://drs7ygek4yy50" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="4_38pxi"]
-[ext_resource type="Texture2D" uid="uid://cdbvkvlpornsd" path="res://assets/puzzles/petraPuzzleAssets/interface.png" id="4_aud12"]
+[ext_resource type="Texture2D" uid="uid://c1ioorymicnc2" path="res://assets/tiles/petra.png" id="2_n0qc1"]
+[ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="2_wrmt6"]
+[ext_resource type="Texture2D" uid="uid://blqkminc22opk" path="res://assets/tiles/petraBigTile.png" id="3_7hott"]
+[ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="3_b7b0k"]
+[ext_resource type="Texture2D" uid="uid://brruxxtxuoipb" path="res://assets/puzzles/petraPuzzleAssets/sprites (15).png" id="3_t1jj7"]
+[ext_resource type="Texture2D" uid="uid://vgjq34j3hp3c" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="4_38pxi"]
+[ext_resource type="Texture2D" uid="uid://dix0x3ufgd5n1" path="res://assets/puzzles/petraPuzzleAssets/interface.png" id="4_aud12"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="6_hairf"]
-[ext_resource type="Texture2D" uid="uid://6cvnki3tska5" path="res://assets/characters/sprites (19).png" id="7_3qayv"]
+[ext_resource type="Texture2D" uid="uid://yfbweiawsrsp" path="res://assets/characters/sprites (19).png" id="7_3qayv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_myqlt"]
 load_path = "res://.godot/imported/petra.png-d9d1ef0e21cbae8dea6ca758c55a9327.ctex"
@@ -24267,3 +24269,11 @@ scale = Vector2(0.383952, 0.383952)
 sprite_frames = SubResource("SpriteFrames_qmrkt")
 autoplay = "default"
 frame_progress = 0.975517
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_wrmt6")]
+visible = false
+
+[node name="map" parent="CanvasLayer" instance=ExtResource("3_b7b0k")]
+visible = false
