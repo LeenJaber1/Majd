@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://be4k01wavoty2"]
+
+[ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="1_qkate"]
+[ext_resource type="Texture2D" uid="uid://bvndp6yl7oft" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  parchment.png" id="2_2ih11"]
+[ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="3_v7md1"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="4_v7dvh"]
+[ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="5_te0uf"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UiBoardLargeStone" type="Sprite2D" parent="."]
+position = Vector2(585, 342)
+scale = Vector2(1.30823, 1.30823)
+texture = ExtResource("1_qkate")
+
+[node name="UiBoardLargeParchment" type="Sprite2D" parent="."]
+position = Vector2(578, 329)
+scale = Vector2(1.05696, 1.05696)
+texture = ExtResource("2_2ih11")
+
+[node name="quit" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 352.0
+offset_right = 677.0
+offset_bottom = 440.0
+theme = ExtResource("3_v7md1")
+theme_override_fonts/font = ExtResource("4_v7dvh")
+theme_override_font_sizes/font_size = 40
+text = "الخروج"
+
+[node name="play" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 232.0
+offset_right = 678.0
+offset_bottom = 328.0
+theme = ExtResource("3_v7md1")
+theme_override_fonts/font = ExtResource("4_v7dvh")
+theme_override_font_sizes/font_size = 40
+text = "عودة للعبة"
+text_direction = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_te0uf")
