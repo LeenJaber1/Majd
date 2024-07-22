@@ -10,17 +10,19 @@
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_01vit")
 
-[node name="UiBoardLargeStone" type="Sprite2D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UiBoardLargeStone" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(585, 342)
 scale = Vector2(1.30823, 1.30823)
 texture = ExtResource("2_cueci")
 
-[node name="UiBoardLargeParchment" type="Sprite2D" parent="."]
+[node name="UiBoardLargeParchment" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(578, 329)
 scale = Vector2(1.05696, 1.05696)
 texture = ExtResource("3_7osbe")
 
-[node name="continue" type="Button" parent="."]
+[node name="continue" type="Button" parent="CanvasLayer"]
 offset_left = 448.0
 offset_top = 192.0
 offset_right = 658.0
@@ -28,9 +30,10 @@ offset_bottom = 280.0
 theme = ExtResource("4_tk60r")
 theme_override_fonts/font = ExtResource("5_bakcj")
 theme_override_font_sizes/font_size = 40
+disabled = true
 text = "أكمل اللعبة"
 
-[node name="quit" type="Button" parent="."]
+[node name="quit" type="Button" parent="CanvasLayer"]
 offset_left = 448.0
 offset_top = 424.0
 offset_right = 661.0
@@ -40,7 +43,7 @@ theme_override_fonts/font = ExtResource("5_bakcj")
 theme_override_font_sizes/font_size = 40
 text = "اغلاق"
 
-[node name="play" type="Button" parent="."]
+[node name="play" type="Button" parent="CanvasLayer"]
 offset_left = 448.0
 offset_top = 304.0
 offset_right = 662.0
@@ -50,9 +53,9 @@ theme_override_fonts/font = ExtResource("5_bakcj")
 theme_override_font_sizes/font_size = 40
 text = "لعبة جديدة"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CanvasLayer"]
 stream = ExtResource("5_qs7ho")
 
-[connection signal="pressed" from="continue" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="play" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/continue" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/play" to="." method="_on_button_3_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=26 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://ci7c06nitsoee" path="res://assets/tiles/tile.png" id="1_uti85"]
@@ -12,6 +12,7 @@
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="11_cgucy"]
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_lwuiq"]
+[ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="13_hdica"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
@@ -22183,3 +22184,6 @@ offset_left = -2.0
 offset_top = -7.0
 offset_right = -2.0
 offset_bottom = -7.0
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_hdica")]
+visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=26 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dpyxp1q3ofb5b" path="res://chest/chest.tscn" id="6_x28vd"]
 [ext_resource type="PackedScene" uid="uid://n362do0xcld6" path="res://interaction/StartLevel.tscn" id="7_xcvyf"]
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="8_7c6ff"]
+[ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="9_o278s"]
 
 [sub_resource type="GDScript" id="GDScript_xi5oo"]
 
@@ -6779,5 +6780,8 @@ offset_left = -2.0
 offset_top = -7.0
 offset_right = -2.0
 offset_bottom = -7.0
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("9_o278s")]
+visible = false
 
 [connection signal="ready" from="." to="." method="_on_ready"]

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cekmymrg0l56b"]
+[gd_scene load_steps=4 format=3 uid="uid://cekmymrg0l56b"]
 
 [ext_resource type="Texture2D" uid="uid://7brr5krkp5pt" path="res://assets/backgrounds/petra.png" id="1_xfn82"]
+[ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="2_wrmt6"]
+[ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="3_b7b0k"]
 
 [node name="MainPetra" type="Node2D"]
 
@@ -12,3 +14,11 @@
 position = Vector2(2160, 453)
 scale = Vector2(0.506521, 0.503765)
 texture = ExtResource("1_xfn82")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_wrmt6")]
+visible = false
+
+[node name="map" parent="CanvasLayer" instance=ExtResource("3_b7b0k")]
+visible = false
