@@ -18493,12 +18493,11 @@ texture = SubResource("CompressedTexture2D_fbr4s")
 
 [node name="Player" parent="." instance=ExtResource("5_mqlh2")]
 texture_filter = 1
-position = Vector2(-52, 530)
+position = Vector2(2671, 526)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(0, -60)
 zoom = Vector2(1.5, 1.5)
-position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

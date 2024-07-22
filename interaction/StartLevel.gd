@@ -10,4 +10,5 @@ func _on_ready():
 	interaction.interact = Callable(self, "_open_level")
 	
 func _open_level():
+	GameManager.set_player_position(interaction.global_position)
 	get_tree().change_scene_to_file(levelPath)

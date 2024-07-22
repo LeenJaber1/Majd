@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+@onready var camera = $Camera2D
 const SPEED = 350
 const JUMP_VELOCITY = -450
 
@@ -10,13 +10,12 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
+	camera.position_smoothing_enabled = true
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		
-	var new_position = global_transform.origin
-	GameManager.set_player_position(new_position)
-
+	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
