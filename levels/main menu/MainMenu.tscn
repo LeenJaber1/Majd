@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8l86j1se46vx"]
+[gd_scene load_steps=7 format=3 uid="uid://c8l86j1se46vx"]
 
 [ext_resource type="Script" path="res://levels/main menu/MainMenu.gd" id="1_01vit"]
-[ext_resource type="Texture2D" uid="uid://wm4p06msofdv" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="2_cueci"]
-[ext_resource type="Texture2D" uid="uid://q85115tdtph5" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  parchment.png" id="3_7osbe"]
+[ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="2_cueci"]
+[ext_resource type="Texture2D" uid="uid://bvndp6yl7oft" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  parchment.png" id="3_7osbe"]
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="4_tk60r"]
-[ext_resource type="AudioStream" uid="uid://lfngapd2gnfn" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="5_qs7ho"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="5_bakcj"]
+[ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="5_qs7ho"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_01vit")
@@ -25,7 +26,9 @@ offset_top = 192.0
 offset_right = 658.0
 offset_bottom = 280.0
 theme = ExtResource("4_tk60r")
-text = "CONTINUE"
+theme_override_fonts/font = ExtResource("5_bakcj")
+theme_override_font_sizes/font_size = 40
+text = "أكمل اللعبة"
 
 [node name="quit" type="Button" parent="."]
 offset_left = 448.0
@@ -33,7 +36,9 @@ offset_top = 424.0
 offset_right = 661.0
 offset_bottom = 512.0
 theme = ExtResource("4_tk60r")
-text = "QUIT"
+theme_override_fonts/font = ExtResource("5_bakcj")
+theme_override_font_sizes/font_size = 40
+text = "اغلاق"
 
 [node name="play" type="Button" parent="."]
 offset_left = 448.0
@@ -41,7 +46,9 @@ offset_top = 304.0
 offset_right = 662.0
 offset_bottom = 400.0
 theme = ExtResource("4_tk60r")
-text = "PLAY"
+theme_override_fonts/font = ExtResource("5_bakcj")
+theme_override_font_sizes/font_size = 40
+text = "لعبة جديدة"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_qs7ho")
