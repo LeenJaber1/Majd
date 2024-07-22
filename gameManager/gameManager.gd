@@ -1,10 +1,16 @@
 extends Node
 
 
+var keys = 0
+
 var money = 0
+
+func add_key():
+	keys += 1
 
 func add_money(amount):
 	money += amount
+	print(money)
 	
 func sub_money(amount):
 	money -= amount

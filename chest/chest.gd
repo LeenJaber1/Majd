@@ -11,6 +11,7 @@ var isOpen = false
 
 func _open_chest():
 	if(!isOpen):
+		GameManager.add_money(randi() % 7 + 5)
 		sprite.play("opening")
 		isOpen = true
 		InteractionManager.unregisterArea(interactionArea)

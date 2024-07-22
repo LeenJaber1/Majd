@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=28 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://ci7c06nitsoee" path="res://assets/tiles/tile.png" id="1_uti85"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="11_cgucy"]
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_lwuiq"]
 [ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="13_hdica"]
+[ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="14_mm2bj"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
@@ -21573,6 +21574,8 @@ load_path = "res://.godot/imported/23.png-e9c53c4f6c25eb9c97f7e8f5bcd069a9.ctex"
 
 [sub_resource type="GDScript" id="GDScript_tg1vu"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vevbk"]
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)
 
@@ -22187,3 +22190,11 @@ offset_bottom = -7.0
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_hdica")]
 visible = false
+
+[node name="Killzone" parent="." instance=ExtResource("14_mm2bj")]
+position = Vector2(159, 806)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_vevbk")
+
+[connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
