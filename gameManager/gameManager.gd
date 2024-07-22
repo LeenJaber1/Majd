@@ -3,18 +3,21 @@ extends Node
 var JarashHintStatus : int = 0
 var PetraHintStatus : int = 0
 var AjlounHintStatus : int = 0
-var money = 7
 
 var jarashKey : bool = false
 var petraKey : bool = false
 var ajlounKey : bool = false
+
+var money = 0
+
 func add_money(amount):
 	money += amount
+	print(money)
 	
 func sub_money(amount):
 	money -= amount
 	
-var defaultPlayerPosition : Vector2 = Vector2(7000, 400)
+var defaultPlayerPosition : Vector2 = Vector2(300, 400)
 var playerPosition = defaultPlayerPosition
 
 func get_default_player_position() -> Vector2:

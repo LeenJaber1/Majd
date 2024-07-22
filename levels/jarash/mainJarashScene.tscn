@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=25 format=3 uid="uid://bd0lhx5wkj4be"]
+=======
+[gd_scene load_steps=28 format=3 uid="uid://bd0lhx5wkj4be"]
+>>>>>>> 9cf8362 (add kill zone)
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://bu5js6ow5iyf0" path="res://assets/backgrounds/jarash.png" id="1_sspdd"]
@@ -15,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_lwuiq"]
 [ext_resource type="PackedScene" uid="uid://kjr30hrqs65g" path="res://player/jarash_guy.tscn" id="13_b7tai"]
 [ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="13_hdica"]
+[ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="14_mm2bj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lsecr"]
 texture = ExtResource("2_mgsfw")
@@ -20712,6 +20717,8 @@ distance = -128.0
 normal = Vector2(1, 0)
 distance = 48.0
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vevbk"]
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)
 
@@ -20813,3 +20820,11 @@ offset_bottom = -7.0
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_hdica")]
 visible = false
+
+[node name="Killzone" parent="." instance=ExtResource("14_mm2bj")]
+position = Vector2(159, 806)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_vevbk")
+
+[connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]

@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dix0x3ufgd5n1" path="res://assets/puzzles/petraPuzzleAssets/interface.png" id="4_aud12"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="6_hairf"]
 [ext_resource type="Texture2D" uid="uid://yfbweiawsrsp" path="res://assets/characters/sprites (19).png" id="7_3qayv"]
+[ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="4_pddx4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qaajd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_myqlt"]
 load_path = "res://.godot/imported/petra.png-d9d1ef0e21cbae8dea6ca758c55a9327.ctex"
@@ -24277,3 +24280,11 @@ visible = false
 
 [node name="map" parent="CanvasLayer" instance=ExtResource("3_b7b0k")]
 visible = false
+
+[node name="Killzone" parent="." instance=ExtResource("4_pddx4")]
+position = Vector2(300, 590)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_qaajd")
+
+[connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
