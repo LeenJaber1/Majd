@@ -50,4 +50,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_ready():
-	global_position = GameManager.get_player_position()
+	if GameManager.isDefault:
+		global_position = GameManager.get_default_player_position()
+	else:
+		global_position = GameManager.get_player_position()
