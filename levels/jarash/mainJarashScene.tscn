@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=24 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://ci7c06nitsoee" path="res://assets/tiles/tile.png" id="1_uti85"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://burplmtpa0kxr" path="res://assets/GUI/statue 1.png" id="8_v1kmi"]
 [ext_resource type="Texture2D" uid="uid://dew57mnfj8ftc" path="res://assets/GUI/statue 2.png" id="9_r85u2"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
+[ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="11_cgucy"]
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
 
@@ -21567,8 +21569,7 @@ sources/3 = SubResource("TileSetAtlasSource_7kfnb")
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fbr4s"]
 load_path = "res://.godot/imported/23.png-e9c53c4f6c25eb9c97f7e8f5bcd069a9.ctex"
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t8r3v"]
-distance = -49.0
+[sub_resource type="GDScript" id="GDScript_tg1vu"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)
@@ -21823,14 +21824,6 @@ texture = SubResource("CompressedTexture2D_fbr4s")
 position = Vector2(346.797, 124.235)
 scale = Vector2(1.17183, 2.35403)
 texture = SubResource("CompressedTexture2D_fbr4s")
-
-[node name="Player" parent="." instance=ExtResource("5_mqlh2")]
-texture_filter = 1
-position = Vector2(2671, 526)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-offset = Vector2(0, -60)
-zoom = Vector2(1.5, 1.5)
 
 [node name="67" type="Sprite2D" parent="grass"]
 position = Vector2(364.699, 120.471)
@@ -22171,3 +22164,12 @@ theme = ExtResource("10_vs3b3")
 text = "VI"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Player" parent="." instance=ExtResource("11_cgucy")]
+texture_filter = 1
+position = Vector2(17, 522)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -60)
+zoom = Vector2(1.5, 1.5)
+script = SubResource("GDScript_tg1vu")
