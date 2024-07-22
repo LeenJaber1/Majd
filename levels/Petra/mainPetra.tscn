@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cekmymrg0l56b"]
+[gd_scene load_steps=7 format=3 uid="uid://cekmymrg0l56b"]
 
 [ext_resource type="Texture2D" uid="uid://7brr5krkp5pt" path="res://assets/backgrounds/petra.png" id="1_xfn82"]
+[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="2_kvxom"]
 [ext_resource type="PackedScene" uid="uid://be4k01wavoty2" path="res://levels/main menu/pauseMenu.tscn" id="2_wrmt6"]
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="3_b7b0k"]
 [ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="4_pddx4"]
@@ -19,6 +20,8 @@ scale = Vector2(0.506521, 0.503765)
 texture = ExtResource("1_xfn82")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MoneyDisplay" parent="CanvasLayer" instance=ExtResource("2_kvxom")]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_wrmt6")]
 visible = false

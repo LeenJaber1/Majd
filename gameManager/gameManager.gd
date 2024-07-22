@@ -10,7 +10,6 @@ func add_key():
 
 func add_money(amount):
 	money += amount
-	print(money)
 	
 func sub_money(amount):
 	money -= amount
