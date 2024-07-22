@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://g3i7svbh4n5m"]
+[gd_scene load_steps=4 format=3 uid="uid://dryyivym76t7a"]
 
-[ext_resource type="Texture2D" uid="uid://drs7ygek4yy50" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="2_7vo68"]
+[ext_resource type="Texture2D" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="2_7vo68"]
 
 [sub_resource type="GDScript" id="GDScript_iq7in"]
 script/source = "extends TextureButton
