@@ -1,0 +1,413 @@
+[gd_scene load_steps=23 format=3 uid="uid://uhju1n7kgpw8"]
+
+[ext_resource type="Script" path="res://levels/Petra/ecryptionPuzzle/decryption.gd" id="1_8twea"]
+[ext_resource type="Texture2D" uid="uid://ctkklf0e7lfhj" path="res://assets/backgrounds/-petra-jordan-wall.png" id="1_u56ur"]
+[ext_resource type="Texture2D" uid="uid://cg8ejbo38eykp" path="res://assets/puzzles/empty-ancient-paper (4).png" id="2_daiyn"]
+[ext_resource type="Texture2D" uid="uid://cuomj3qmau7mx" path="res://assets/puzzles/petraPuzzleAssets/sprites (17).png" id="3_q10dc"]
+[ext_resource type="Script" path="res://levels/Petra/ecryptionPuzzle/userInput.gd" id="4_dhoxd"]
+[ext_resource type="Texture2D" uid="uid://jcrnlmws010n" path="res://assets/puzzles/petraPuzzleAssets/ح/27.png" id="4_jvr5y"]
+[ext_resource type="Texture2D" uid="uid://c076kbr71bsb2" path="res://assets/puzzles/petraPuzzleAssets/ح/26.png" id="6_uve3g"]
+[ext_resource type="Texture2D" uid="uid://2dt1olw0vw6h" path="res://assets/puzzles/petraPuzzleAssets/ح/24.png" id="7_w3p4s"]
+[ext_resource type="Texture2D" uid="uid://1neffdy247rj" path="res://assets/puzzles/petraPuzzleAssets/ح/25.png" id="8_8muf6"]
+[ext_resource type="Texture2D" uid="uid://cohgfxiuaghqr" path="res://assets/puzzles/petraPuzzleAssets/ح/22.png" id="9_dpqmw"]
+[ext_resource type="Texture2D" uid="uid://bnli2hrta8iag" path="res://assets/puzzles/petraPuzzleAssets/ح/23.png" id="10_bvbwa"]
+[ext_resource type="Texture2D" uid="uid://dcr5h772uvu51" path="res://assets/puzzles/petraPuzzleAssets/ح/21.png" id="11_kwiej"]
+[ext_resource type="Texture2D" uid="uid://bospqmkebylht" path="res://assets/puzzles/petraPuzzleAssets/ح/20.png" id="12_reg4i"]
+[ext_resource type="Texture2D" uid="uid://cthi5ymlw41jw" path="res://assets/puzzles/petraPuzzleAssets/ح/19.png" id="13_c0t0y"]
+[ext_resource type="Texture2D" uid="uid://ba4htxwxa6u5h" path="res://assets/puzzles/petraPuzzleAssets/ح/18.png" id="14_8l640"]
+[ext_resource type="Texture2D" uid="uid://cjj123n7wl2va" path="res://assets/puzzles/petraPuzzleAssets/ح/17.png" id="15_51wxi"]
+[ext_resource type="Texture2D" uid="uid://b8gqmjsqqlfml" path="res://assets/puzzles/petraPuzzleAssets/ح/16.png" id="16_bbbsq"]
+[ext_resource type="Texture2D" uid="uid://bsjhdmdcujwuk" path="res://assets/puzzles/petraPuzzleAssets/ح/15.png" id="17_ixm5u"]
+[ext_resource type="Texture2D" uid="uid://dptllbuq62fyg" path="res://assets/puzzles/petraPuzzleAssets/ح/14.png" id="18_r4nwe"]
+[ext_resource type="Texture2D" uid="uid://d2hgccfr6mo1y" path="res://assets/puzzles/petraPuzzleAssets/ح/13.png" id="19_egeh3"]
+[ext_resource type="Texture2D" uid="uid://dm8hybh1audyb" path="res://assets/puzzles/petraPuzzleAssets/ح/12.png" id="20_0h4yq"]
+[ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="22_yx6nh"]
+
+[node name="Decryption" type="Node2D"]
+position = Vector2(121, 41)
+script = ExtResource("1_8twea")
+
+[node name="-petra-jordan-wall" type="Sprite2D" parent="."]
+position = Vector2(575, 304)
+scale = Vector2(0.320982, 0.320982)
+texture = ExtResource("1_u56ur")
+
+[node name="Empty-ancient-paper(4)" type="Sprite2D" parent="."]
+position = Vector2(572, 301)
+scale = Vector2(0.485175, 0.485175)
+texture = ExtResource("2_daiyn")
+
+[node name="Sprites(17)" type="Sprite2D" parent="Empty-ancient-paper(4)"]
+position = Vector2(-12.3667, 22.6723)
+scale = Vector2(1.43592, 1.43592)
+texture = ExtResource("3_q10dc")
+
+[node name="7a2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 289.241
+offset_top = -172.659
+offset_right = 356.304
+offset_bottom = -141.659
+scale = Vector2(0.63422, 1.27765)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 219.882
+offset_top = -262.678
+offset_right = 259.882
+offset_bottom = -222.678
+scale = Vector2(3.73641, 3.73641)
+texture = ExtResource("4_jvr5y")
+
+[node name="seen" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -17.7087
+offset_top = -163.805
+offset_right = 49.3538
+offset_bottom = -132.805
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -88.5431
+offset_top = -265.63
+offset_right = -48.5431
+offset_bottom = -225.63
+scale = Vector2(3.6329, 3.78788)
+texture = ExtResource("6_uve3g")
+
+[node name="qaf" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -341.911
+offset_top = -160.957
+offset_right = -274.848
+offset_bottom = -129.957
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -384.85
+offset_top = -254.885
+offset_right = -344.85
+offset_bottom = -214.885
+scale = Vector2(2.93263, 3.05773)
+texture = ExtResource("7_w3p4s")
+
+[node name="ta2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -302.998
+offset_top = -160.957
+offset_right = -235.935
+offset_bottom = -129.957
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -343.253
+offset_top = -254.885
+offset_right = -303.253
+offset_bottom = -214.885
+scale = Vector2(2.96641, 3.09296)
+texture = ExtResource("8_8muf6")
+
+[node name="sheen" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 97.3974
+offset_top = -53.1259
+offset_right = 164.46
+offset_bottom = -22.1259
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect5" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 74.0565
+offset_top = -142.172
+offset_right = 114.057
+offset_bottom = -102.172
+scale = Vector2(2.52979, 2.63772)
+texture = ExtResource("9_dpqmw")
+
+[node name="seen2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 13.2813
+offset_top = -54.6016
+offset_right = 80.3438
+offset_bottom = -23.6016
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect6" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -41.3409
+offset_top = -146.197
+offset_right = -1.3409
+offset_bottom = -106.197
+scale = Vector2(3.19593, 3.33227)
+texture = ExtResource("6_uve3g")
+
+[node name="7a22" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -126.912
+offset_top = -53.1259
+offset_right = -59.8497
+offset_bottom = -22.1259
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect7" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -197.747
+offset_top = -154.951
+offset_right = -157.747
+offset_bottom = -114.951
+scale = Vector2(3.6329, 3.78788)
+texture = ExtResource("4_jvr5y")
+
+[node name="jeem" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -174.135
+offset_top = -54.6016
+offset_right = -107.073
+offset_bottom = -23.6016
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect8" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -217.121
+offset_top = -146.197
+offset_right = -177.121
+offset_bottom = -106.197
+scale = Vector2(2.99659, 3.12442)
+texture = ExtResource("10_bvbwa")
+
+[node name="ba2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 331.688
+offset_top = 36.2919
+offset_right = 398.751
+offset_bottom = 67.2919
+scale = Vector2(0.581394, 1.17123)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect9" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 288.749
+offset_top = -67.0291
+offset_right = 328.749
+offset_bottom = -27.0291
+scale = Vector2(2.93209, 3.05718)
+texture = ExtResource("11_kwiej")
+
+[node name="lam" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 66.4072
+offset_top = 41.3203
+offset_right = 133.47
+offset_bottom = 72.3203
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect10" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 53.929
+offset_top = -25.4323
+offset_right = 93.929
+offset_bottom = 14.5677
+scale = Vector2(1.87307, 1.95298)
+texture = ExtResource("12_reg4i")
+
+[node name="ra2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 0.25584
+offset_top = 40.3174
+offset_right = 67.3183
+offset_bottom = 71.3174
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect11" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -21.2134
+offset_top = -25.4323
+offset_right = 18.7866
+offset_bottom = 14.5677
+scale = Vector2(2.00951, 2.09524)
+texture = ExtResource("13_c0t0y")
+
+[node name="fa2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -38.6573
+offset_top = 40.3174
+offset_right = 28.4052
+offset_bottom = 71.3174
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect12" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -58.7847
+offset_top = -28.116
+offset_right = -18.7847
+offset_bottom = 11.884
+scale = Vector2(2.18174, 2.27481)
+texture = ExtResource("14_8l640")
+
+[node name="meem" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -180.891
+offset_top = 48.3684
+offset_right = -113.829
+offset_bottom = 79.3683
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect13" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -210.412
+offset_top = -25.4323
+offset_right = -170.412
+offset_bottom = 14.5677
+scale = Vector2(2.50776, 2.61474)
+texture = ExtResource("15_51wxi")
+
+[node name="fa22" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -277.436
+offset_top = 47.2231
+offset_right = -210.373
+offset_bottom = 78.2231
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect14" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -294.947
+offset_top = -14.6977
+offset_right = -254.947
+offset_bottom = 25.3023
+scale = Vector2(1.87769, 1.95779)
+texture = ExtResource("14_8l640")
+
+[node name="ya2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -333.513
+offset_top = 50.1746
+offset_right = -266.451
+offset_bottom = 81.1746
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect15" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -363.38
+offset_top = -25.4323
+offset_right = -323.38
+offset_bottom = 14.5677
+scale = Vector2(2.26328, 2.35983)
+texture = ExtResource("16_bbbsq")
+
+[node name="ya22" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 160.853
+offset_top = 143.145
+offset_right = 227.916
+offset_bottom = 174.145
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect16" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = 129.072
+offset_top = 71.1795
+offset_right = 169.072
+offset_bottom = 111.179
+scale = Vector2(2.27424, 2.37126)
+texture = ExtResource("16_bbbsq")
+
+[node name="ha2" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -16.2331
+offset_top = 147.572
+offset_right = 50.8294
+offset_bottom = 178.572
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect17" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -62.8102
+offset_top = 59.103
+offset_right = -22.8102
+offset_bottom = 99.103
+scale = Vector2(3.06753, 3.19839)
+texture = ExtResource("17_ixm5u")
+
+[node name="kaf" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -156.427
+offset_top = 156.426
+offset_right = -89.3641
+offset_bottom = 187.426
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect18" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -191.626
+offset_top = 72.5213
+offset_right = -151.626
+offset_bottom = 112.521
+scale = Vector2(2.62707, 2.73914)
+texture = ExtResource("18_r4nwe")
+
+[node name="noon" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -211.003
+offset_top = 157.894
+offset_right = -143.941
+offset_bottom = 188.894
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect19" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -249.325
+offset_top = 65.8121
+offset_right = -209.325
+offset_bottom = 105.812
+scale = Vector2(2.93817, 3.06351)
+texture = ExtResource("19_egeh3")
+
+[node name="zain" type="LineEdit" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -262.678
+offset_top = 160.854
+offset_right = -195.616
+offset_bottom = 191.854
+scale = Vector2(0.542311, 1.0925)
+alignment = 1
+max_length = 1
+script = ExtResource("4_dhoxd")
+
+[node name="NinePatchRect20" type="NinePatchRect" parent="Empty-ancient-paper(4)/Sprites(17)"]
+offset_left = -301.656
+offset_top = 73.8631
+offset_right = -261.656
+offset_bottom = 113.863
+scale = Vector2(2.49017, 2.5964)
+texture = ExtResource("20_0h4yq")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 509.0
+offset_top = 499.0
+offset_right = 517.0
+offset_bottom = 507.0
+scale = Vector2(16.0766, 5.35205)
+theme = ExtResource("22_yx6nh")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
