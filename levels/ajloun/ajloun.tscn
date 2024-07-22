@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=25 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c4qsuo4fatyet" path="res://levels/ajloun/platform.tscn" id="5_w5db1"]
 [ext_resource type="PackedScene" uid="uid://dpyxp1q3ofb5b" path="res://chest/chest.tscn" id="6_x28vd"]
 [ext_resource type="PackedScene" uid="uid://n362do0xcld6" path="res://interaction/StartLevel.tscn" id="7_xcvyf"]
+[ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="8_7c6ff"]
 
 [sub_resource type="GDScript" id="GDScript_xi5oo"]
 
@@ -6769,5 +6770,14 @@ position = Vector2(7712, 443)
 scale = Vector2(0.566397, 0.16)
 levelPath = "res://levels/ajloun/quizPuzzle/QuizPuzzle.tscn"
 action_name = "للقراءة"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="map" parent="CanvasLayer" instance=ExtResource("8_7c6ff")]
+visible = false
+offset_left = -2.0
+offset_top = -7.0
+offset_right = -2.0
+offset_bottom = -7.0
 
 [connection signal="ready" from="." to="." method="_on_ready"]

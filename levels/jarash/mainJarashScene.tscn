@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=25 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://ci7c06nitsoee" path="res://assets/tiles/tile.png" id="1_uti85"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dew57mnfj8ftc" path="res://assets/GUI/statue 2.png" id="9_r85u2"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="11_cgucy"]
+[ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_lwuiq"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bvsk"]
 load_path = "res://.godot/imported/plants.png-a034da4458be1d664e9374e702ea501d.ctex"
@@ -22173,3 +22174,12 @@ position = Vector2(17, 522)
 offset = Vector2(0, -60)
 zoom = Vector2(1.5, 1.5)
 script = SubResource("GDScript_tg1vu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="map" parent="CanvasLayer" instance=ExtResource("12_lwuiq")]
+visible = false
+offset_left = -2.0
+offset_top = -7.0
+offset_right = -2.0
+offset_bottom = -7.0
