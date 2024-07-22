@@ -8,7 +8,7 @@
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="6_bk3a0"]
 [ext_resource type="AudioStream" uid="uid://e1a0ehhb0043" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="7_b5kae"]
 [ext_resource type="AudioStream" uid="uid://b1fyn5ia2feyd" path="res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3" id="7_y11wr"]
-[ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="9_w3lub"]
+[ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="9_w3lub"]
 
 [node name="puzzle3" type="Node2D"]
 script = ExtResource("1_7lpjr")

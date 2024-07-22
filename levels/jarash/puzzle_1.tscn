@@ -7,7 +7,7 @@
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="5_8jism"]
 [ext_resource type="AudioStream" uid="uid://c18tdpruqrxu2" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3" id="6_egfd4"]
 [ext_resource type="AudioStream" uid="uid://e1a0ehhb0043" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="7_u4kjq"]
-[ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="8_cfc1k"]
+[ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="8_cfc1k"]
 
 [node name="puzzle1" type="Node2D"]
 script = ExtResource("1_15yjh")

@@ -8,7 +8,7 @@
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="4_d64v5"]
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="6_0gfj8"]
 [ext_resource type="AudioStream" uid="uid://bl2vkhrjyma3k" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3" id="7_3cba8"]
-[ext_resource type="Theme" uid="uid://cexhhctfqrjov" path="res://assets/buttons/backButton.tres" id="9_opf1f"]
+[ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="9_opf1f"]
 
 [node name="puzzle2" type="Node2D"]
 script = ExtResource("1_thkqi")

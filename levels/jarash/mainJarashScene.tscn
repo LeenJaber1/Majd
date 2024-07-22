@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bd0lhx5wkj4be"]
+[gd_scene load_steps=23 format=3 uid="uid://bd0lhx5wkj4be"]
 
 [ext_resource type="Texture2D" uid="uid://b082fopx481d8" path="res://assets/GUI/stone_gate.png" id="1_pm7ob"]
 [ext_resource type="Texture2D" uid="uid://bu5js6ow5iyf0" path="res://assets/backgrounds/jarash.png" id="1_sspdd"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dew57mnfj8ftc" path="res://assets/GUI/statue 2.png" id="9_r85u2"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="11_srr18"]
+[ext_resource type="PackedScene" uid="uid://kjr30hrqs65g" path="res://player/jarash_guy.tscn" id="13_b7tai"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lsecr"]
 texture = ExtResource("2_mgsfw")
@@ -21183,15 +21184,17 @@ distance = -128.0
 normal = Vector2(1, 0)
 distance = 48.0
 
-[sub_resource type="GDScript" id="GDScript_tg1vu"]
-
 [node name="Node2D" type="Node2D"]
 position = Vector2(376, -64)
 
 [node name="Jarash" type="Sprite2D" parent="."]
+visibility_layer = 1023
 position = Vector2(2960, 600)
 scale = Vector2(0.44881, 0.44881)
 texture = ExtResource("1_sspdd")
+
+[node name="jarashGuy" parent="." instance=ExtResource("13_b7tai")]
+position = Vector2(2228, 304)
 
 [node name="StoneGate" type="Sprite2D" parent="."]
 position = Vector2(5008, 488)
@@ -21246,7 +21249,6 @@ theme = ExtResource("10_vs3b3")
 text = "VI"
 horizontal_alignment = 1
 vertical_alignment = 1
-
 
 [node name="Player" parent="." instance=ExtResource("11_srr18")]
 position = Vector2(-104, 528)
