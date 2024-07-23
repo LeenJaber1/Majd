@@ -1,0 +1,11 @@
+res://levels/Petra/mainPetra.tscn
+res://assets/buttons/button.tres
+res://assets/themes/square_line_edit.tres
+res://assets/buttons/submitButton.tres
+res://assets/buttons/backButton.tres
+res://levels/Petra/ecryptionPuzzle/decryption.tscn
+res://levels/ajloun/ajloun.tscn
+res://levels/ajloun/passwordPuzzle/passwordPuzzle.tscn
+res://levels/Petra/ecryptionPuzzle/encryptionPuzzleScene.tscn
+res://levels/tutorial/tutorialScene.tscn
+res://player/player.gd

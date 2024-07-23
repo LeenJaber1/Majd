@@ -1,0 +1,14 @@
+AnimatedSprite2D
+TileMap
+AudioStreamPlayer2D
+Label
+NinePatchRect
+Button
+CenterContainer
+LineEdit
+Camera2D
+AnimationPlayer
+CollisionShape2D
+CharacterBody2D
+ParallaxLayer
+StaticBody2D
