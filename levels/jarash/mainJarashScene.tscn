@@ -20723,7 +20723,7 @@ position = Vector2(451, -63)
 
 [node name="Jarash" type="Sprite2D" parent="."]
 visibility_layer = 1023
-position = Vector2(2960, 600)
+position = Vector2(3161, 604)
 scale = Vector2(0.44881, 0.44881)
 texture = ExtResource("1_sspdd")
 
