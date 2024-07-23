@@ -1,7 +1,5 @@
 extends Control
 
-
-
 func _on_submit_button_button_down():
 	var word = "جلعاد"
 	var lineEdits = [$firstLineEdit, $secondLineEdit, $thirdLineEdit, $fourthLineEdit, $fifthLineEdit]
