@@ -20723,7 +20723,7 @@ position = Vector2(451, -63)
 
 [node name="Jarash" type="Sprite2D" parent="."]
 visibility_layer = 1023
-position = Vector2(2960, 600)
+position = Vector2(2840, 537)
 scale = Vector2(0.44881, 0.44881)
 texture = ExtResource("1_sspdd")
 
@@ -20757,7 +20757,7 @@ texture = ExtResource("9_r85u2")
 [node name="Label" type="Label" parent="."]
 offset_left = 3400.0
 offset_top = 184.0
-offset_right = 3456.0
+offset_right = 3460.0
 offset_bottom = 232.0
 theme = ExtResource("10_vs3b3")
 text = "V"
@@ -20767,7 +20767,7 @@ vertical_alignment = 1
 [node name="Label2" type="Label" parent="."]
 offset_left = 3592.0
 offset_top = 184.0
-offset_right = 3656.0
+offset_right = 3652.0
 offset_bottom = 229.0
 theme = ExtResource("10_vs3b3")
 text = "X"
@@ -20777,7 +20777,7 @@ vertical_alignment = 1
 [node name="Label3" type="Label" parent="."]
 offset_left = 3784.0
 offset_top = 184.0
-offset_right = 3848.0
+offset_right = 3845.0
 offset_bottom = 232.0
 theme = ExtResource("10_vs3b3")
 text = "VI"
