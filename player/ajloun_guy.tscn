@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://prbslm0ewrit"]
+
+[ext_resource type="Script" path="res://player/ajloun_guy.gd" id="1_43m6t"]
+[ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="2_binym"]
+[ext_resource type="Texture2D" uid="uid://bnsm05bcpe4no" path="res://assets/GUI/ajloun_guy.png" id="3_wg25v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l87af"]
+size = Vector2(235, 143.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6lwe"]
+atlas = ExtResource("3_wg25v")
+region = Rect2(0, 0, 540, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3owos"]
+atlas = ExtResource("3_wg25v")
+region = Rect2(540, 0, 540, 540)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5oesv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6lwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3owos")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="ajloun_guy" type="Node2D"]
+script = ExtResource("1_43m6t")
+
+[node name="InteractionArea2" parent="." instance=ExtResource("2_binym")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2"]
+position = Vector2(318, 292)
+shape = SubResource("RectangleShape2D_l87af")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(313, 313)
+scale = Vector2(0.258333, 0.258333)
+sprite_frames = SubResource("SpriteFrames_5oesv")
+autoplay = "default"
+frame_progress = 0.195064
