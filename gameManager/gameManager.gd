@@ -8,6 +8,8 @@ var jarashKey : bool = false
 var petraKey : bool = false
 var ajlounKey : bool = false
 
+var ajlounPuzzleSolved = false
+
 var money = 0
 
 func add_money(amount):

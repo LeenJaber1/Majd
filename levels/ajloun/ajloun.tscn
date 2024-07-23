@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=30 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]

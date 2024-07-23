@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=2 format=3 uid="uid://chs2ty56x04xt"]
+
+[ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
 
 [node name="MosiacPuzzle" type="Node2D"]
+
+[node name="StoneBackground" type="Sprite2D" parent="."]
+position = Vector2(580.73, 322)
+scale = Vector2(0.463601, 0.469417)
+texture = ExtResource("1_ekbgm")
