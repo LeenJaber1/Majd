@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dvhadc7ia8h7c" path="res://assets/GUI/statue spritesheet.png" id="2_mgsfw"]
 [ext_resource type="Texture2D" uid="uid://xwj3a740dlwu" path="res://assets/tiles/Jerash_Tiles.png" id="3_4cd8m"]
 [ext_resource type="Texture2D" uid="uid://bo5gxaxjtt2gc" path="res://assets/GUI/UI books & more.png" id="4_h2dwr"]
-[ext_resource type="Texture2D" uid="uid://bsifetssgxvpl" path="res://assets/tiles/plants.png" id="7_ogwaj"]
+[ext_resource type="Texture2D" uid="uid://b5dw3jm8sd4yq" path="res://assets/tiles/plants.png" id="7_ogwaj"]
 [ext_resource type="Texture2D" uid="uid://burplmtpa0kxr" path="res://assets/GUI/statue 1.png" id="8_v1kmi"]
 [ext_resource type="Texture2D" uid="uid://dew57mnfj8ftc" path="res://assets/GUI/statue 2.png" id="9_r85u2"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="10_vs3b3"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="14_ma8ci"]
 [ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="14_mm2bj"]
 [ext_resource type="PackedScene" uid="uid://n362do0xcld6" path="res://interaction/StartLevel.tscn" id="15_k0g0j"]
+[ext_resource type="PackedScene" uid="uid://dpyxp1q3ofb5b" path="res://chest/chest.tscn" id="19_ypn7i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lsecr"]
 texture = ExtResource("2_mgsfw")
@@ -129,7 +130,7 @@ texture = ExtResource("2_mgsfw")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ceqc4"]
 texture = ExtResource("1_uti85")
-texture_region_size = Vector2i(16, 129)
+texture_region_size = Vector2i(129, 129)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -20718,7 +20719,7 @@ distance = 48.0
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vevbk"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(376, -64)
+position = Vector2(451, -63)
 
 [node name="Jarash" type="Sprite2D" parent="."]
 visibility_layer = 1023
@@ -20830,19 +20831,19 @@ money_display = NodePath("../CanvasLayer/MoneyDisplay")
 shape = SubResource("WorldBoundaryShape2D_vevbk")
 
 [node name="StartLevel" parent="." instance=ExtResource("15_k0g0j")]
-position = Vector2(3511, 89)
+position = Vector2(3428, 204)
 scale = Vector2(0.446786, 1.91343)
 levelPath = "res://levels/jarash/puzzle_1.tscn"
 action_name = "لفتح اللغز"
 
 [node name="StartLevel2" parent="." instance=ExtResource("15_k0g0j")]
-position = Vector2(3687, 97)
+position = Vector2(3622, 215)
 scale = Vector2(0.446786, 1.91343)
 levelPath = "res://levels/jarash/puzzle_2.tscn"
 action_name = "لفتح اللغز"
 
 [node name="StartLevel3" parent="." instance=ExtResource("15_k0g0j")]
-position = Vector2(3862, 96)
+position = Vector2(3814, 221)
 scale = Vector2(0.446786, 1.91343)
 levelPath = "res://levels/jarash/puzzle_3.tscn"
 action_name = "لفتح اللغز"
@@ -20852,5 +20853,14 @@ position = Vector2(5005, 494)
 scale = Vector2(2.39859, -2.5099)
 levelPath = "res://levels/jarash/sound puzzle/sound_puzzle_jerash.tscn"
 action_name = "لفتح اللغز"
+
+[node name="Chest" parent="." instance=ExtResource("19_ypn7i")]
+position = Vector2(1272, 571)
+
+[node name="Chest2" parent="." instance=ExtResource("19_ypn7i")]
+position = Vector2(6041, 571)
+
+[node name="Chest3" parent="." instance=ExtResource("19_ypn7i")]
+position = Vector2(3999, 427)
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
