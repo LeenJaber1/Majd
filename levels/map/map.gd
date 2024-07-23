@@ -3,7 +3,9 @@ extends Control
 var paused = false
 @onready var money_display = $MoneyDisplay
 @onready var popMessage = $popupMessage
-
+@onready var key1 = $KeyBig
+@onready var key2 = $KeyBig2
+@onready var key3 = $KeyBig3
 func closeMap():
 	paused = false
 	visible = false
@@ -31,6 +33,7 @@ func _on_ajloun_pressed():
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
 		GameManager.isDefault = true
+		GameManager.scene = "res://levels/ajloun/ajloun.tscn"
 		get_tree().change_scene_to_file("res://levels/ajloun/ajloun.tscn")
 	
 func _on_jarash_pressed():
@@ -43,11 +46,11 @@ func _on_jarash_pressed():
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
 		GameManager.isDefault = true
+		GameManager.scene = "res://levels/jarash/mainJarashScene.tscn"
 		get_tree().change_scene_to_file("res://levels/jarash/mainJarashScene.tscn")
 	
 func _on_petra_pressed():
 	$AudioStreamPlayer.play()
-	
 	if(GameManager.money < 6):
 		popMessage.visible = true
 	else:
@@ -55,8 +58,20 @@ func _on_petra_pressed():
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
 		GameManager.isDefault = true
+		GameManager.scene = "res://levels/Petra/mainPetra.tscn"
 		get_tree().change_scene_to_file("res://levels/Petra/mainPetra.tscn")
 
 
 func _on_button_pressed():
 	popMessage.visible = false
+
+
+func _on_ready():
+	if GameManager.jarashKey:
+		key1.visible = true
+	if GameManager.ajlounKey:
+		key2.visible = true
+	if GameManager.petraKey:
+		key3.visible = true
+		
+		
