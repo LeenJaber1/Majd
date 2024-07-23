@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://plpw403lfiii"]
+
+[ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/deadField.gd" id="1_80qjk"]
+
+[node name="DeadField" type="TextureRect"]
+custom_minimum_size = Vector2(400, 400)
+script = ExtResource("1_80qjk")

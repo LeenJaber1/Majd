@@ -1,10 +1,159 @@
-[gd_scene load_steps=2 format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=7 format=3 uid="uid://chs2ty56x04xt"]
 
 [ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
+[ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.gd" id="1_mta42"]
+[ext_resource type="Texture2D" uid="uid://bnpd4irhrh0ff" path="res://assets/puzzles/grid.png" id="2_15ois"]
+[ext_resource type="PackedScene" uid="uid://b5vmexb4kjnay" path="res://levels/ajloun/mosiacPuzzle/field.tscn" id="3_4f16p"]
+[ext_resource type="PackedScene" uid="uid://plpw403lfiii" path="res://levels/ajloun/mosiacPuzzle/deadField.tscn" id="3_u13mn"]
+[ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/deadField.gd" id="7_j4ypo"]
 
 [node name="MosiacPuzzle" type="Node2D"]
+script = ExtResource("1_mta42")
 
 [node name="StoneBackground" type="Sprite2D" parent="."]
-position = Vector2(580.73, 322)
+position = Vector2(576, 326)
 scale = Vector2(0.463601, 0.469417)
 texture = ExtResource("1_ekbgm")
+
+[node name="DeadField" parent="." instance=ExtResource("3_u13mn")]
+offset_right = 1154.0
+offset_bottom = 654.0
+
+[node name="Grid" type="TextureRect" parent="."]
+offset_left = 187.0
+offset_top = 60.0
+offset_right = 2227.0
+offset_bottom = 2130.0
+scale = Vector2(0.233824, 0.233824)
+texture = ExtResource("2_15ois")
+script = ExtResource("7_j4ypo")
+
+[node name="generator" parent="." instance=ExtResource("3_4f16p")]
+offset_left = 876.0
+offset_top = 273.0
+offset_right = 992.0
+offset_bottom = 366.0
+
+[node name="Field1" parent="." instance=ExtResource("3_4f16p")]
+offset_left = 188.0
+offset_top = 62.0
+offset_right = 304.0
+offset_bottom = 155.0
+
+[node name="Field2" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 62.0
+offset_right = 424.0
+offset_bottom = 155.0
+
+[node name="Field3" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 62.0
+offset_right = 544.0
+offset_bottom = 155.0
+
+[node name="Field4" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 548.0
+offset_top = 62.0
+offset_right = 664.0
+offset_bottom = 155.0
+
+[node name="Field5" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 188.0
+offset_top = 159.0
+offset_right = 304.0
+offset_bottom = 252.0
+
+[node name="Field6" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 159.0
+offset_right = 424.0
+offset_bottom = 252.0
+
+[node name="Field7" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 159.0
+offset_right = 544.0
+offset_bottom = 252.0
+
+[node name="Field8" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 548.0
+offset_top = 159.0
+offset_right = 664.0
+offset_bottom = 252.0
+
+[node name="Field9" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 188.0
+offset_top = 256.0
+offset_right = 304.0
+offset_bottom = 349.0
+
+[node name="Field10" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 256.0
+offset_right = 424.0
+offset_bottom = 349.0
+
+[node name="Field11" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 256.0
+offset_right = 544.0
+offset_bottom = 349.0
+
+[node name="Field12" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 548.0
+offset_top = 256.0
+offset_right = 664.0
+offset_bottom = 349.0
+
+[node name="Field13" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 188.0
+offset_top = 353.0
+offset_right = 304.0
+offset_bottom = 446.0
+
+[node name="Field14" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 353.0
+offset_right = 424.0
+offset_bottom = 446.0
+
+[node name="Field15" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 353.0
+offset_right = 544.0
+offset_bottom = 446.0
+
+[node name="Field16" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 548.0
+offset_top = 353.0
+offset_right = 664.0
+offset_bottom = 446.0
+
+[node name="Field17" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 188.0
+offset_top = 450.0
+offset_right = 304.0
+offset_bottom = 543.0
+
+[node name="Field18" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 450.0
+offset_right = 424.0
+offset_bottom = 543.0
+
+[node name="Field19" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 450.0
+offset_right = 544.0
+offset_bottom = 543.0
+
+[node name="Field20" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 548.0
+offset_top = 450.0
+offset_right = 664.0
+offset_bottom = 543.0
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pieceHaveFallen" from="DeadField" to="." method="_on_dead_field_piece_have_fallen"]
+[connection signal="pieceHaveFallen" from="Grid" to="." method="_on_grid_piece_have_fallen"]
