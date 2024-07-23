@@ -1,14 +1,16 @@
 extends Node
 
-var JarashHintStatus : int = 0
-var PetraHintStatus : int = 0
-var AjlounHintStatus : int = 0
+var JarashHintStatus  = 0
+var PetraHintStatus  = 0
+var AjlounHintStatus  = 0
 
-var jarashKey : bool = false
-var petraKey : bool = false
-var ajlounKey : bool = false
+var jarashKey  = 0
+var petraKey  = 0
+var ajlounKey  = 0
 
 var money = 0
+
+var scene = ""
 
 func add_money(amount):
 	money += amount

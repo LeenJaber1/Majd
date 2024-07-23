@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dr8utaj6ne1ki"]
+[gd_scene load_steps=20 format=3 uid="uid://dr8utaj6ne1ki"]
 
 [ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="1_5kffc"]
 [ext_resource type="Script" path="res://levels/map/map.gd" id="1_hphut"]
@@ -10,10 +10,11 @@
 [ext_resource type="Theme" uid="uid://kjlm8d0nl88i" path="res://assets/buttons/jarashButton.tres" id="8_m8ofb"]
 [ext_resource type="Theme" uid="uid://cfuajhnmulcqo" path="res://assets/buttons/petraButton.tres" id="9_c1j6a"]
 [ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="10_ebeu6"]
-[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="11_1xlsh"]
+[ext_resource type="PackedScene" path="res://gameManager/moneyDisplay.tscn" id="11_1xlsh"]
 [ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="12_svuwe"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="13_p8obv"]
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="14_bmt8r"]
+[ext_resource type="Texture2D" uid="uid://cvjbrhugi57n4" path="res://assets/GUI/key_big.png" id="15_wd6kq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ocld"]
 texture = ExtResource("3_t2vni")
@@ -9645,7 +9646,7 @@ anchors_preset = 0
 script = ExtResource("1_hphut")
 
 [node name="UiBoardLargeStone" type="Sprite2D" parent="."]
-position = Vector2(565.95, 318.625)
+position = Vector2(576, 320)
 scale = Vector2(1.34855, 1.34855)
 texture = ExtResource("1_5kffc")
 
@@ -9743,6 +9744,25 @@ theme_override_fonts/font = ExtResource("13_p8obv")
 theme_override_font_sizes/font_size = 40
 text = "حسنًا"
 
+[node name="KeyBig" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(818, 106)
+scale = Vector2(1.34375, 1.34375)
+texture = ExtResource("15_wd6kq")
+
+[node name="KeyBig2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(869, 106)
+scale = Vector2(1.3125, 1.3125)
+texture = ExtResource("15_wd6kq")
+
+[node name="KeyBig3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(915.25, 105.75)
+scale = Vector2(1.35937, 1.35937)
+texture = ExtResource("15_wd6kq")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="ajloun" to="." method="_on_ajloun_pressed"]
 [connection signal="pressed" from="jarash" to="." method="_on_jarash_pressed"]
 [connection signal="pressed" from="petra" to="." method="_on_petra_pressed"]

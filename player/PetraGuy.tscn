@@ -47,13 +47,15 @@ animations = [{
 script = ExtResource("1_y5fm7")
 
 [node name="InteractionArea2" parent="." instance=ExtResource("2_v8vl2")]
+position = Vector2(2, -171)
+action_name = "للتحدث"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2"]
-position = Vector2(468.5, 300)
+position = Vector2(-2, 161)
 shape = SubResource("RectangleShape2D_4b7yr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(452, 328)
+position = Vector2(1, 7)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_b31em")
 autoplay = "default"

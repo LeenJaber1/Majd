@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var camera = $Camera2D
 const SPEED = 350
-const JUMP_VELOCITY = -600
+const JUMP_VELOCITY = -550
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
