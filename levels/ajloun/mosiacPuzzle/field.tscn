@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5vmexb4kjnay"]
+
+[ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/field.gd" id="1_el6n5"]
+
+[node name="Field" type="TextureRect"]
+custom_minimum_size = Vector2(116, 93)
+expand_mode = 1
+script = ExtResource("1_el6n5")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.854902, 0.572549, 0, 0.572549)
+show_behind_parent = true
+layout_mode = 0
+offset_right = 116.0
+offset_bottom = 93.0
+mouse_filter = 2
