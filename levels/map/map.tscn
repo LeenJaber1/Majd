@@ -9762,8 +9762,43 @@ position = Vector2(915.25, 105.75)
 scale = Vector2(1.35937, 1.35937)
 texture = ExtResource("15_wd6kq")
 
+[node name="popupMessage2" type="ColorRect" parent="."]
+visible = false
+offset_left = -232.0
+offset_top = -176.0
+offset_right = 1384.0
+offset_bottom = 848.0
+color = Color(0, 0, 0, 0.698039)
+
+[node name="UiBoardSmallParchment" type="Sprite2D" parent="popupMessage2"]
+position = Vector2(776, 496)
+texture = ExtResource("12_svuwe")
+
+[node name="Label" type="Label" parent="popupMessage2/UiBoardSmallParchment"]
+offset_left = -243.0
+offset_top = -56.0
+offset_right = 237.0
+offset_bottom = 4.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 60
+text = "استعمل زر [M] لفتح الخريطة"
+
+[node name="ButtonTutorial" type="Button" parent="popupMessage2"]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 520.0
+offset_right = 874.0
+offset_bottom = 576.0
+theme = ExtResource("14_bmt8r")
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 40
+text = "حسنًا"
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="ajloun" to="." method="_on_ajloun_pressed"]
 [connection signal="pressed" from="jarash" to="." method="_on_jarash_pressed"]
 [connection signal="pressed" from="petra" to="." method="_on_petra_pressed"]
 [connection signal="pressed" from="popupMessage/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="popupMessage2/ButtonTutorial" to="." method="_on_button_tutorial_pressed"]

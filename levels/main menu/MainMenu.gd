@@ -11,13 +11,9 @@ func _on_button_pressed():
 	$CanvasLayer/AudioStreamPlayer2D.play()
 	load_data()
 	
-	
-
-
 func _on_button_3_pressed():
 	#play cut scene
-	get_tree().change_scene_to_file("res://levels/map/map.tscn")
-
+	get_tree().change_scene_to_file("res://levels/tutorial/tutorialScene.tscn")
 
 func load_data():
 	if FileAccess.file_exists(save_path):
@@ -25,9 +21,9 @@ func load_data():
 		GameManager.money = file.get_var()
 		GameManager.scene = file.get_var()
 		GameManager.jarashKey = file.get_var()
-		print(GameManager.jarashKey)
 		GameManager.petraKey = file.get_var()
 		GameManager.ajlounKey = file.get_var()
+		GameManager.isTutorial = file.get_var()
 		get_tree().change_scene_to_file(GameManager.scene)
 	else:
 		popMessage.visible = true

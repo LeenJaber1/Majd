@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://kjr30hrqs65g"]
 
-[ext_resource type="Texture2D" uid="uid://by00xjl8h6bfu" path="res://assets/GUI/jarash_guy.png" id="1_8net3"]
+[ext_resource type="Texture2D" uid="uid://c8lkeecjcpn1y" path="res://assets/GUI/jarash_guy.png" id="1_8net3"]
 [ext_resource type="Script" path="res://player/jarash_guy.gd" id="1_sha8o"]
 [ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="2_bx82n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_15kis"]
-size = Vector2(387, 226)
+size = Vector2(272, 226)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c6jdb"]
 atlas = ExtResource("1_8net3")
@@ -48,15 +48,15 @@ position = Vector2(104, 0)
 script = ExtResource("1_sha8o")
 
 [node name="InteractionArea2" parent="." instance=ExtResource("2_bx82n")]
-position = Vector2(-324, 188)
+position = Vector2(-76, -91)
 action_name = "للتحدث"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2"]
-position = Vector2(-10.5, 3)
+position = Vector2(-38, 82)
 shape = SubResource("RectangleShape2D_15kis")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-329.5, 207.336)
+position = Vector2(-102, 4)
 scale = Vector2(0.405556, 0.413571)
 sprite_frames = SubResource("SpriteFrames_rs4h2")
 autoplay = "default"

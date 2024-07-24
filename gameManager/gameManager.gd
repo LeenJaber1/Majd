@@ -9,6 +9,15 @@ var petraKey  = 0
 var ajlounKey  = 0
 
 var ajlounPuzzleSolved = false
+var isTutorial = 1
+
+var majd_jump = -550
+
+func get_jump():
+	return majd_jump
+
+func set_jump(amount):
+	majd_jump = amount
 
 var money = 0
 

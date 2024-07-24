@@ -29,6 +29,7 @@ func _on_ajloun_pressed():
 	if(GameManager.money < 4):
 		popMessage.visible = true
 	else:
+		GameManager.set_jump(-450)
 		GameManager.sub_money(4)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
@@ -42,6 +43,7 @@ func _on_jarash_pressed():
 	if(GameManager.money < 5):
 		popMessage.visible = true
 	else:
+		GameManager.set_jump(-550)
 		GameManager.sub_money(5)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
@@ -54,6 +56,7 @@ func _on_petra_pressed():
 	if(GameManager.money < 6):
 		popMessage.visible = true
 	else:
+		GameManager.set_jump(-550)
 		GameManager.sub_money(6)
 		await get_tree().create_timer(1.0).timeout
 		money_display.sub_money()
@@ -67,11 +70,16 @@ func _on_button_pressed():
 
 
 func _on_ready():
+	if GameManager.isTutorial:
+		$popupMessage2.visible = true
 	if GameManager.jarashKey:
 		key1.visible = true
 	if GameManager.ajlounKey:
 		key2.visible = true
 	if GameManager.petraKey:
 		key3.visible = true
-		
-		
+
+
+func _on_button_tutorial_pressed():
+	GameManager.isTutorial = false
+	$popupMessage2.visible = false

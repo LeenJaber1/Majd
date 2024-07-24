@@ -9,6 +9,7 @@ func _on_submit_button_button_down():
 			$wrongAudio.play()
 			break
 		if index == 4:
+			GameManager.ajlounPuzzleSolved = true
 			$correctAudio.play()
 			await $correctAudio.finished
 			get_tree().change_scene_to_file("res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.tscn")

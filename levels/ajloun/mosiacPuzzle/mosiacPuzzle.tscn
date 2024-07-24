@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=37 format=3 uid="uid://chs2ty56x04xt"]
 
 [ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
 [ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.gd" id="1_mta42"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="8_rpwx0"]
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="9_hkegd"]
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="10_iruf6"]
+[ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="11_qwq3b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
 atlas = ExtResource("10_iruf6")
@@ -412,8 +413,17 @@ theme_override_fonts/font = ExtResource("8_rpwx0")
 theme_override_font_sizes/font_size = 40
 text = "حسنًا"
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 39.0
+offset_top = 36.0
+offset_right = 87.0
+offset_bottom = 81.0
+scale = Vector2(1.68, 1.64)
+theme = ExtResource("11_qwq3b")
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pieceHaveFallen" from="DeadField" to="." method="_on_dead_field_piece_have_fallen"]
 [connection signal="pieceHaveFallen" from="Grid" to="." method="_on_grid_piece_have_fallen"]
 [connection signal="pressed" from="CanvasLayer/popupWrongMessage/UiBoardSmallParchment/wrongButton" to="." method="_on_wrong_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/popupWinMessage/UiBoardSmallParchment/correctButton" to="." method="_on_correct_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

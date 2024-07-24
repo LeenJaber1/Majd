@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cdtuowriymfau"]
+[gd_scene load_steps=11 format=3 uid="uid://cdtuowriymfau"]
 
 [ext_resource type="Script" path="res://levels/jarash/puzzle_3.gd" id="1_7lpjr"]
 [ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="2_nmnm6"]
@@ -6,8 +6,9 @@
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="4_xu4ni"]
 [ext_resource type="Theme" uid="uid://n02qgwf05c5q" path="res://assets/themes/puzzleLabels.tres" id="5_7ircw"]
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="6_bk3a0"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="7_a2iye"]
 [ext_resource type="AudioStream" uid="uid://b1fyn5ia2feyd" path="res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3" id="7_y11wr"]
-[ext_resource type="AudioStream" uid="uid://b7b36up5vehto" path="res://assets/audio/wrong.mp3" id="8_df3v8"]
+[ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="8_df3v8"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="9_w3lub"]
 
 [node name="puzzle3" type="Node2D"]
@@ -53,11 +54,14 @@ theme_override_constants/minimum_character_width = 2
 alignment = 1
 
 [node name="Button" type="Button" parent="."]
-offset_left = 592.0
-offset_top = 430.0
-offset_right = 676.0
+offset_left = 577.0
+offset_top = 438.0
+offset_right = 707.0
 offset_bottom = 499.0
 theme = ExtResource("6_bk3a0")
+theme_override_fonts/font = ExtResource("7_a2iye")
+theme_override_font_sizes/font_size = 40
+text = "تأكيد"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
 stream = ExtResource("7_y11wr")

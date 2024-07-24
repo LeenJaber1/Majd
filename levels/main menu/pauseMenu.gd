@@ -10,6 +10,9 @@ func resume():
 func pause():
 	paused = true
 	visible = true
+	
+func disable_save():
+	$Button.disabled = true
 
 func input_map():
 	if Input.is_action_just_pressed("esc"):
@@ -27,23 +30,21 @@ func _on_quit_pressed():
 func _on_play_pressed():
 	resume()
 
-
 func _on_button_pressed():
 	var file = FileAccess.open(save_path , FileAccess.WRITE)
+	var scene = GameManager.scene
 	var jarashKey = GameManager.jarashKey
 	var petraKey =  GameManager.petraKey
 	var ajlounKey = GameManager.ajlounKey
-	var money  = GameManager.money
-	var scene = GameManager.scene
+	var money = GameManager.money
+	var isTutorial = GameManager.isTutorial
 	file.store_var(money)
 	file.store_var(scene)
 	file.store_var(jarashKey)
 	file.store_var(petraKey)
 	file.store_var(ajlounKey)
+	file.store_var(isTutorial)
 	popMessage.visible = true
-	
-	
-
 
 func _on_button_2_pressed():
 	popMessage.visible = false

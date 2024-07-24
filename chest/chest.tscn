@@ -46,23 +46,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdli2"]
-size = Vector2(342, 192.5)
+size = Vector2(342, 151.705)
 
 [node name="Chest" type="Node2D"]
 script = ExtResource("1_3st2l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -39)
-scale = Vector2(2.86, 2.86)
+position = Vector2(2, -26)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_rowxq")
 animation = &"closed"
 
 [node name="InteractionArea" parent="." instance=ExtResource("6_6nqjh")]
-position = Vector2(4, -56)
+position = Vector2(5, -36)
+scale = Vector2(1, 0.785714)
 action_name = "لفتح الصندوق"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
-position = Vector2(4, -54)
+position = Vector2(4, -33.6023)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fdli2")
 
 [connection signal="ready" from="." to="." method="_on_ready"]

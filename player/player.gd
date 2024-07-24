@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var camera = $Camera2D
 const SPEED = 350
-const JUMP_VELOCITY = -550
+var JUMP_VELOCITY = -550
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -50,6 +50,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_ready():
+	JUMP_VELOCITY = GameManager.get_jump()
 	if GameManager.isDefault:
 		global_position = GameManager.get_default_player_position()
 	else:

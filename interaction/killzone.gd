@@ -5,10 +5,10 @@ extends Area2D
 
 func _on_body_entered(body):
 	timer.start()
-	if GameManager.money > 6:
+	if GameManager.money > 15:
 		money_display.sub_money()
 	
 func _on_timer_timeout():
-	if GameManager.money > 6:
+	if GameManager.money > 15:
 		GameManager.sub_money(5)
 	get_tree().reload_current_scene()

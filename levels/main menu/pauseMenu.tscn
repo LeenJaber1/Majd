@@ -66,6 +66,7 @@ text = "حفظ اللعبة"
 
 [node name="popupMessage" type="ColorRect" parent="."]
 visible = false
+layout_mode = 0
 offset_left = -232.0
 offset_top = -176.0
 offset_right = 1384.0

@@ -53,6 +53,7 @@ var pictures = [
 var pieces_in_place = 0
 
 func _on_ready():
+	print("here")
 	for piece in pieces:
 		piece.pieceMoved.connect(_on_piece_moved.bind())
 		piece.pieceNotNull.connect(_on_piece_not_null.bind())
@@ -118,4 +119,6 @@ func _on_wrong_button_pressed():
 func _on_correct_button_pressed():
 	$CanvasLayer/popupWrongMessage.visible = false
 	get_tree().change_scene_to_file("res://levels/ajloun/ajloun.tscn")
-	
+
+func _on_button_2_pressed():
+		get_tree().change_scene_to_file("res://levels/ajloun/ajloun.tscn")

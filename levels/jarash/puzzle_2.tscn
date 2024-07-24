@@ -1,13 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://p523guy02n3l"]
+[gd_scene load_steps=11 format=3 uid="uid://p523guy02n3l"]
 
 [ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="1_m6aaf"]
 [ext_resource type="Script" path="res://levels/jarash/puzzle_2.gd" id="1_thkqi"]
 [ext_resource type="Texture2D" uid="uid://dua7lm61f0qg5" path="res://assets/backgrounds/puzzle2.png" id="2_b7pxp"]
-[ext_resource type="AudioStream" uid="uid://b7b36up5vehto" path="res://assets/audio/wrong.mp3" id="2_sd35l"]
+[ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="2_sd35l"]
 [ext_resource type="Theme" uid="uid://n02qgwf05c5q" path="res://assets/themes/puzzleLabels.tres" id="3_en8vj"]
 [ext_resource type="Theme" uid="uid://5vm1k61hgxg8" path="res://assets/themes/new_theme.tres" id="4_d64v5"]
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="6_0gfj8"]
 [ext_resource type="AudioStream" uid="uid://bl2vkhrjyma3k" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (2).mp3" id="7_3cba8"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="8_sjsu4"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="9_opf1f"]
 
 [node name="puzzle2" type="Node2D"]
@@ -28,9 +29,9 @@ scale = Vector2(12.4219, 12.4219)
 texture = ExtResource("2_b7pxp")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-offset_left = 357.0
+offset_left = 335.0
 offset_top = 260.0
-offset_right = 454.0
+offset_right = 432.0
 offset_bottom = 320.0
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer"]
@@ -41,9 +42,9 @@ expand_to_text_length = true
 caret_blink = true
 
 [node name="CenterContainer2" type="CenterContainer" parent="."]
-offset_left = 462.0
+offset_left = 440.0
 offset_top = 261.0
-offset_right = 544.0
+offset_right = 522.0
 offset_bottom = 316.0
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer2"]
@@ -52,9 +53,9 @@ theme = ExtResource("3_en8vj")
 theme_override_constants/minimum_character_width = 1
 
 [node name="CenterContainer3" type="CenterContainer" parent="."]
-offset_left = 542.0
+offset_left = 520.0
 offset_top = 262.0
-offset_right = 686.0
+offset_right = 664.0
 offset_bottom = 316.0
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer3"]
@@ -63,21 +64,21 @@ theme = ExtResource("3_en8vj")
 theme_override_constants/minimum_character_width = 1
 
 [node name="Label" type="Label" parent="."]
-offset_left = 672.0
+offset_left = 650.0
 offset_top = 258.0
-offset_right = 751.0
+offset_right = 783.0
 offset_bottom = 313.0
 theme = ExtResource("4_d64v5")
 theme_override_font_sizes/font_size = 32
-text = "= 27"
+text = "= XXVII"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 435.0
+offset_left = 413.0
 offset_top = 272.0
-offset_right = 475.0
-offset_bottom = 301.0
+offset_right = 453.0
+offset_bottom = 308.0
 theme = ExtResource("4_d64v5")
 theme_override_font_sizes/font_size = 30
 text = "x"
@@ -85,9 +86,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 536.0
+offset_left = 514.0
 offset_top = 265.0
-offset_right = 576.0
+offset_right = 554.0
 offset_bottom = 306.0
 theme = ExtResource("4_d64v5")
 theme_override_font_sizes/font_size = 30
@@ -101,6 +102,15 @@ offset_top = 391.0
 offset_right = 638.0
 offset_bottom = 456.0
 theme = ExtResource("6_0gfj8")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_sjsu4")
+theme_override_font_sizes/font_size = 40
+text = "تأكيد"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
 stream = ExtResource("7_3cba8")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://g3siivm0onrw"]
+[gd_scene load_steps=20 format=3 uid="uid://g3siivm0onrw"]
 
+[ext_resource type="Script" path="res://levels/tutorial/tutorialScene.gd" id="1_g7qad"]
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_urj1g"]
 [ext_resource type="Texture2D" uid="uid://cf5jlapf7f5oq" path="res://assets/tiles/New_ruin_tiles.png" id="2_2vxaa"]
 [ext_resource type="Texture2D" uid="uid://fsbb8ot58mbx" path="res://assets/puzzles/backgroumd.png" id="2_msf2u"]
@@ -16516,6 +16517,7 @@ sources/2 = SubResource("TileSetAtlasSource_subob")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ytf5q"]
 
 [node name="TutorialScene" type="Node2D"]
+script = ExtResource("1_g7qad")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(25, 111)
@@ -16561,7 +16563,8 @@ limit_top = 130
 limit_right = 5380
 limit_bottom = 680
 
-[node name="Killzone" parent="." instance=ExtResource("9_40nkp")]
+[node name="Killzone" parent="." node_paths=PackedStringArray("money_display") instance=ExtResource("9_40nkp")]
+money_display = NodePath("../CanvasLayer/MoneyDisplay")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(780, 838)
