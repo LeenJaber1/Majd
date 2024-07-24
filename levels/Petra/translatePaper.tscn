@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dop1rucetfmkp"]
+
+[ext_resource type="Script" path="res://levels/Petra/translatePaper.gd" id="1_0i5rp"]
+[ext_resource type="Texture2D" uid="uid://c584tr0821k5c" path="res://assets/backgrounds/petra.png" id="1_114y1"]
+[ext_resource type="Texture2D" uid="uid://drqfljxanntqe" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="1_cb84v"]
+[ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="4_pg8ya"]
+
+[node name="TranslatePaper" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0i5rp")
+
+[node name="Petra" type="Sprite2D" parent="."]
+position = Vector2(-328, 327)
+scale = Vector2(0.365462, 0.365462)
+texture = ExtResource("1_114y1")
+
+[node name="KeyCypher" type="Sprite2D" parent="."]
+position = Vector2(566, 315)
+scale = Vector2(0.553009, 0.553009)
+texture = ExtResource("1_cb84v")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 69.0
+offset_right = 357.0
+offset_bottom = 107.0
+scale = Vector2(1.68, 1.64)
+theme = ExtResource("4_pg8ya")
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
