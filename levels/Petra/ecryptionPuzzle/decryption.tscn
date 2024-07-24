@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bvt1kaxe35htg"]
+[gd_scene load_steps=56 format=3 uid="uid://bvt1kaxe35htg"]
 
 [ext_resource type="Script" path="res://levels/Petra/ecryptionPuzzle/decryption.gd" id="1_o5jf7"]
 [ext_resource type="Texture2D" uid="uid://c584tr0821k5c" path="res://assets/backgrounds/petra.png" id="1_wc8jv"]
@@ -25,11 +25,191 @@
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="22_0q7lh"]
 [ext_resource type="AudioStream" uid="uid://cknnuga2y4kbd" path="res://assets/audio/correct.mp3" id="23_arq8c"]
 [ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="24_4mciv"]
+[ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="26_p4b5p"]
+[ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="27_macvm"]
+[ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="28_f3f2v"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="29_d5pkc"]
 
 [sub_resource type="GDScript" id="GDScript_ffmvr"]
 script/source = "extends Control
 
 "
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
+atlas = ExtResource("27_macvm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i4bj"]
+atlas = ExtResource("27_macvm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n65u1"]
+atlas = ExtResource("27_macvm")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dl2w"]
+atlas = ExtResource("27_macvm")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqg6t"]
+atlas = ExtResource("27_macvm")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf5t0"]
+atlas = ExtResource("27_macvm")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtsuf"]
+atlas = ExtResource("27_macvm")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qrb4"]
+atlas = ExtResource("27_macvm")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghgwq"]
+atlas = ExtResource("27_macvm")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtpj3"]
+atlas = ExtResource("27_macvm")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd2ua"]
+atlas = ExtResource("27_macvm")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlkx3"]
+atlas = ExtResource("27_macvm")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpagi"]
+atlas = ExtResource("27_macvm")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6rvn"]
+atlas = ExtResource("27_macvm")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ag5c"]
+atlas = ExtResource("27_macvm")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v62l1"]
+atlas = ExtResource("27_macvm")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbpgo"]
+atlas = ExtResource("27_macvm")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y43n3"]
+atlas = ExtResource("27_macvm")
+region = Rect2(544, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no52j"]
+atlas = ExtResource("27_macvm")
+region = Rect2(576, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus8r"]
+atlas = ExtResource("27_macvm")
+region = Rect2(608, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kih78"]
+atlas = ExtResource("27_macvm")
+region = Rect2(640, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myy3e"]
+atlas = ExtResource("27_macvm")
+region = Rect2(672, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgkjj"]
+atlas = ExtResource("27_macvm")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kut4c"]
+atlas = ExtResource("27_macvm")
+region = Rect2(736, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rnl20"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o3bb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i4bj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n65u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dl2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqg6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf5t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtsuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qrb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghgwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtpj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd2ua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlkx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpagi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6rvn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ag5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v62l1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbpgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y43n3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no52j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kih78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myy3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgkjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kut4c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
 
 [node name="Decryption" type="Node2D"]
 position = Vector2(60, 18)
@@ -89,13 +269,19 @@ scale = Vector2(0.885844, 0.885844)
 texture = ExtResource("3_q10dc")
 
 [node name="7a2" type="LineEdit" parent="Sprites(17)"]
-offset_left = 289.241
-offset_top = -172.659
-offset_right = 356.304
-offset_bottom = -141.659
+offset_left = 283.0
+offset_top = -182.0
+offset_right = 387.0
+offset_bottom = -130.0
 scale = Vector2(0.63422, 1.27765)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 2
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Sprites(17)"]
@@ -107,13 +293,19 @@ scale = Vector2(3.73641, 3.73641)
 texture = ExtResource("4_jvr5y")
 
 [node name="seen" type="LineEdit" parent="Sprites(17)"]
-offset_left = -17.7087
-offset_top = -163.805
-offset_right = 49.3538
-offset_bottom = -132.805
+offset_left = -25.2462
+offset_top = -173.918
+offset_right = 78.7538
+offset_bottom = -129.918
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="Sprites(17)"]
@@ -125,13 +317,19 @@ scale = Vector2(3.6329, 3.78788)
 texture = ExtResource("6_uve3g")
 
 [node name="qaf" type="LineEdit" parent="Sprites(17)"]
-offset_left = -341.911
-offset_top = -160.957
-offset_right = -274.848
-offset_bottom = -129.957
+offset_left = -354.849
+offset_top = -169.71
+offset_right = -269.849
+offset_bottom = -130.71
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="Sprites(17)"]
@@ -143,13 +341,19 @@ scale = Vector2(2.93263, 3.05773)
 texture = ExtResource("7_w3p4s")
 
 [node name="ta2" type="LineEdit" parent="Sprites(17)"]
-offset_left = -302.998
-offset_top = -160.957
-offset_right = -235.935
-offset_bottom = -129.957
+offset_left = -309.967
+offset_top = -169.71
+offset_right = -229.967
+offset_bottom = -130.71
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect4" type="NinePatchRect" parent="Sprites(17)"]
@@ -161,31 +365,43 @@ scale = Vector2(2.96641, 3.09296)
 texture = ExtResource("8_8muf6")
 
 [node name="sheen" type="LineEdit" parent="Sprites(17)"]
-offset_left = 97.3974
-offset_top = -53.1259
-offset_right = 164.46
-offset_bottom = -22.1259
+offset_left = 97.0
+offset_top = -67.0
+offset_right = 189.0
+offset_bottom = -23.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect5" type="NinePatchRect" parent="Sprites(17)"]
-offset_left = 74.0565
-offset_top = -142.172
-offset_right = 114.057
-offset_bottom = -102.172
+offset_left = 78.5434
+offset_top = -148.671
+offset_right = 118.544
+offset_bottom = -108.671
 scale = Vector2(2.52979, 2.63772)
 texture = ExtResource("9_dpqmw")
 
 [node name="seen2" type="LineEdit" parent="Sprites(17)"]
-offset_left = 13.2813
-offset_top = -54.6016
-offset_right = 80.3438
-offset_bottom = -23.6016
+offset_left = 2.80505
+offset_top = -70.1278
+offset_right = 104.805
+offset_bottom = -24.1278
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect6" type="NinePatchRect" parent="Sprites(17)"]
@@ -197,13 +413,19 @@ scale = Vector2(3.19593, 3.33227)
 texture = ExtResource("6_uve3g")
 
 [node name="7a22" type="LineEdit" parent="Sprites(17)"]
-offset_left = -126.912
-offset_top = -53.1259
-offset_right = -59.8497
-offset_bottom = -22.1259
+offset_left = -136.049
+offset_top = -64.5176
+offset_right = -42.0487
+offset_bottom = -20.5176
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect7" type="NinePatchRect" parent="Sprites(17)"]
@@ -215,13 +437,19 @@ scale = Vector2(3.6329, 3.78788)
 texture = ExtResource("4_jvr5y")
 
 [node name="jeem" type="LineEdit" parent="Sprites(17)"]
-offset_left = -174.135
-offset_top = -54.6016
-offset_right = -107.073
-offset_bottom = -23.6016
+offset_left = -179.528
+offset_top = -65.9202
+offset_right = -93.5282
+offset_bottom = -24.9202
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect8" type="NinePatchRect" parent="Sprites(17)"]
@@ -233,13 +461,19 @@ scale = Vector2(2.99659, 3.12442)
 texture = ExtResource("10_bvbwa")
 
 [node name="ba2" type="LineEdit" parent="Sprites(17)"]
-offset_left = 331.688
-offset_top = 36.2919
-offset_right = 398.751
-offset_bottom = 67.2919
+offset_left = 321.187
+offset_top = 29.4541
+offset_right = 414.187
+offset_bottom = 69.4541
 scale = Vector2(0.581394, 1.17123)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect9" type="NinePatchRect" parent="Sprites(17)"]
@@ -251,13 +485,19 @@ scale = Vector2(2.93209, 3.05718)
 texture = ExtResource("11_kwiej")
 
 [node name="lam" type="LineEdit" parent="Sprites(17)"]
-offset_left = 66.4072
-offset_top = 41.3203
-offset_right = 133.47
-offset_bottom = 72.3203
+offset_left = 60.3101
+offset_top = 32.2593
+offset_right = 147.31
+offset_bottom = 73.2593
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect10" type="NinePatchRect" parent="Sprites(17)"]
@@ -269,14 +509,19 @@ scale = Vector2(1.87307, 1.95298)
 texture = ExtResource("12_reg4i")
 
 [node name="ra2" type="LineEdit" parent="Sprites(17)"]
-offset_left = 0.25584
-offset_top = 40.3174
-offset_right = 67.3183
-offset_bottom = 71.3174
+offset_top = 32.0
+offset_right = 80.0
+offset_bottom = 70.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
 expand_to_text_length = true
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect11" type="NinePatchRect" parent="Sprites(17)"]
@@ -288,13 +533,19 @@ scale = Vector2(2.00951, 2.09524)
 texture = ExtResource("13_c0t0y")
 
 [node name="fa2" type="LineEdit" parent="Sprites(17)"]
-offset_left = -38.6573
-offset_top = 40.3174
-offset_right = 28.4052
-offset_bottom = 71.3174
+offset_left = -42.0
+offset_top = 34.0
+offset_right = 38.0
+offset_bottom = 71.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect12" type="NinePatchRect" parent="Sprites(17)"]
@@ -306,13 +557,19 @@ scale = Vector2(2.18174, 2.27481)
 texture = ExtResource("14_8l640")
 
 [node name="meem" type="LineEdit" parent="Sprites(17)"]
-offset_left = -180.891
-offset_top = 48.3684
-offset_right = -113.829
-offset_bottom = 79.3683
+offset_left = -194.0
+offset_top = 38.0
+offset_right = -103.0
+offset_bottom = 80.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect13" type="NinePatchRect" parent="Sprites(17)"]
@@ -324,13 +581,19 @@ scale = Vector2(2.50776, 2.61474)
 texture = ExtResource("15_51wxi")
 
 [node name="fa22" type="LineEdit" parent="Sprites(17)"]
-offset_left = -277.436
-offset_top = 47.2231
-offset_right = -210.373
-offset_bottom = 78.2231
+offset_left = -280.513
+offset_top = 33.6618
+offset_right = -177.513
+offset_bottom = 80.6618
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect14" type="NinePatchRect" parent="Sprites(17)"]
@@ -342,13 +605,19 @@ scale = Vector2(1.87769, 1.95779)
 texture = ExtResource("14_8l640")
 
 [node name="ya2" type="LineEdit" parent="Sprites(17)"]
-offset_left = -333.513
-offset_top = 50.1746
-offset_right = -266.451
-offset_bottom = 81.1746
+offset_left = -349.0
+offset_top = 38.0
+offset_right = -243.0
+offset_bottom = 89.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect15" type="NinePatchRect" parent="Sprites(17)"]
@@ -360,13 +629,19 @@ scale = Vector2(2.26328, 2.35983)
 texture = ExtResource("16_bbbsq")
 
 [node name="ya22" type="LineEdit" parent="Sprites(17)"]
-offset_left = 160.853
-offset_top = 143.145
-offset_right = 227.916
-offset_bottom = 174.145
+offset_left = 154.282
+offset_top = 143.062
+offset_right = 251.282
+offset_bottom = 188.062
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect16" type="NinePatchRect" parent="Sprites(17)"]
@@ -378,13 +653,19 @@ scale = Vector2(2.27424, 2.37126)
 texture = ExtResource("16_bbbsq")
 
 [node name="ha2" type="LineEdit" parent="Sprites(17)"]
-offset_left = -16.2331
-offset_top = 147.572
-offset_right = 50.8294
-offset_bottom = 178.572
+offset_left = -22.4411
+offset_top = 144.464
+offset_right = 69.5589
+offset_bottom = 186.464
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect17" type="NinePatchRect" parent="Sprites(17)"]
@@ -396,13 +677,19 @@ scale = Vector2(3.06753, 3.19839)
 texture = ExtResource("17_ixm5u")
 
 [node name="kaf" type="LineEdit" parent="Sprites(17)"]
-offset_left = -156.427
-offset_top = 156.426
-offset_right = -89.3641
-offset_bottom = 187.426
+offset_left = -168.308
+offset_top = 150.075
+offset_right = -74.3076
+offset_bottom = 196.075
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect18" type="NinePatchRect" parent="Sprites(17)"]
@@ -414,13 +701,19 @@ scale = Vector2(2.62707, 2.73914)
 texture = ExtResource("18_r4nwe")
 
 [node name="noon" type="LineEdit" parent="Sprites(17)"]
-offset_left = -211.003
-offset_top = 157.894
-offset_right = -143.941
-offset_bottom = 188.894
+offset_left = -220.203
+offset_top = 155.685
+offset_right = -126.203
+offset_bottom = 199.685
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect19" type="NinePatchRect" parent="Sprites(17)"]
@@ -432,13 +725,19 @@ scale = Vector2(2.93817, 3.06351)
 texture = ExtResource("19_egeh3")
 
 [node name="zain" type="LineEdit" parent="Sprites(17)"]
-offset_left = -262.678
-offset_top = 160.854
-offset_right = -195.616
-offset_bottom = 191.854
+offset_left = -276.0
+offset_top = 157.0
+offset_right = -177.0
+offset_bottom = 202.0
 scale = Vector2(0.542311, 1.0925)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
 alignment = 1
 max_length = 1
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 script = SubResource("GDScript_ffmvr")
 
 [node name="NinePatchRect20" type="NinePatchRect" parent="Sprites(17)"]
@@ -449,5 +748,53 @@ offset_bottom = 113.863
 scale = Vector2(2.49017, 2.5964)
 texture = ExtResource("20_0h4yq")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="popupWinMessage" type="ColorRect" parent="CanvasLayer"]
+offset_left = -198.0
+offset_top = -176.0
+offset_right = 1418.0
+offset_bottom = 848.0
+color = Color(0, 0, 0, 0.698039)
+
+[node name="UiBoardSmallParchment" type="Sprite2D" parent="CanvasLayer/popupWinMessage"]
+position = Vector2(776, 496)
+texture = ExtResource("26_p4b5p")
+
+[node name="key" type="AnimatedSprite2D" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+position = Vector2(-229, -24)
+scale = Vector2(1.875, 2)
+sprite_frames = SubResource("SpriteFrames_rnl20")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+offset_left = -195.0
+offset_top = -54.0
+offset_right = 284.0
+offset_bottom = 6.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 60
+text = "لقد عثرت على مفتاح البتراء"
+horizontal_alignment = 1
+
+[node name="correctButton" type="Button" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+offset_left = -104.0
+offset_top = 32.0
+offset_right = 104.0
+offset_bottom = 88.0
+theme = ExtResource("28_f3f2v")
+theme_override_fonts/font = ExtResource("22_0q7lh")
+theme_override_font_sizes/font_size = 40
+text = "حسنًا"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_d5pkc")
+volume_db = -22.533
+autoplay = true
+
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="submitButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/popupWinMessage/UiBoardSmallParchment/correctButton" to="." method="_on_button_2_pressed"]

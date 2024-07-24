@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://g3siivm0onrw"]
+[gd_scene load_steps=23 format=3 uid="uid://g3siivm0onrw"]
 
 [ext_resource type="Script" path="res://levels/tutorial/tutorialScene.gd" id="1_g7qad"]
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_urj1g"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://covtd44xvr156" path="res://levels/main menu/pauseMenu.tscn" id="13_85ylj"]
 [ext_resource type="Texture2D" uid="uid://dmy0as1n7tyfn" path="res://levels/tutorial/25.png" id="15_i7hvw"]
 [ext_resource type="Texture2D" uid="uid://cxj1m3c7pb2kg" path="res://levels/tutorial/26.png" id="16_fp168"]
+[ext_resource type="AudioStream" uid="uid://ot7m74ebrds4" path="res://assets/audio/Wild Life In The Forest Sounds.mp3" id="17_gmq2f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8onqu"]
 texture = ExtResource("1_urj1g")
@@ -16603,5 +16604,10 @@ texture = ExtResource("16_fp168")
 position = Vector2(5259, 384)
 scale = Vector2(0.126469, 0.126469)
 texture = ExtResource("8_iuxjw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_gmq2f")
+volume_db = -19.136
+autoplay = true
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]

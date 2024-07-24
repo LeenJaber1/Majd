@@ -12,6 +12,7 @@ func _on_button_pressed():
 		if index == 19:
 			$rightAns.play()
 			GameManager.petraKey = true
+			$CanvasLayer.visible = true
 			await $rightAns.finished
 
 func _on_button_2_pressed():

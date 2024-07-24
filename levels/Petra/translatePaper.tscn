@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dop1rucetfmkp"]
+[gd_scene load_steps=6 format=3 uid="uid://dop1rucetfmkp"]
 
 [ext_resource type="Script" path="res://levels/Petra/translatePaper.gd" id="1_0i5rp"]
 [ext_resource type="Texture2D" uid="uid://c584tr0821k5c" path="res://assets/backgrounds/petra.png" id="1_114y1"]
 [ext_resource type="Texture2D" uid="uid://drqfljxanntqe" path="res://assets/puzzles/petraPuzzleAssets/keyCypher.png" id="1_cb84v"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="4_pg8ya"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="5_w0x8p"]
 
 [node name="TranslatePaper" type="Control"]
 layout_mode = 3
@@ -32,5 +33,10 @@ offset_right = 357.0
 offset_bottom = 107.0
 scale = Vector2(1.68, 1.64)
 theme = ExtResource("4_pg8ya")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_w0x8p")
+volume_db = -22.533
+autoplay = true
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

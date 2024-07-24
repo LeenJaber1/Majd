@@ -18,14 +18,12 @@ func _process(delta):
 func add_money():
 	label.add_theme_color_override("font_color", Color.FOREST_GREEN)
 	label.text = str(money)
-	$correctAudio.play()
-	await $correctAudio.finished
 	label.add_theme_color_override("font_color", Color.WHITE)
 	
 func sub_money():
 	label.add_theme_color_override("font_color", Color.DARK_RED)
 	label.text = str(money)
-	$correctAudio.play()
-	await $correctAudio.finished
+	$losingMoneyAudio.play()
+	await $losingMoneyAudio.finished
 	label.add_theme_color_override("font_color", Color.WHITE)
 	

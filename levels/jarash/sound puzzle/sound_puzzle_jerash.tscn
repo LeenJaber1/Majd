@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://b5x5pfg3hjv0o"]
+[gd_scene load_steps=48 format=3 uid="uid://b5x5pfg3hjv0o"]
 
 [ext_resource type="Script" path="res://levels/jarash/sound puzzle/sound_puzzle_jerash.gd" id="1_pcpi3"]
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="2_55o0s"]
@@ -20,6 +20,7 @@
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="16_wpmpb"]
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="18_ku5me"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="19_l2i3o"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="21_ct1yr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yu001"]
 animations = [{
@@ -348,6 +349,11 @@ offset_top = 25.0
 offset_right = 1126.0
 offset_bottom = 73.0
 theme = ExtResource("19_l2i3o")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_ct1yr")
+volume_db = -22.533
+autoplay = true
 
 [connection signal="toggled" from="button1" to="." method="_on_button_1_toggled"]
 [connection signal="toggled" from="button2" to="." method="_on2__toggled"]

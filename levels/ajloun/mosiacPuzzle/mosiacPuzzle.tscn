@@ -1,8 +1,8 @@
-[gd_scene load_steps=37 format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=38 format=3 uid="uid://chs2ty56x04xt"]
 
-[ext_resource type="Texture2D" uid="uid://bj8uplkllfg6u" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
+[ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
 [ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.gd" id="1_mta42"]
-[ext_resource type="Texture2D" uid="uid://c65roahmg11fb" path="res://assets/puzzles/grid.png" id="2_15ois"]
+[ext_resource type="Texture2D" uid="uid://bnpd4irhrh0ff" path="res://assets/puzzles/grid.png" id="2_15ois"]
 [ext_resource type="PackedScene" uid="uid://b5vmexb4kjnay" path="res://levels/ajloun/mosiacPuzzle/field.tscn" id="3_4f16p"]
 [ext_resource type="PackedScene" uid="uid://plpw403lfiii" path="res://levels/ajloun/mosiacPuzzle/deadField.tscn" id="3_u13mn"]
 [ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="7_c1crm"]
@@ -11,6 +11,7 @@
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="9_hkegd"]
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="10_iruf6"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="11_qwq3b"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="12_v1tma"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
 atlas = ExtResource("10_iruf6")
@@ -420,6 +421,11 @@ offset_right = 87.0
 offset_bottom = 81.0
 scale = Vector2(1.68, 1.64)
 theme = ExtResource("11_qwq3b")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_v1tma")
+volume_db = -22.533
+autoplay = true
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pieceHaveFallen" from="DeadField" to="." method="_on_dead_field_piece_have_fallen"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cekmymrg0l56b"]
+[gd_scene load_steps=29 format=3 uid="uid://cekmymrg0l56b"]
 
 [ext_resource type="Script" path="res://levels/Petra/mainPetra.gd" id="1_f0dm3"]
 [ext_resource type="Texture2D" uid="uid://dcooc2t0ke5wd" path="res://assets/tiles/petra.png" id="2_n0qc1"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="13_cnrtq"]
 [ext_resource type="PackedScene" uid="uid://b52e8g2isx7ec" path="res://levels/Petra/petra_gate.tscn" id="13_r3go6"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="16_dnssn"]
+[ext_resource type="AudioStream" uid="uid://cy4hvtfrtlxrv" path="res://assets/audio/[HQ Sound effect] Desert ambience (wind over sand).mp3" id="17_csfny"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_myqlt"]
 load_path = "res://.godot/imported/petra.png-d9d1ef0e21cbae8dea6ca758c55a9327.ctex"
@@ -24269,6 +24270,13 @@ limit_left = 0
 limit_top = 0
 limit_right = 4360
 limit_bottom = 640
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="majd/Camera2D"]
+position = Vector2(-233.987, -273.691)
+scale = Vector2(0.731208, 0.727903)
+stream = ExtResource("17_csfny")
+volume_db = -6.5
+autoplay = true
 
 [node name="PetraGuy" parent="." instance=ExtResource("7_44f22")]
 position = Vector2(2664, 400)

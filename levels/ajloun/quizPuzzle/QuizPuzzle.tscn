@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bie3kry7sepfd"]
+[gd_scene load_steps=7 format=3 uid="uid://bie3kry7sepfd"]
 
 [ext_resource type="Texture2D" uid="uid://cg8ejbo38eykp" path="res://assets/puzzles/empty-ancient-paper (4).png" id="1_n3uhg"]
 [ext_resource type="Script" path="res://levels/ajloun/quizPuzzle/QuizPuzzle.gd" id="1_yijtb"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_7cwse"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="3_ele36"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="4_o1ofg"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="6_kbf23"]
 
 [node name="QuizPuzzle" type="Node2D"]
 script = ExtResource("1_yijtb")
@@ -60,5 +61,10 @@ offset_right = 234.0
 offset_bottom = 55.0
 scale = Vector2(1.68, 1.64)
 theme = ExtResource("4_o1ofg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_kbf23")
+volume_db = -22.533
+autoplay = true
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

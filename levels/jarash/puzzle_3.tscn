@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cdtuowriymfau"]
+[gd_scene load_steps=12 format=3 uid="uid://cdtuowriymfau"]
 
 [ext_resource type="Script" path="res://levels/jarash/puzzle_3.gd" id="1_7lpjr"]
 [ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="2_nmnm6"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://b1fyn5ia2feyd" path="res://levels/jarash/sound puzzle/sounds/Arabic OUD SOLO (Taqsim) Studio Recording by Hesham Hamra (4k) (mp3cut.net).mp3" id="7_y11wr"]
 [ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="8_df3v8"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="9_w3lub"]
+[ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="11_n42ki"]
 
 [node name="puzzle3" type="Node2D"]
 script = ExtResource("1_7lpjr")
@@ -75,6 +76,11 @@ offset_top = 28.0
 offset_right = 1120.0
 offset_bottom = 66.0
 theme = ExtResource("9_w3lub")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_n42ki")
+volume_db = -22.533
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dpyxp1q3ofb5b"]
+[gd_scene load_steps=11 format=3 uid="uid://dpyxp1q3ofb5b"]
 
 [ext_resource type="Script" path="res://chest/chest.gd" id="1_3st2l"]
-[ext_resource type="Texture2D" uid="uid://d2v8tfekeaqbi" path="res://assets/GUI/Animated Chests/spriteSheetChest.png" id="2_1wgkf"]
+[ext_resource type="Texture2D" uid="uid://brymrxh5v88g2" path="res://assets/GUI/Animated Chests/spriteSheetChest.png" id="2_1wgkf"]
+[ext_resource type="AudioStream" uid="uid://btgd7thowpfsj" path="res://assets/audio/Treasure Chest Sound Effect.mp3" id="4_1xmhv"]
 [ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="6_6nqjh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qaxcf"]
@@ -64,7 +65,10 @@ action_name = "لفتح الصندوق"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 position = Vector2(30.5, -33.6023)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fdli2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1xmhv")
+volume_db = -20.955
 
 [connection signal="ready" from="." to="." method="_on_ready"]

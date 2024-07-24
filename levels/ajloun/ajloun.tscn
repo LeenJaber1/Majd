@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://7knw5c7i4541"]
+[gd_scene load_steps=32 format=3 uid="uid://7knw5c7i4541"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_2ih15"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_tsqbp"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://covtd44xvr156" path="res://levels/main menu/pauseMenu.tscn" id="9_o278s"]
 [ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="10_bawg8"]
 [ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="10_wpnlx"]
+[ext_resource type="AudioStream" uid="uid://ot7m74ebrds4" path="res://assets/audio/Wild Life In The Forest Sounds.mp3" id="13_1o6gm"]
 
 [sub_resource type="GDScript" id="GDScript_1n713"]
 
@@ -6696,6 +6697,12 @@ zoom = Vector2(1.5, 1.5)
 limit_top = 100
 limit_bottom = 1000
 script = SubResource("GDScript_xi5oo")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Player/Camera2D"]
+position = Vector2(-309, -399)
+stream = ExtResource("13_1o6gm")
+volume_db = -9.75
+autoplay = true
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1

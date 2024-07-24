@@ -3,6 +3,9 @@ extends CharacterBody2D
 @onready var camera = $Camera2D
 const SPEED = 350
 var JUMP_VELOCITY = -550
+@onready var walk_audio = $walkAudio
+@onready var jump_audio = $AudioStreamPlayer2D
+@onready var audioTimer = $Timer
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -18,6 +21,7 @@ func _physics_process(delta):
 	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		jump_audio.play()
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction: -1, 0, 1
@@ -34,6 +38,10 @@ func _physics_process(delta):
 		if direction == 0:
 			animated_sprite.play("idle")
 		else:
+			if audioTimer.time_left <= 0:
+				walk_audio.pitch_scale = randf_range(0.8, 1.2)
+				walk_audio.play()
+				audioTimer.start(0.3)
 			animated_sprite.play("walk")
 	else:
 		if velocity.y < 0:
