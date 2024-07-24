@@ -6689,8 +6689,8 @@ texture_filter = 1
 position = Vector2(309, 399)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-offset = Vector2(0, -60)
 zoom = Vector2(1.5, 1.5)
+limit_top = 100
 limit_bottom = 1000
 script = SubResource("GDScript_xi5oo")
 

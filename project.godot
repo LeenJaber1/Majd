@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="leenFirstGame"
-run/main_scene="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.tscn"
+config/name="majd"
+run/main_scene="res://levels/ajloun/ajloun.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon/مَجد (256 x 256 px) (2).svg"
 
