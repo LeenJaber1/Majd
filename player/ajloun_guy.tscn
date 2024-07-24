@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bnsm05bcpe4no" path="res://assets/GUI/ajloun_guy.png" id="3_wg25v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l87af"]
-size = Vector2(235, 143.5)
+size = Vector2(290, 190.75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e6lwe"]
 atlas = ExtResource("3_wg25v")
@@ -33,14 +33,16 @@ animations = [{
 script = ExtResource("1_43m6t")
 
 [node name="InteractionArea2" parent="." instance=ExtResource("2_binym")]
+position = Vector2(-1, -89)
+action_name = "للتحدث"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2"]
-position = Vector2(318, 292)
+position = Vector2(2, 89)
 shape = SubResource("RectangleShape2D_l87af")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(313, 313)
+position = Vector2(-2, 0)
 scale = Vector2(0.258333, 0.258333)
 sprite_frames = SubResource("SpriteFrames_5oesv")
 autoplay = "default"
-frame_progress = 0.195064
+frame_progress = 0.734864

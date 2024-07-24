@@ -6,7 +6,7 @@
 [ext_resource type="Theme" uid="uid://n02qgwf05c5q" path="res://assets/themes/puzzleLabels.tres" id="3_ht6af"]
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="5_8jism"]
 [ext_resource type="AudioStream" uid="uid://c18tdpruqrxu2" path="res://levels/jarash/sound puzzle/sounds/harmonica (mp3cut.net) (1).mp3" id="6_egfd4"]
-[ext_resource type="AudioStream" uid="uid://e1a0ehhb0043" path="res://assets/gui sounds/Mac Trash Delete (Apple Sound) - Sound Effect for editing (mp3cut.net).mp3" id="7_u4kjq"]
+[ext_resource type="AudioStream" uid="uid://b7b36up5vehto" path="res://assets/audio/wrong.mp3" id="7_h55e5"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="8_cfc1k"]
 
 [node name="puzzle1" type="Node2D"]
@@ -53,7 +53,7 @@ theme = ExtResource("5_8jism")
 stream = ExtResource("6_egfd4")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_u4kjq")
+stream = ExtResource("7_h55e5")
 
 [node name="Button2" type="Button" parent="."]
 offset_left = 1086.0
