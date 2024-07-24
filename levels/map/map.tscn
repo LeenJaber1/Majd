@@ -9764,6 +9764,7 @@ texture = ExtResource("15_wd6kq")
 
 [node name="popupMessage2" type="ColorRect" parent="."]
 visible = false
+layout_mode = 0
 offset_left = -232.0
 offset_top = -176.0
 offset_right = 1384.0
