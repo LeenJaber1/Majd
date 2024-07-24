@@ -64,7 +64,6 @@ action_name = "لفتح الصندوق"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 position = Vector2(4, -33.6023)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fdli2")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
