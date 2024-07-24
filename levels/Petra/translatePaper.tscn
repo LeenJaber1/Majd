@@ -25,6 +25,7 @@ scale = Vector2(0.553009, 0.553009)
 texture = ExtResource("1_cb84v")
 
 [node name="Button2" type="Button" parent="."]
+layout_mode = 0
 offset_left = 309.0
 offset_top = 69.0
 offset_right = 357.0
