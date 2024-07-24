@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://b5x5pfg3hjv0o"]
+[gd_scene load_steps=47 format=3 uid="uid://b5x5pfg3hjv0o"]
 
 [ext_resource type="Script" path="res://levels/jarash/sound puzzle/sound_puzzle_jerash.gd" id="1_pcpi3"]
 [ext_resource type="Theme" uid="uid://blw1itshrxt2g" path="res://assets/buttons/button.tres" id="2_55o0s"]
@@ -17,6 +17,7 @@
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="13_utril"]
 [ext_resource type="AudioStream" uid="uid://x4wvn8yipcvh" path="res://assets/gui sounds/Treasure Chest Sound Effect (mp3cut.net).mp3" id="14_as8lv"]
 [ext_resource type="AudioStream" uid="uid://cx18rmau27s5x" path="res://assets/gui sounds/Unlock  Open  Close Chest Sound Effect (mp3cut.net).mp3" id="15_7kefj"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="16_wpmpb"]
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="18_ku5me"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="19_l2i3o"]
 
@@ -323,6 +324,10 @@ offset_top = 456.0
 offset_right = 658.0
 offset_bottom = 536.0
 theme = ExtResource("13_utril")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("16_wpmpb")
+theme_override_font_sizes/font_size = 30
+text = "للتأكيد"
 
 [node name="opening" type="AudioStreamPlayer2D" parent="submit"]
 stream = ExtResource("14_as8lv")

@@ -59,6 +59,7 @@ func _on_submit_pressed():
 		$"submit/opening".play()
 		key.visible = true
 		key.play("default")
+		GameManager.jarashKey = true
 		
 		#then go back to scene and add key
 	else:

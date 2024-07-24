@@ -62,8 +62,7 @@ func check_letter(letter1, letter2=null, points=1):
 	  else:
 		  return 0  # No points for mismatched duplicates
   else:
-	  if letter1.text:
-		  return points
-	  else:
+	if letter1.text:
+		return points
+	else:
 		  return 0
-

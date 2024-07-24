@@ -2,28 +2,28 @@
 
 [ext_resource type="Texture2D" uid="uid://c584tr0821k5c" path="res://assets/backgrounds/petra.png" id="1_wc8jv"]
 [ext_resource type="Texture2D" uid="uid://cg8ejbo38eykp" path="res://assets/puzzles/empty-ancient-paper (4).png" id="2_daiyn"]
-[ext_resource type="Texture2D" uid="uid://cuomj3qmau7mx" path="res://assets/puzzles/petraPuzzleAssets/sprites (17).png" id="3_q10dc"]
-[ext_resource type="Texture2D" uid="uid://jcrnlmws010n" path="res://assets/puzzles/petraPuzzleAssets/ح/27.png" id="4_jvr5y"]
-[ext_resource type="Texture2D" uid="uid://c076kbr71bsb2" path="res://assets/puzzles/petraPuzzleAssets/ح/26.png" id="6_uve3g"]
-[ext_resource type="Texture2D" uid="uid://2dt1olw0vw6h" path="res://assets/puzzles/petraPuzzleAssets/ح/24.png" id="7_w3p4s"]
-[ext_resource type="Texture2D" uid="uid://1neffdy247rj" path="res://assets/puzzles/petraPuzzleAssets/ح/25.png" id="8_8muf6"]
-[ext_resource type="Texture2D" uid="uid://cohgfxiuaghqr" path="res://assets/puzzles/petraPuzzleAssets/ح/22.png" id="9_dpqmw"]
-[ext_resource type="Texture2D" uid="uid://bnli2hrta8iag" path="res://assets/puzzles/petraPuzzleAssets/ح/23.png" id="10_bvbwa"]
-[ext_resource type="Texture2D" uid="uid://dcr5h772uvu51" path="res://assets/puzzles/petraPuzzleAssets/ح/21.png" id="11_kwiej"]
-[ext_resource type="Texture2D" uid="uid://bospqmkebylht" path="res://assets/puzzles/petraPuzzleAssets/ح/20.png" id="12_reg4i"]
-[ext_resource type="Texture2D" uid="uid://cthi5ymlw41jw" path="res://assets/puzzles/petraPuzzleAssets/ح/19.png" id="13_c0t0y"]
-[ext_resource type="Texture2D" uid="uid://ba4htxwxa6u5h" path="res://assets/puzzles/petraPuzzleAssets/ح/18.png" id="14_8l640"]
-[ext_resource type="Texture2D" uid="uid://cjj123n7wl2va" path="res://assets/puzzles/petraPuzzleAssets/ح/17.png" id="15_51wxi"]
-[ext_resource type="Texture2D" uid="uid://b8gqmjsqqlfml" path="res://assets/puzzles/petraPuzzleAssets/ح/16.png" id="16_bbbsq"]
-[ext_resource type="Texture2D" uid="uid://bsjhdmdcujwuk" path="res://assets/puzzles/petraPuzzleAssets/ح/15.png" id="17_ixm5u"]
-[ext_resource type="Texture2D" uid="uid://dptllbuq62fyg" path="res://assets/puzzles/petraPuzzleAssets/ح/14.png" id="18_r4nwe"]
-[ext_resource type="Texture2D" uid="uid://d2hgccfr6mo1y" path="res://assets/puzzles/petraPuzzleAssets/ح/13.png" id="19_egeh3"]
-[ext_resource type="Texture2D" uid="uid://dm8hybh1audyb" path="res://assets/puzzles/petraPuzzleAssets/ح/12.png" id="20_0h4yq"]
+[ext_resource type="Texture2D" uid="uid://bnlgblo4hwg7b" path="res://assets/puzzles/petraPuzzleAssets/sprites (17).png" id="3_q10dc"]
+[ext_resource type="Texture2D" uid="uid://vpkj88120euw" path="res://assets/puzzles/petraPuzzleAssets/ح/27.png" id="4_jvr5y"]
+[ext_resource type="Texture2D" uid="uid://crj0250aeb5du" path="res://assets/puzzles/petraPuzzleAssets/ح/26.png" id="6_uve3g"]
+[ext_resource type="Texture2D" uid="uid://cb1hvi14kkfb5" path="res://assets/puzzles/petraPuzzleAssets/ح/24.png" id="7_w3p4s"]
+[ext_resource type="Texture2D" uid="uid://dg2rdua4mf8mh" path="res://assets/puzzles/petraPuzzleAssets/ح/25.png" id="8_8muf6"]
+[ext_resource type="Texture2D" uid="uid://dadnsfuwj1ab2" path="res://assets/puzzles/petraPuzzleAssets/ح/22.png" id="9_dpqmw"]
+[ext_resource type="Texture2D" uid="uid://nocxuudb51k0" path="res://assets/puzzles/petraPuzzleAssets/ح/23.png" id="10_bvbwa"]
+[ext_resource type="Texture2D" uid="uid://bo7xnd3g4n658" path="res://assets/puzzles/petraPuzzleAssets/ح/21.png" id="11_kwiej"]
+[ext_resource type="Texture2D" uid="uid://cpc5wkacbbua5" path="res://assets/puzzles/petraPuzzleAssets/ح/20.png" id="12_reg4i"]
+[ext_resource type="Texture2D" uid="uid://6vdkxl8ilydc" path="res://assets/puzzles/petraPuzzleAssets/ح/19.png" id="13_c0t0y"]
+[ext_resource type="Texture2D" uid="uid://b5a5t5aeomsau" path="res://assets/puzzles/petraPuzzleAssets/ح/18.png" id="14_8l640"]
+[ext_resource type="Texture2D" uid="uid://800d24e7xgwj" path="res://assets/puzzles/petraPuzzleAssets/ح/17.png" id="15_51wxi"]
+[ext_resource type="Texture2D" uid="uid://bpi6hrurv5f5x" path="res://assets/puzzles/petraPuzzleAssets/ح/16.png" id="16_bbbsq"]
+[ext_resource type="Texture2D" uid="uid://dsp00a7v0aqna" path="res://assets/puzzles/petraPuzzleAssets/ح/15.png" id="17_ixm5u"]
+[ext_resource type="Texture2D" uid="uid://cye70o284pkcf" path="res://assets/puzzles/petraPuzzleAssets/ح/14.png" id="18_r4nwe"]
+[ext_resource type="Texture2D" uid="uid://dmug1oi4fb6fj" path="res://assets/puzzles/petraPuzzleAssets/ح/13.png" id="19_egeh3"]
+[ext_resource type="Texture2D" uid="uid://doauvm6rd3k0o" path="res://assets/puzzles/petraPuzzleAssets/ح/12.png" id="20_0h4yq"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="20_tme8c"]
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="21_n7rg2"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="22_0q7lh"]
-[ext_resource type="AudioStream" uid="uid://bmo32qhvw0mcy" path="res://assets/audio/correct.mp3" id="23_arq8c"]
-[ext_resource type="AudioStream" uid="uid://b1ee4nok2ih35" path="res://assets/audio/wrong.mp3" id="24_4mciv"]
+[ext_resource type="AudioStream" uid="uid://2i8xmwhj4q3a" path="res://assets/audio/correct.mp3" id="23_arq8c"]
+[ext_resource type="AudioStream" uid="uid://b4xmvl40bs80c" path="res://assets/audio/wrong.mp3" id="24_4mciv"]
 
 [sub_resource type="GDScript" id="GDScript_d2v6o"]
 script/source = "extends Node2D
@@ -39,6 +39,7 @@ func _on_button_pressed():
 			break
 		if index == 19:
 			$rightAns.play()
+			GameManager.petraKey = true
 			await $rightAns.finished
 
 func _on_button_2_pressed():
