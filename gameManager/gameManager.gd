@@ -10,8 +10,6 @@ var ajlounKey  = 0
 
 var ajlounPuzzleSolved = false
 
-var ajlounPuzzleSolved = false
-
 var money = 0
 
 var scene = ""
