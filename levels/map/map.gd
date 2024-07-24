@@ -20,6 +20,9 @@ func input_map():
 			closeMap()
 		else:
 			openMap()
+	if Input.is_action_just_pressed("esc"):
+		if paused:
+			closeMap()
 		
 func _process(delta):
 	input_map()
