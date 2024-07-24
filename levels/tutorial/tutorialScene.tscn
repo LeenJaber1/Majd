@@ -3,11 +3,6 @@
 [ext_resource type="Script" path="res://levels/tutorial/tutorialScene.gd" id="1_g7qad"]
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_urj1g"]
 [ext_resource type="Texture2D" uid="uid://cf5jlapf7f5oq" path="res://assets/tiles/New_ruin_tiles.png" id="2_2vxaa"]
-[ext_resource type="Texture2D" uid="uid://c4xdlepxkgpya" path="res://assets/puzzles/backgroumd.png" id="2_msf2u"]
-[ext_resource type="Texture2D" uid="uid://bbm2mk30dxw1d" path="res://assets/tiles/TX Village Props.png" id="3_dklqf"]
-[ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="4_choc4"]
-[ext_resource type="Texture2D" uid="uid://dm4r0a6e7lr6w" path="res://levels/tutorial/مَجد (256 x 256 px).png" id="7_akun6"]
-[ext_resource type="Texture2D" uid="uid://bic5bm6bhemv7" path="res://levels/tutorial/مَجد (256 x 256 px) (2).png" id="8_iuxjw"]
 [ext_resource type="Texture2D" uid="uid://fsbb8ot58mbx" path="res://assets/puzzles/backgroumd.png" id="2_msf2u"]
 [ext_resource type="Texture2D" uid="uid://bbm2mk30dxw1d" path="res://assets/tiles/TX Village Props.png" id="3_dklqf"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="4_choc4"]
@@ -19,8 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="11_fvqiy"]
 [ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_sprmh"]
 [ext_resource type="PackedScene" uid="uid://covtd44xvr156" path="res://levels/main menu/pauseMenu.tscn" id="13_85ylj"]
-[ext_resource type="Texture2D" path="res://levels/tutorial/25.png" id="15_i7hvw"]
-[ext_resource type="Texture2D" path="res://levels/tutorial/26.png" id="16_fp168"]
+[ext_resource type="Texture2D" uid="uid://dmy0as1n7tyfn" path="res://levels/tutorial/25.png" id="15_i7hvw"]
+[ext_resource type="Texture2D" uid="uid://cxj1m3c7pb2kg" path="res://levels/tutorial/26.png" id="16_fp168"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8onqu"]
 texture = ExtResource("1_urj1g")

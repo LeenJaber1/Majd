@@ -1,50 +1,30 @@
 [gd_scene load_steps=27 format=3 uid="uid://bvt1kaxe35htg"]
 
+[ext_resource type="Script" path="res://levels/Petra/ecryptionPuzzle/decryption.gd" id="1_o5jf7"]
 [ext_resource type="Texture2D" uid="uid://c584tr0821k5c" path="res://assets/backgrounds/petra.png" id="1_wc8jv"]
 [ext_resource type="Texture2D" uid="uid://cg8ejbo38eykp" path="res://assets/puzzles/empty-ancient-paper (4).png" id="2_daiyn"]
-[ext_resource type="Texture2D" uid="uid://bnlgblo4hwg7b" path="res://assets/puzzles/petraPuzzleAssets/sprites (17).png" id="3_q10dc"]
-[ext_resource type="Texture2D" uid="uid://vpkj88120euw" path="res://assets/puzzles/petraPuzzleAssets/ح/27.png" id="4_jvr5y"]
-[ext_resource type="Texture2D" uid="uid://crj0250aeb5du" path="res://assets/puzzles/petraPuzzleAssets/ح/26.png" id="6_uve3g"]
-[ext_resource type="Texture2D" uid="uid://cb1hvi14kkfb5" path="res://assets/puzzles/petraPuzzleAssets/ح/24.png" id="7_w3p4s"]
-[ext_resource type="Texture2D" uid="uid://dg2rdua4mf8mh" path="res://assets/puzzles/petraPuzzleAssets/ح/25.png" id="8_8muf6"]
-[ext_resource type="Texture2D" uid="uid://dadnsfuwj1ab2" path="res://assets/puzzles/petraPuzzleAssets/ح/22.png" id="9_dpqmw"]
-[ext_resource type="Texture2D" uid="uid://nocxuudb51k0" path="res://assets/puzzles/petraPuzzleAssets/ح/23.png" id="10_bvbwa"]
-[ext_resource type="Texture2D" uid="uid://bo7xnd3g4n658" path="res://assets/puzzles/petraPuzzleAssets/ح/21.png" id="11_kwiej"]
-[ext_resource type="Texture2D" uid="uid://cpc5wkacbbua5" path="res://assets/puzzles/petraPuzzleAssets/ح/20.png" id="12_reg4i"]
-[ext_resource type="Texture2D" uid="uid://6vdkxl8ilydc" path="res://assets/puzzles/petraPuzzleAssets/ح/19.png" id="13_c0t0y"]
-[ext_resource type="Texture2D" uid="uid://b5a5t5aeomsau" path="res://assets/puzzles/petraPuzzleAssets/ح/18.png" id="14_8l640"]
-[ext_resource type="Texture2D" uid="uid://800d24e7xgwj" path="res://assets/puzzles/petraPuzzleAssets/ح/17.png" id="15_51wxi"]
-[ext_resource type="Texture2D" uid="uid://bpi6hrurv5f5x" path="res://assets/puzzles/petraPuzzleAssets/ح/16.png" id="16_bbbsq"]
-[ext_resource type="Texture2D" uid="uid://dsp00a7v0aqna" path="res://assets/puzzles/petraPuzzleAssets/ح/15.png" id="17_ixm5u"]
-[ext_resource type="Texture2D" uid="uid://cye70o284pkcf" path="res://assets/puzzles/petraPuzzleAssets/ح/14.png" id="18_r4nwe"]
-[ext_resource type="Texture2D" uid="uid://dmug1oi4fb6fj" path="res://assets/puzzles/petraPuzzleAssets/ح/13.png" id="19_egeh3"]
-[ext_resource type="Texture2D" uid="uid://doauvm6rd3k0o" path="res://assets/puzzles/petraPuzzleAssets/ح/12.png" id="20_0h4yq"]
+[ext_resource type="Texture2D" uid="uid://dlhrpwig5hpp1" path="res://assets/puzzles/petraPuzzleAssets/sprites (17).png" id="3_q10dc"]
+[ext_resource type="Texture2D" uid="uid://dxqas1llqgj1v" path="res://assets/puzzles/petraPuzzleAssets/ح/27.png" id="4_jvr5y"]
+[ext_resource type="Texture2D" uid="uid://cutqsaxcey0er" path="res://assets/puzzles/petraPuzzleAssets/ح/26.png" id="6_uve3g"]
+[ext_resource type="Texture2D" uid="uid://gkbpqm3udayo" path="res://assets/puzzles/petraPuzzleAssets/ح/24.png" id="7_w3p4s"]
+[ext_resource type="Texture2D" uid="uid://di0tuil3helap" path="res://assets/puzzles/petraPuzzleAssets/ح/25.png" id="8_8muf6"]
+[ext_resource type="Texture2D" uid="uid://cd1iu11j3tal3" path="res://assets/puzzles/petraPuzzleAssets/ح/22.png" id="9_dpqmw"]
+[ext_resource type="Texture2D" uid="uid://b2l7ag4mturyi" path="res://assets/puzzles/petraPuzzleAssets/ح/23.png" id="10_bvbwa"]
+[ext_resource type="Texture2D" uid="uid://na8ox0vybq0m" path="res://assets/puzzles/petraPuzzleAssets/ح/21.png" id="11_kwiej"]
+[ext_resource type="Texture2D" uid="uid://bqb06vvn8apul" path="res://assets/puzzles/petraPuzzleAssets/ح/20.png" id="12_reg4i"]
+[ext_resource type="Texture2D" uid="uid://cd5nxx5avaqsf" path="res://assets/puzzles/petraPuzzleAssets/ح/19.png" id="13_c0t0y"]
+[ext_resource type="Texture2D" uid="uid://dtpfedqa1y0pe" path="res://assets/puzzles/petraPuzzleAssets/ح/18.png" id="14_8l640"]
+[ext_resource type="Texture2D" uid="uid://sr2cpc31aoqw" path="res://assets/puzzles/petraPuzzleAssets/ح/17.png" id="15_51wxi"]
+[ext_resource type="Texture2D" uid="uid://iidd1tms0cug" path="res://assets/puzzles/petraPuzzleAssets/ح/16.png" id="16_bbbsq"]
+[ext_resource type="Texture2D" uid="uid://8noehlhk4h5g" path="res://assets/puzzles/petraPuzzleAssets/ح/15.png" id="17_ixm5u"]
+[ext_resource type="Texture2D" uid="uid://dlx503kwi0gud" path="res://assets/puzzles/petraPuzzleAssets/ح/14.png" id="18_r4nwe"]
+[ext_resource type="Texture2D" uid="uid://w503ajq1t61b" path="res://assets/puzzles/petraPuzzleAssets/ح/13.png" id="19_egeh3"]
+[ext_resource type="Texture2D" uid="uid://jg6wac52vsxa" path="res://assets/puzzles/petraPuzzleAssets/ح/12.png" id="20_0h4yq"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="20_tme8c"]
 [ext_resource type="Theme" uid="uid://cu8kpxwxk130l" path="res://assets/buttons/submitButton.tres" id="21_n7rg2"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="22_0q7lh"]
-[ext_resource type="AudioStream" uid="uid://2i8xmwhj4q3a" path="res://assets/audio/correct.mp3" id="23_arq8c"]
-[ext_resource type="AudioStream" uid="uid://b4xmvl40bs80c" path="res://assets/audio/wrong.mp3" id="24_4mciv"]
-
-[sub_resource type="GDScript" id="GDScript_d2v6o"]
-script/source = "extends Node2D
-@onready var word = \"حستقشسحجبلرفمفييهكنز\"
-@onready var lineEdits = [$\"Sprites(17)/7a2\",$\"Sprites(17)/seen\",$\"Sprites(17)/ta2\", $\"Sprites(17)/qaf\",$\"Sprites(17)/sheen\",$\"Sprites(17)/seen2\", $\"Sprites(17)/7a22\",$\"Sprites(17)/jeem\" ,$\"Sprites(17)/ba2\",$\"Sprites(17)/lam\", $\"Sprites(17)/ra2\",$\"Sprites(17)/fa2\",$\"Sprites(17)/meem\", $\"Sprites(17)/fa22\",$\"Sprites(17)/ya2\", $\"Sprites(17)/ya22\",  $\"Sprites(17)/ha2\",$\"Sprites(17)/kaf\", $\"Sprites(17)/noon\", $\"Sprites(17)/zain\"]
-
-func _on_button_pressed():
-	for index in 20:
-		var element = lineEdits[index]
-		print (element)
-		if word[index] != element.text || element.text == \"\":
-			$wrongAns.play()
-			break
-		if index == 19:
-			$rightAns.play()
-			GameManager.petraKey = true
-			await $rightAns.finished
-
-func _on_button_2_pressed():
-	get_tree().change_scene_to_file(\"res://levels/Petra/mainPetra.tscn\")
-"
+[ext_resource type="AudioStream" uid="uid://cknnuga2y4kbd" path="res://assets/audio/correct.mp3" id="23_arq8c"]
+[ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="24_4mciv"]
 
 [sub_resource type="GDScript" id="GDScript_ffmvr"]
 script/source = "extends Control
@@ -54,7 +34,7 @@ script/source = "extends Control
 [node name="Decryption" type="Node2D"]
 position = Vector2(60, 18)
 scale = Vector2(0.80486, 0.80486)
-script = SubResource("GDScript_d2v6o")
+script = ExtResource("1_o5jf7")
 
 [node name="-petra-jordan-wall" type="Sprite2D" parent="."]
 position = Vector2(-455.98, 395.1)
