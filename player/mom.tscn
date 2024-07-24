@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://player/mom.gd" id="1_5v8xr"]
 [ext_resource type="PackedScene" uid="uid://d2252wt6sltpo" path="res://interaction/interactionArea.tscn" id="1_npv76"]
-[ext_resource type="Texture2D" uid="uid://kqmnb1lg4eld" path="res://assets/characters/mother.png" id="2_mheba"]
+[ext_resource type="Texture2D" uid="uid://dg0011u06jsf2" path="res://assets/characters/mother.png" id="2_mheba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfygj"]
-size = Vector2(639, 354)
+size = Vector2(274.5, 215)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uku50"]
 atlas = ExtResource("2_mheba")
@@ -40,11 +40,11 @@ animations = [{
 script = ExtResource("1_5v8xr")
 
 [node name="InteractionArea2" parent="." instance=ExtResource("1_npv76")]
-position = Vector2(-1, -116)
+position = Vector2(0, -63)
 action_name = "للتحدث"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2"]
-position = Vector2(1, 117)
+position = Vector2(0, 32)
 shape = SubResource("RectangleShape2D_vfygj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
