@@ -1,6 +1,8 @@
 extends TextureRect
 
-signal hasPiece
+signal pieceMoved
+signal pieceNotNull
+signal pieceReceived
 
 func _get_drag_data(at_position):
 	
@@ -16,6 +18,8 @@ func _get_drag_data(at_position):
 	set_drag_preview(preview)
 	texture = null
 	
+	pieceMoved.emit(self)
+	
 	return preview_texture.texture
 	
 func _can_drop_data(at_position, data):
@@ -24,7 +28,10 @@ func _can_drop_data(at_position, data):
 func _drop_data(at_position, data):
 	if (texture == null):
 		texture = data
-		hasPiece.emit()
+		pieceReceived.emit()
+	else:
+		pieceNotNull.emit(texture)
+		texture = data
 	
 func generate(t : Texture2D):
 	texture = t

@@ -1,11 +1,191 @@
-[gd_scene load_steps=7 format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=36 format=3 uid="uid://chs2ty56x04xt"]
 
 [ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
 [ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.gd" id="1_mta42"]
 [ext_resource type="Texture2D" uid="uid://bnpd4irhrh0ff" path="res://assets/puzzles/grid.png" id="2_15ois"]
 [ext_resource type="PackedScene" uid="uid://b5vmexb4kjnay" path="res://levels/ajloun/mosiacPuzzle/field.tscn" id="3_4f16p"]
 [ext_resource type="PackedScene" uid="uid://plpw403lfiii" path="res://levels/ajloun/mosiacPuzzle/deadField.tscn" id="3_u13mn"]
+[ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="7_c1crm"]
 [ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/deadField.gd" id="7_j4ypo"]
+[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="8_rpwx0"]
+[ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="9_hkegd"]
+[ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="10_iruf6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i4bj"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n65u1"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dl2w"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqg6t"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf5t0"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtsuf"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qrb4"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghgwq"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtpj3"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd2ua"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlkx3"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpagi"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6rvn"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ag5c"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v62l1"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbpgo"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y43n3"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(544, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no52j"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(576, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus8r"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(608, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kih78"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(640, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myy3e"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(672, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgkjj"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kut4c"]
+atlas = ExtResource("10_iruf6")
+region = Rect2(736, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o68jl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o3bb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i4bj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n65u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dl2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqg6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf5t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtsuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qrb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghgwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtpj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd2ua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlkx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpagi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6rvn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ag5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v62l1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbpgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y43n3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no52j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kih78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myy3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgkjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kut4c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
 
 [node name="MosiacPuzzle" type="Node2D"]
 script = ExtResource("1_mta42")
@@ -28,132 +208,212 @@ scale = Vector2(0.233824, 0.233824)
 texture = ExtResource("2_15ois")
 script = ExtResource("7_j4ypo")
 
-[node name="generator" parent="." instance=ExtResource("3_4f16p")]
+[node name="generator" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 876.0
 offset_top = 273.0
 offset_right = 992.0
 offset_bottom = 366.0
 
-[node name="Field1" parent="." instance=ExtResource("3_4f16p")]
-offset_left = 188.0
+[node name="Field1" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 189.0
 offset_top = 62.0
-offset_right = 304.0
+offset_right = 305.0
 offset_bottom = 155.0
 
-[node name="Field2" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 308.0
+[node name="Field2" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 189.0
+offset_top = 159.0
+offset_right = 305.0
+offset_bottom = 252.0
+
+[node name="Field3" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 189.0
+offset_top = 256.0
+offset_right = 305.0
+offset_bottom = 349.0
+
+[node name="Field4" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 189.0
+offset_top = 351.0
+offset_right = 305.0
+offset_bottom = 444.0
+
+[node name="Field5" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 189.0
+offset_top = 449.0
+offset_right = 305.0
+offset_bottom = 542.0
+
+[node name="Field6" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 309.0
 offset_top = 62.0
-offset_right = 424.0
+offset_right = 425.0
 offset_bottom = 155.0
 
-[node name="Field3" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+[node name="Field7" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 159.0
+offset_right = 424.0
+offset_bottom = 252.0
+
+[node name="Field8" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 309.0
+offset_top = 256.0
+offset_right = 425.0
+offset_bottom = 349.0
+
+[node name="Field9" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 308.0
+offset_top = 352.0
+offset_right = 424.0
+offset_bottom = 445.0
+
+[node name="Field10" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 309.0
+offset_top = 447.0
+offset_right = 425.0
+offset_bottom = 540.0
+
+[node name="Field11" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 428.0
 offset_top = 62.0
 offset_right = 544.0
 offset_bottom = 155.0
 
-[node name="Field4" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 548.0
-offset_top = 62.0
-offset_right = 664.0
-offset_bottom = 155.0
+[node name="Field12" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 427.0
+offset_top = 160.0
+offset_right = 543.0
+offset_bottom = 253.0
 
-[node name="Field5" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 188.0
-offset_top = 159.0
-offset_right = 304.0
-offset_bottom = 252.0
-
-[node name="Field6" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 308.0
-offset_top = 159.0
-offset_right = 424.0
-offset_bottom = 252.0
-
-[node name="Field7" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 428.0
-offset_top = 159.0
-offset_right = 544.0
-offset_bottom = 252.0
-
-[node name="Field8" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 548.0
-offset_top = 159.0
-offset_right = 664.0
-offset_bottom = 252.0
-
-[node name="Field9" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 188.0
-offset_top = 256.0
-offset_right = 304.0
-offset_bottom = 349.0
-
-[node name="Field10" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 308.0
-offset_top = 256.0
-offset_right = 424.0
-offset_bottom = 349.0
-
-[node name="Field11" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+[node name="Field13" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 428.0
 offset_top = 256.0
 offset_right = 544.0
 offset_bottom = 349.0
 
-[node name="Field12" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+[node name="Field14" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 352.0
+offset_right = 544.0
+offset_bottom = 445.0
+
+[node name="Field15" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 428.0
+offset_top = 449.0
+offset_right = 544.0
+offset_bottom = 542.0
+
+[node name="Field16" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 547.0
+offset_top = 63.0
+offset_right = 663.0
+offset_bottom = 156.0
+
+[node name="Field17" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
+offset_left = 547.0
+offset_top = 160.0
+offset_right = 663.0
+offset_bottom = 253.0
+
+[node name="Field18" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 548.0
 offset_top = 256.0
 offset_right = 664.0
 offset_bottom = 349.0
 
-[node name="Field13" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 188.0
-offset_top = 353.0
-offset_right = 304.0
-offset_bottom = 446.0
-
-[node name="Field14" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 308.0
-offset_top = 353.0
-offset_right = 424.0
-offset_bottom = 446.0
-
-[node name="Field15" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 428.0
-offset_top = 353.0
-offset_right = 544.0
-offset_bottom = 446.0
-
-[node name="Field16" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+[node name="Field19" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 548.0
-offset_top = 353.0
+offset_top = 352.0
 offset_right = 664.0
-offset_bottom = 446.0
+offset_bottom = 445.0
 
-[node name="Field17" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 188.0
-offset_top = 450.0
-offset_right = 304.0
-offset_bottom = 543.0
-
-[node name="Field18" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 308.0
-offset_top = 450.0
-offset_right = 424.0
-offset_bottom = 543.0
-
-[node name="Field19" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
-offset_left = 428.0
-offset_top = 450.0
-offset_right = 544.0
-offset_bottom = 543.0
-
-[node name="Field20" parent="." groups=["pieces"] instance=ExtResource("3_4f16p")]
+[node name="Field20" parent="." groups=["board_pieces", "pieces"] instance=ExtResource("3_4f16p")]
 offset_left = 548.0
 offset_top = 450.0
 offset_right = 664.0
 offset_bottom = 543.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="popupWrongMessage" type="ColorRect" parent="CanvasLayer"]
+visible = false
+offset_left = -232.0
+offset_top = -176.0
+offset_right = 1384.0
+offset_bottom = 848.0
+color = Color(0, 0, 0, 0.698039)
+
+[node name="UiBoardSmallParchment" type="Sprite2D" parent="CanvasLayer/popupWrongMessage"]
+position = Vector2(776, 496)
+texture = ExtResource("7_c1crm")
+
+[node name="Label" type="Label" parent="CanvasLayer/popupWrongMessage/UiBoardSmallParchment"]
+offset_left = -316.0
+offset_top = -53.0
+offset_right = 316.0
+offset_bottom = 7.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_rpwx0")
+theme_override_font_sizes/font_size = 60
+text = "تمت اعادة الاجزاء الخاطئة"
+horizontal_alignment = 1
+
+[node name="wrongButton" type="Button" parent="CanvasLayer/popupWrongMessage/UiBoardSmallParchment"]
+offset_left = -104.0
+offset_top = 32.0
+offset_right = 104.0
+offset_bottom = 88.0
+theme = ExtResource("9_hkegd")
+theme_override_fonts/font = ExtResource("8_rpwx0")
+theme_override_font_sizes/font_size = 40
+text = "حسنًا"
+
+[node name="popupWinMessage" type="ColorRect" parent="CanvasLayer"]
+visible = false
+offset_left = -232.0
+offset_top = -176.0
+offset_right = 1384.0
+offset_bottom = 848.0
+color = Color(0, 0, 0, 0.698039)
+
+[node name="UiBoardSmallParchment" type="Sprite2D" parent="CanvasLayer/popupWinMessage"]
+position = Vector2(776, 496)
+texture = ExtResource("7_c1crm")
+
+[node name="key" type="AnimatedSprite2D" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+position = Vector2(-229, -24)
+scale = Vector2(1.875, 2)
+sprite_frames = SubResource("SpriteFrames_o68jl")
+autoplay = "default"
+frame = 21
+frame_progress = 0.974871
+
+[node name="Label" type="Label" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+offset_left = -195.0
+offset_top = -54.0
+offset_right = 284.0
+offset_bottom = 6.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_rpwx0")
+theme_override_font_sizes/font_size = 60
+text = "لقد عثرت على مفتاح عجلون"
+horizontal_alignment = 1
+
+[node name="correctButton" type="Button" parent="CanvasLayer/popupWinMessage/UiBoardSmallParchment"]
+offset_left = -104.0
+offset_top = 32.0
+offset_right = 104.0
+offset_bottom = 88.0
+theme = ExtResource("9_hkegd")
+theme_override_fonts/font = ExtResource("8_rpwx0")
+theme_override_font_sizes/font_size = 40
+text = "حسنًا"
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pieceHaveFallen" from="DeadField" to="." method="_on_dead_field_piece_have_fallen"]
 [connection signal="pieceHaveFallen" from="Grid" to="." method="_on_grid_piece_have_fallen"]
+[connection signal="pressed" from="CanvasLayer/popupWrongMessage/UiBoardSmallParchment/wrongButton" to="." method="_on_wrong_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/popupWinMessage/UiBoardSmallParchment/correctButton" to="." method="_on_correct_button_pressed"]
