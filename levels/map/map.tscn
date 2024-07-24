@@ -10,11 +10,11 @@
 [ext_resource type="Theme" uid="uid://kjlm8d0nl88i" path="res://assets/buttons/jarashButton.tres" id="8_m8ofb"]
 [ext_resource type="Theme" uid="uid://cfuajhnmulcqo" path="res://assets/buttons/petraButton.tres" id="9_c1j6a"]
 [ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="10_ebeu6"]
-[ext_resource type="PackedScene" path="res://gameManager/moneyDisplay.tscn" id="11_1xlsh"]
+[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="11_1xlsh"]
 [ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="12_svuwe"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="13_p8obv"]
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="14_bmt8r"]
-[ext_resource type="Texture2D" uid="uid://cvjbrhugi57n4" path="res://assets/GUI/key_big.png" id="15_wd6kq"]
+[ext_resource type="Texture2D" uid="uid://1l1tm6a0dbo6" path="res://assets/GUI/key_big.png" id="15_wd6kq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ocld"]
 texture = ExtResource("3_t2vni")

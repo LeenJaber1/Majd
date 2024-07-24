@@ -1,13 +1,18 @@
-[gd_scene load_steps=13 format=3 uid="uid://g3siivm0onrw"]
+[gd_scene load_steps=19 format=3 uid="uid://g3siivm0onrw"]
 
 [ext_resource type="Texture2D" uid="uid://b5au3i2lrm4l0" path="res://assets/tiles/TX Tileset Ground.png" id="1_urj1g"]
 [ext_resource type="Texture2D" uid="uid://cf5jlapf7f5oq" path="res://assets/tiles/New_ruin_tiles.png" id="2_2vxaa"]
-[ext_resource type="Texture2D" uid="uid://cjebkouhd0jfe" path="res://assets/puzzles/backgroumd.png" id="2_msf2u"]
+[ext_resource type="Texture2D" uid="uid://fsbb8ot58mbx" path="res://assets/puzzles/backgroumd.png" id="2_msf2u"]
 [ext_resource type="Texture2D" uid="uid://bbm2mk30dxw1d" path="res://assets/tiles/TX Village Props.png" id="3_dklqf"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://player/player.tscn" id="4_choc4"]
-[ext_resource type="Texture2D" uid="uid://cw41pjslt1x70" path="res://levels/tutorial/مَجد (256 x 256 px).png" id="7_akun6"]
-[ext_resource type="Texture2D" uid="uid://u6jycg3ua4lf" path="res://levels/tutorial/مَجد (256 x 256 px) (2).png" id="8_iuxjw"]
+[ext_resource type="Texture2D" uid="uid://c4fadduxnlgma" path="res://levels/tutorial/مَجد (256 x 256 px).png" id="7_akun6"]
+[ext_resource type="Texture2D" uid="uid://st0jj8tqgloh" path="res://levels/tutorial/مَجد (256 x 256 px) (2).png" id="8_iuxjw"]
 [ext_resource type="PackedScene" uid="uid://dc1wv0h3s5h2g" path="res://player/mom.tscn" id="9_17ev4"]
+[ext_resource type="PackedScene" uid="uid://bq2lxtxaeqqh0" path="res://interaction/killzone.tscn" id="9_40nkp"]
+[ext_resource type="PackedScene" uid="uid://dpyxp1q3ofb5b" path="res://chest/chest.tscn" id="10_s80ia"]
+[ext_resource type="PackedScene" uid="uid://dp2vfud213ysy" path="res://gameManager/moneyDisplay.tscn" id="11_fvqiy"]
+[ext_resource type="PackedScene" uid="uid://dr8utaj6ne1ki" path="res://levels/map/map.tscn" id="12_sprmh"]
+[ext_resource type="PackedScene" uid="uid://covtd44xvr156" path="res://levels/main menu/pauseMenu.tscn" id="13_85ylj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8onqu"]
 texture = ExtResource("1_urj1g")
@@ -16508,6 +16513,8 @@ sources/0 = SubResource("TileSetAtlasSource_8onqu")
 sources/1 = SubResource("TileSetAtlasSource_pgaqr")
 sources/2 = SubResource("TileSetAtlasSource_subob")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ytf5q"]
+
 [node name="TutorialScene" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -16553,3 +16560,28 @@ limit_left = 0
 limit_top = 130
 limit_right = 5380
 limit_bottom = 680
+
+[node name="Killzone" parent="." instance=ExtResource("9_40nkp")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(780, 838)
+shape = SubResource("WorldBoundaryShape2D_ytf5q")
+
+[node name="Chest" parent="." instance=ExtResource("10_s80ia")]
+position = Vector2(1343, 468)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MoneyDisplay" parent="CanvasLayer" instance=ExtResource("11_fvqiy")]
+
+[node name="map" parent="CanvasLayer" instance=ExtResource("12_sprmh")]
+visible = false
+offset_left = -2.0
+offset_top = -7.0
+offset_right = -2.0
+offset_bottom = -7.0
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_85ylj")]
+visible = false
+
+[connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]

@@ -20,7 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="18_ku5me"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="19_l2i3o"]
 
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_yu001"]
 animations = [{
 "frames": [{
