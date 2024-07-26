@@ -24275,7 +24275,7 @@ limit_bottom = 640
 position = Vector2(-233.987, -273.691)
 scale = Vector2(0.731208, 0.727903)
 stream = ExtResource("17_csfny")
-volume_db = -6.5
+volume_db = 6.609
 autoplay = true
 
 [node name="PetraGuy" parent="." instance=ExtResource("7_44f22")]

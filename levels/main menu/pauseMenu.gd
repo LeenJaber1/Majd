@@ -16,6 +16,7 @@ func disable_save():
 
 func input_map():
 	if Input.is_action_just_pressed("esc"):
+		$paperSound.play()
 		if paused:
 			resume()
 		else:

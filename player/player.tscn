@@ -141,13 +141,12 @@ shape = SubResource("CapsuleShape2D_3fw2e")
 
 [node name="walkAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_ea1cs")
-volume_db = -20.143
+volume_db = -3.0
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_amuf5")
-volume_db = -19.992
 
 [connection signal="ready" from="." to="." method="_on_ready"]

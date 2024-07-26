@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dr8utaj6ne1ki"]
+[gd_scene load_steps=21 format=3 uid="uid://dr8utaj6ne1ki"]
 
 [ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="1_5kffc"]
 [ext_resource type="Script" path="res://levels/map/map.gd" id="1_hphut"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="13_p8obv"]
 [ext_resource type="Theme" uid="uid://wvho8120pnwa" path="res://assets/buttons/mainMenuButtons.tres" id="14_bmt8r"]
 [ext_resource type="Texture2D" uid="uid://1l1tm6a0dbo6" path="res://assets/GUI/key_big.png" id="15_wd6kq"]
+[ext_resource type="AudioStream" uid="uid://dv0t12045o53a" path="res://assets/audio/Paper Sound Effect.mp3" id="16_vjo3j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ocld"]
 texture = ExtResource("3_t2vni")
@@ -9671,6 +9672,19 @@ offset_right = 976.0
 offset_bottom = 256.0
 theme = ExtResource("7_nid6e")
 
+[node name="Label2" type="Label" parent="ajloun"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 212.0
+offset_right = 117.0
+offset_bottom = 263.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 50
+text = "عجلون"
+
 [node name="jarash" type="Button" parent="."]
 layout_mode = 0
 offset_left = 440.0
@@ -9679,13 +9693,38 @@ offset_right = 652.0
 offset_bottom = 416.0
 theme = ExtResource("8_m8ofb")
 
+[node name="Label2" type="Label" parent="jarash"]
+offset_left = 60.0
+offset_top = 189.0
+offset_right = 148.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 50
+text = "جرش"
+horizontal_alignment = 1
+
 [node name="petra" type="Button" parent="."]
 layout_mode = 0
-offset_left = 208.0
-offset_top = 416.0
-offset_right = 402.0
-offset_bottom = 584.0
+offset_left = 207.0
+offset_top = 369.0
+offset_right = 401.0
+offset_bottom = 537.0
 theme = ExtResource("9_c1j6a")
+
+[node name="Label2" type="Label" parent="petra"]
+offset_left = 100.0
+offset_top = 167.0
+offset_right = 188.0
+offset_bottom = 218.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_p8obv")
+theme_override_font_sizes/font_size = 50
+text = "البتراء"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_ebeu6")
@@ -9704,10 +9743,10 @@ vertical_alignment = 1
 
 [node name="MoneyDisplay" parent="." instance=ExtResource("11_1xlsh")]
 layout_mode = 1
-offset_left = 432.0
-offset_top = 448.0
-offset_right = 432.0
-offset_bottom = 448.0
+offset_left = 445.0
+offset_top = 449.0
+offset_right = 445.0
+offset_bottom = 449.0
 
 [node name="popupMessage" type="ColorRect" parent="."]
 visible = false
@@ -9796,6 +9835,9 @@ theme = ExtResource("14_bmt8r")
 theme_override_fonts/font = ExtResource("13_p8obv")
 theme_override_font_sizes/font_size = 40
 text = "حسنًا"
+
+[node name="paperSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_vjo3j")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="ajloun" to="." method="_on_ajloun_pressed"]

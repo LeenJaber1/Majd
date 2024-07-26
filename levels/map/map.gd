@@ -16,11 +16,13 @@ func openMap():
 
 func input_map():
 	if Input.is_action_just_pressed("map"):
+		$paperSound.play()
 		if paused:
 			closeMap()
 		else:
 			openMap()
 	if Input.is_action_just_pressed("esc"):
+		$paperSound.play()
 		if paused:
 			closeMap()
 		

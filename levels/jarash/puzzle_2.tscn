@@ -125,7 +125,6 @@ theme = ExtResource("9_opf1f")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_a04jb")
-volume_db = -22.533
 autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

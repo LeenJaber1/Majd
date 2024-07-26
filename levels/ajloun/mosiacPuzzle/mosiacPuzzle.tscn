@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://chs2ty56x04xt"]
+[gd_scene load_steps=39 format=3 uid="uid://chs2ty56x04xt"]
 
 [ext_resource type="Texture2D" uid="uid://wdg2v3a8crco" path="res://assets/puzzles/stoneBackground.png" id="1_ekbgm"]
 [ext_resource type="Script" path="res://levels/ajloun/mosiacPuzzle/mosiacPuzzle.gd" id="1_mta42"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://4iiqsoh81ol0" path="res://assets/GUI/key_32x32_24f.png" id="10_iruf6"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="11_qwq3b"]
 [ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="12_v1tma"]
+[ext_resource type="AudioStream" uid="uid://cknnuga2y4kbd" path="res://assets/audio/correct.mp3" id="13_p8sm0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o3bb"]
 atlas = ExtResource("10_iruf6")
@@ -424,8 +425,11 @@ theme = ExtResource("11_qwq3b")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_v1tma")
-volume_db = -22.533
+volume_db = -10.053
 autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_p8sm0")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pieceHaveFallen" from="DeadField" to="." method="_on_dead_field_piece_have_fallen"]

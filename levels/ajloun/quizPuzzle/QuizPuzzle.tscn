@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cg8ejbo38eykp" path="res://assets/puzzles/empty-ancient-paper (4).png" id="1_n3uhg"]
 [ext_resource type="Script" path="res://levels/ajloun/quizPuzzle/QuizPuzzle.gd" id="1_yijtb"]
 [ext_resource type="Texture2D" uid="uid://bupk41dk1gwgs" path="res://assets/backgrounds/ajloun.png" id="2_7cwse"]
-[ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="3_ele36"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="4_o1ofg"]
+[ext_resource type="Texture2D" uid="uid://cq325a1g2jai2" path="res://assets/puzzles/quiz.png" id="6_7h0p1"]
 [ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="6_kbf23"]
 
 [node name="QuizPuzzle" type="Node2D"]
@@ -22,38 +22,6 @@ position = Vector2(575, 325)
 scale = Vector2(0.418814, 0.418814)
 texture = ExtResource("1_n3uhg")
 
-[node name="Label" type="Label" parent="paper"]
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.512
-anchor_right = 0.5
-anchor_bottom = 0.512
-offset_left = -1563.96
-offset_top = -1256.62
-offset_right = -470.956
-offset_bottom = -223.616
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_ele36")
-theme_override_font_sizes/font_size = 70
-text = "- من أمر ببناء قلعة عجلون؟
-أ- عمر بن الخطاب ب- الصليبيين  ج- صلاح الدين الأيوبي
-
-ما اسم الجبل الذي بنيت عليه القلعة؟
-ل- جبل عوف س- جبل النور د- جبل البلقاء
-
-ما اسم الاداة الحربية التي ترمي المقذوفات الثقيلة؟
-ن- القوس ق- السيف ع- المنجنيق
-
-ما الهدف من بناء قلعة عجلون؟
-هـ- تجاري ا- عسكري ك- ثقافي
-
-ما هي البحيرة التي تطل عليها قلعة عجلون؟
-د- بحيرة طبريا ص- البحر الميت م -بحيرة الريان"
-horizontal_alignment = 1
-vertical_alignment = 1
-text_direction = 2
-
 [node name="Button2" type="Button" parent="."]
 offset_left = 186.0
 offset_top = 17.0
@@ -64,7 +32,11 @@ theme = ExtResource("4_o1ofg")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_kbf23")
-volume_db = -22.533
+volume_db = -10.053
 autoplay = true
+
+[node name="Quiz" type="Sprite2D" parent="."]
+position = Vector2(564, 326)
+texture = ExtResource("6_7h0p1")
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

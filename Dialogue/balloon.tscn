@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=11 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://Dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="2_ssijc"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
+[ext_resource type="AudioStream" uid="uid://ynr805uj4w4q" path="res://assets/audio/typing.mp3" id="5_bn43s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -157,6 +158,9 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ssijc")
 theme_override_font_sizes/font_size = 24
 text = "Response example"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_bn43s")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

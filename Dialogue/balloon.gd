@@ -59,7 +59,9 @@ var dialogue_line: DialogueLine:
 		dialogue_label.show()
 		if not dialogue_line.text.is_empty():
 			dialogue_label.type_out()
+			$AudioStreamPlayer.play()
 			await dialogue_label.finished_typing
+			$AudioStreamPlayer.stop()
 
 		# Wait for input
 		if dialogue_line.responses.size() > 0:
@@ -99,7 +101,6 @@ func _notification(what: int) -> void:
 		self.dialogue_line = await resource.get_next_dialogue_line(dialogue_line.id)
 		if visible_ratio < 1:
 			dialogue_label.skip_typing()
-
 
 ## Start some dialogue
 func start(dialogue_resource: DialogueResource, title: String, extra_game_states: Array = []) -> void:

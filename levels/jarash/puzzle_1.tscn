@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://33eb2pmoch58"]
+[gd_scene load_steps=12 format=3 uid="uid://33eb2pmoch58"]
 
 [ext_resource type="Script" path="res://levels/jarash/puzzle_1.gd" id="1_15yjh"]
 [ext_resource type="Texture2D" uid="uid://clilrld6kndgq" path="res://assets/backgrounds/image.png" id="1_mmwvd"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://dlu0j6o5rtnr7" path="res://assets/audio/wrong.mp3" id="7_h55e5"]
 [ext_resource type="Theme" uid="uid://ogb0i6v2wpvv" path="res://assets/buttons/backButton.tres" id="8_cfc1k"]
 [ext_resource type="AudioStream" uid="uid://x5g1wh6k0krg" path="res://assets/audio/puzzle.mp3" id="10_43q0d"]
+[ext_resource type="Theme" uid="uid://c8f3ole2rx485" path="res://assets/themes/romanNumber.tres" id="11_rwne2"]
 
 [node name="puzzle1" type="Node2D"]
 script = ExtResource("1_15yjh")
@@ -23,17 +24,6 @@ texture = ExtResource("1_mmwvd")
 position = Vector2(584, 304)
 scale = Vector2(12.7604, 12.7604)
 texture = ExtResource("2_yp4qg")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 286.0
-offset_top = 173.0
-offset_right = 873.0
-offset_bottom = 370.0
-theme = ExtResource("3_ht6af")
-text = "IIz - VII = III
-y +  IVz= VIII"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="LineEdit" type="LineEdit" parent="."]
 offset_left = 431.0
@@ -69,8 +59,36 @@ theme = ExtResource("8_cfc1k")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_43q0d")
-volume_db = -22.533
 autoplay = true
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 410.0
+offset_top = 140.0
+offset_right = 739.0
+offset_bottom = 224.0
+theme = ExtResource("11_rwne2")
+theme_override_fonts/font = ExtResource("6_gwmr8")
+theme_override_font_sizes/font_size = 60
+text = "اوجد Y"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 421.0
+offset_top = 201.0
+offset_right = 750.0
+offset_bottom = 285.0
+theme = ExtResource("11_rwne2")
+theme_override_font_sizes/font_size = 60
+text = "IIz - VII = III"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 390.0
+offset_top = 274.0
+offset_right = 784.0
+offset_bottom = 358.0
+theme = ExtResource("11_rwne2")
+theme_override_font_sizes/font_size = 60
+text = "y +  IVz= VIII"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

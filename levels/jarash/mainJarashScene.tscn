@@ -20802,7 +20802,7 @@ limit_bottom = 800
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player/Camera2D"]
 stream = ExtResource("14_61gfy")
-volume_db = -17.975
+volume_db = 4.875
 autoplay = true
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]

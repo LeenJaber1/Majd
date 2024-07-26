@@ -16607,7 +16607,7 @@ texture = ExtResource("8_iuxjw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_gmq2f")
-volume_db = -19.136
+volume_db = 7.0
 autoplay = true
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]

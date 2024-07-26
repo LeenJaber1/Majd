@@ -109,6 +109,7 @@ func checkForWin():
 	
 	if counter == 20:
 		$CanvasLayer/popupWinMessage.visible = true
+		$AudioStreamPlayer2.play()
 		GameManager.ajlounKey = true
 	else:
 		generate(getNextPic())

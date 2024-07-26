@@ -792,7 +792,7 @@ text = "حسنًا"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("29_d5pkc")
-volume_db = -22.533
+volume_db = -8.389
 autoplay = true
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

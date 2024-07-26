@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://covtd44xvr156"]
+[gd_scene load_steps=9 format=3 uid="uid://covtd44xvr156"]
 
 [ext_resource type="Script" path="res://levels/main menu/pauseMenu.gd" id="1_40n3h"]
 [ext_resource type="Texture2D" uid="uid://7y6rv7ikausa" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Large  stone.png" id="1_qkate"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://cr28ssm3siwlg" path="res://assets/fonts/Arapix.otf" id="4_v7dvh"]
 [ext_resource type="AudioStream" uid="uid://cd0051yvy5fsm" path="res://assets/gui sounds/Click - Sound Effect (HD).mp3" id="5_te0uf"]
 [ext_resource type="Texture2D" uid="uid://c21kmclkevh47" path="res://assets/GUI/Fantasy Wooden GUI  Free/PNG/UI board Small  parchment.png" id="7_onopg"]
+[ext_resource type="AudioStream" uid="uid://dv0t12045o53a" path="res://assets/audio/Paper Sound Effect.mp3" id="8_0ql4b"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -98,6 +99,9 @@ theme = ExtResource("3_v7md1")
 theme_override_fonts/font = ExtResource("4_v7dvh")
 theme_override_font_sizes/font_size = 40
 text = "حسنًا"
+
+[node name="paperSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_0ql4b")
 
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]

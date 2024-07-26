@@ -69,6 +69,5 @@ shape = SubResource("RectangleShape2D_fdli2")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_1xmhv")
-volume_db = -20.955
 
 [connection signal="ready" from="." to="." method="_on_ready"]

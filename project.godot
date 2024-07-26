@@ -14,6 +14,7 @@ config/name="majd"
 run/main_scene="res://levels/main menu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon/مَجد (256 x 256 px) (2).svg"
+config/windows_native_icon="res://icon/مَجد (256 x 256 px).ico"
 
 [autoload]
 
